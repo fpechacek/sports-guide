@@ -104,7 +104,7 @@ Leagues included: NFL, college football (FBS), NBA, WNBA, men's and women's coll
 - WNBA and MLB are included. In November they usually have no games. An empty league is not an error.
 - Placeholder `TBD at TBD` games are dropped. UFC is one row per fight. Auto racing is one row per session (practice, qualifying, race), not one row per driver.
 - ESPN's public racing scoreboard has Formula 1, IndyCar, NASCAR Cup, the O'Reilly series (Xfinity), Trucks, and NHRA. IMSA, WEC, and MotoGP are not on that scoreboard.
-- DGB Ratings and Game of the Day allow their homepages in robots.txt, but those pages do not include a game list. The morning job looks anyway and adds a DGB or Game of the day tag only when a matchup is actually in the page. Otherwise it skips them.
+- DGB Ratings puts its ranked list in the page data, not in the visible HTML. The morning job reads that list and marks the five highest-rated games each day as DGB #1 through DGB #5. Game of the Day has a public games API; its featured game is tagged Game of the day. Women's games are still left out. If either site is down, the schedule is still written.
 - Rankings are ESPN's `curatedRank` when it is a real rank. The value 99 means unranked and is omitted.
 - This is an unofficial public endpoint. If ESPN changes the shape, `npm test` still passes and `npm run fetch` is what will fail. The script keeps the previous `schedule.json` when a run comes back with zero games.
 

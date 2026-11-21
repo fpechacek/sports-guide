@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildSchedule } from "./lib/build.mjs";
 import { loadWatchSignals } from "./lib/signals.mjs";
+import { addDays, todayEt } from "./lib/time.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const USER_AGENT = "sports-guide/1.0 (personal tv guide; no AI)";
@@ -70,14 +71,18 @@ async function main() {
   const leagues = leagueConfig.leagues ?? [];
   let signals = [];
   try {
-    signals = await loadWatchSignals(fetch);
+    const start = todayEt();
+    const dates = Array.from({ length: days }, (_, index) => addDays(start, index));
+    signals = await loadWatchSignals(fetch, { dates });
   } catch {
     signals = [];
   }
+  const dgbCount = signals.filter((signal) => signal.id === "dgb").length;
+  const gotdCount = signals.filter((signal) => signal.id === "game-of-the-day").length;
   console.log(
-    signals.length > 0
-      ? `Watch signals: ${signals.length} from public rating pages.`
-      : "Watch signals: none. DGB Ratings and Game of the Day did not publish a game list.",
+    dgbCount + gotdCount > 0
+      ? `Watch signals: ${dgbCount} DGB picks, ${gotdCount} Game of the Day.`
+      : "Watch signals: none. DGB Ratings and Game of the Day did not return a game list.",
   );
 
   console.log(`Fetching ${leagues.length} leagues for ${days} days in ${favoriteConfig.timezone}.`);

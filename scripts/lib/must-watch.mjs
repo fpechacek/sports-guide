@@ -103,15 +103,62 @@ function isWomensSport(event, config) {
   return /\bwomen(?:'s|s)?\b/.test(blob) || blob.includes("nwsl") || blob.includes("wnba");
 }
 
-function signalIds(event, signals) {
-  const found = [];
-  for (const signal of signals ?? []) {
-    const wanted = signal?.teams ?? [];
-    if (wanted.length < 2) continue;
-    const matched = wanted.every((name) => event.teams.some((team) => namesMatch(team.name, name)));
-    if (matched && signal.id) found.push(signal.id);
+const SCHOOL_CONTINUATIONS = new Set(["state", "tech", "a&m", "college", "university", "southern", "northern", "eastern", "western", "central"]);
+
+function wordsOf(value) {
+  return String(value)
+    .toLowerCase()
+    .replace(/[.'’]/g, "")
+    .split(/[^a-z0-9&]+/)
+    .filter(Boolean);
+}
+
+export function teamNameMatches(eventName, signalName) {
+  const event = wordsOf(eventName);
+  const signal = wordsOf(signalName);
+  if (signal.length === 0 || event.length < signal.length) return false;
+  for (let i = 0; i < signal.length; i += 1) {
+    if (event[i] !== signal[i]) return false;
   }
-  return found;
+  const next = event[signal.length];
+  if (!next) return true;
+  if (SCHOOL_CONTINUATIONS.has(next)) return false;
+  if (next === "oh" || next === "fl") return false;
+  return true;
+}
+
+function signalMatches(event, signal) {
+  const wanted = signal?.teams ?? [];
+  if (wanted.length < 2) return false;
+  if (signal.date && event.date && signal.date !== event.date) return false;
+  if (Array.isArray(signal.leagues) && signal.leagues.length > 0 && !signal.leagues.includes(event.leagueSlug)) return false;
+  return wanted.every((name) =>
+    event.teams.some((team) => [team.name, team.shortName, team.abbreviation].some((value) => value && teamNameMatches(value, name))),
+  );
+}
+
+function signalReasons(event, signals) {
+  let bestDgb = null;
+  let gameOfDay = false;
+  for (const signal of signals ?? []) {
+    if (!signalMatches(event, signal)) continue;
+    if (signal.id === "dgb") {
+      const rank = Number(signal.rank) || 0;
+      if (!bestDgb || (rank > 0 && rank < bestDgb.rank)) {
+        bestDgb = { rank: rank || 99, label: signal.label || (rank ? `DGB #${rank}` : "DGB") };
+      }
+    } else if (signal.id === "game-of-the-day") {
+      gameOfDay = true;
+    }
+  }
+  const ids = [];
+  const labels = {};
+  if (bestDgb) {
+    ids.push("dgb");
+    labels.dgb = bestDgb.label;
+  }
+  if (gameOfDay) ids.push("game-of-the-day");
+  return { ids, labels };
 }
 
 function isKnockout(event, rule) {
@@ -137,7 +184,8 @@ export function classifyMustWatch(event, config) {
     if (ranks.length >= 2 && ranks.every((rank) => rank <= ceiling)) reasons.push("ranked-matchup");
   }
 
-  reasons.push(...signalIds(event, config.signals));
+  const signals = signalReasons(event, config.signals);
+  reasons.push(...signals.ids);
 
   if (isRivalry(event, config.rivalries)) reasons.push("rivalry");
   if (includesKeyword(event, config.keywords?.title)) reasons.push("title");
@@ -152,6 +200,6 @@ export function classifyMustWatch(event, config) {
   unique.sort((a, b) => REASON_ORDER.indexOf(a) - REASON_ORDER.indexOf(b));
   return {
     mustWatch: unique.length > 0,
-    mustWatchReasons: unique.map((id) => ({ id, label: REASON_LABELS[id] ?? id })),
+    mustWatchReasons: unique.map((id) => ({ id, label: signals.labels[id] ?? REASON_LABELS[id] ?? id })),
   };
 }

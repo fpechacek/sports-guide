@@ -5,7 +5,7 @@ import { buildSchedule, scoreboardUrl } from "./lib/build.mjs";
 import { matchingFavorites } from "./lib/favorites.mjs";
 import { classifyMustWatch } from "./lib/must-watch.mjs";
 import { listingsFromScoreboard, normalizeCompetition, pickBroadcasts } from "./lib/normalize.mjs";
-import { matchupsFromHtml, loadWatchSignals } from "./lib/signals.mjs";
+import { dgbSignalsFromGames, featuredGotd, gamesFromDgbPayload, loadWatchSignals } from "./lib/signals.mjs";
 import { formatEt } from "./lib/time.mjs";
 import { emptyWatch, isWatched, pruneWatch, toggleWatch } from "./lib/watch-state.mjs";
 
@@ -433,6 +433,7 @@ test("Must Watch rules mark big games and leave ordinary ones out", async () => 
     {
       ...base,
       name: "Buffalo Bills at Kansas City Chiefs",
+      date: "2026-11-21",
       leagueSlug: "nfl",
       competition: "NFL",
       teams: [
@@ -443,15 +444,33 @@ test("Must Watch rules mark big games and leave ordinary ones out", async () => 
     {
       ...rules,
       signals: [
-        { id: "dgb", teams: ["Buffalo Bills", "Kansas City Chiefs"] },
-        { id: "game-of-the-day", teams: ["Buffalo Bills", "Kansas City Chiefs"] },
+        { id: "dgb", rank: 1, label: "DGB #1", date: "2026-11-21", leagues: ["nfl"], teams: ["Buffalo Bills", "Kansas City Chiefs"] },
+        { id: "game-of-the-day", date: "2026-11-21", leagues: ["nfl"], teams: ["Buffalo Bills", "Kansas City Chiefs"] },
       ],
     },
   );
   assert.deepEqual(
-    signaled.mustWatchReasons.map((reason) => reason.id),
-    ["dgb", "game-of-the-day"],
+    signaled.mustWatchReasons.map((reason) => reason.label),
+    ["DGB #1", "Game of the day"],
   );
+
+  const texasTech = classifyMustWatch(
+    {
+      ...base,
+      date: "2026-11-21",
+      name: "Texas Tech Red Raiders at Baylor Bears",
+      leagueSlug: "college-football",
+      teams: [
+        { name: "Texas Tech Red Raiders", shortName: "Texas Tech", abbreviation: "TTU" },
+        { name: "Baylor Bears", shortName: "Baylor", abbreviation: "BAY" },
+      ],
+    },
+    {
+      ...rules,
+      signals: [{ id: "dgb", rank: 2, label: "DGB #2", date: "2026-11-21", leagues: ["college-football"], teams: ["Texas", "Baylor"] }],
+    },
+  );
+  assert.equal(texasTech.mustWatch, false);
 
   const noon = {
     ...base,
@@ -653,11 +672,21 @@ test("UFC lists each fight and a race lists the session, not every driver", () =
   assert.equal(race.listings[0].format, "race");
 });
 
-test("rating pages are skipped when they do not list matchups", async () => {
-  const games = matchupsFromHtml("<html><body><p>No games found for today.</p><p>Subscribe for the weekend.</p></body></html>");
-  assert.deepEqual(games, []);
-  const parsed = matchupsFromHtml("<p>Buffalo Bills vs Kansas City Chiefs</p>");
-  assert.deepEqual(parsed, [{ teams: ["Buffalo Bills", "Kansas City Chiefs"] }]);
+test("DGB top 5 are ranked per day and a dead source is ignored", async () => {
+  const payload = `0:{"games":[{"sport":"cfb","away_display":"LSU","home_display":"Tennessee","start_date":"2026-11-21T20:30:00.000Z","watchability_index":75.2},{"sport":"cfb","away_display":"Ohio State","home_display":"Nebraska","start_date":"2026-11-21T17:00:00.000Z","watchability_index":66},{"sport":"nhl","away_display":"Edmonton Oilers","home_display":"Carolina Hurricanes","start_date":"2026-11-21T18:00:00.000Z","watchability_index":63.1},{"sport":"cfb","away_display":"Texas Tech","home_display":"Baylor","start_date":"2026-11-21T20:30:00.000Z","watchability_index":63},{"sport":"cfb","away_display":"Kentucky","home_display":"Missouri","start_date":"2026-11-22T00:30:00.000Z","watchability_index":62.7},{"sport":"cfb","away_display":"UCLA","home_display":"Michigan","start_date":"2026-11-21T20:30:00.000Z","watchability_index":61.3}]}`;
+  const signals = dgbSignalsFromGames(gamesFromDgbPayload(payload));
+  assert.deepEqual(
+    signals.map((signal) => signal.label),
+    ["DGB #1", "DGB #2", "DGB #3", "DGB #4", "DGB #5"],
+  );
+  assert.equal(signals[0].teams[0], "LSU");
+  assert.equal(signals[5], undefined);
+  const featured = featuredGotd([
+    { id: "a", status: "completed", league: "NBA", awayTeam: "A", homeTeam: "B", startTime: "2026-11-21T00:00:00Z", analysis: { thrillScore: 40, fundamentalsScore: 10, vibeScore: 10 } },
+    { id: "b", status: "completed", league: "NBA", awayTeam: "C", homeTeam: "D", startTime: "2026-11-21T01:00:00Z", analysis: { thrillScore: 80, fundamentalsScore: 10, vibeScore: 10 } },
+    { id: "c", status: "scheduled", league: "NBA", awayTeam: "E", homeTeam: "F", startTime: "2026-11-21T02:00:00Z" },
+  ]);
+  assert.equal(featured.id, "b");
   const none = await loadWatchSignals(async () => {
     throw new Error("offline");
   });
