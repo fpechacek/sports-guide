@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T16:42:40.881Z",
+  "generatedAt": "2026-11-21T16:43:24.503Z",
   "timezone": "America/New_York",
   "location": "Merritt Island, Florida",
   "range": {
@@ -1031,7 +1031,7 @@
       "shortName": "IPS @ TOT",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "84'",
+      "statusDetail": "85'",
       "venue": "Tottenham Hotspur Stadium",
       "teams": [
         {
@@ -1135,7 +1135,7 @@
       "shortName": "SUN @ AVL",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "85'",
+      "statusDetail": "86'",
       "venue": "Villa Park",
       "teams": [
         {
@@ -1220,7 +1220,7 @@
       "shortName": "CRY @ COV",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "80'",
+      "statusDetail": "81'",
       "venue": "Coventry Building Society Arena",
       "teams": [
         {
@@ -1305,7 +1305,7 @@
       "shortName": "LEE @ CHE",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "81'",
+      "statusDetail": "82'",
       "venue": "Stamford Bridge",
       "teams": [
         {
@@ -1390,7 +1390,7 @@
       "shortName": "NFO @ BOU",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "84'",
+      "statusDetail": "85'",
       "venue": "Vitality Stadium",
       "teams": [
         {
@@ -1552,7 +1552,7 @@
       "shortName": "VAL @ RAY",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "67'",
+      "statusDetail": "68'",
       "venue": "Estadio de Vallecas",
       "teams": [
         {
@@ -1647,7 +1647,7 @@
       "shortName": "UPST @ UNCG",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "0:42 - 1st",
+      "statusDetail": "0:38 - 1st",
       "venue": "Bodford Arena",
       "teams": [
         {
@@ -1671,7 +1671,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-2",
-          "score": "39",
+          "score": "41",
           "color": "#003559",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2430.png",
           "favorite": false
@@ -1801,7 +1801,7 @@
       "shortName": "PSG @ NICE",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "27'",
+      "statusDetail": "28'",
       "venue": "Allianz Riviera",
       "teams": [
         {
@@ -2533,7 +2533,7 @@
       "broadcastSummary": "Fox",
       "odds": {
         "provider": "DraftKings",
-        "spread": "OSU -3.5",
+        "spread": "OSU -4",
         "overUnder": "42.5",
         "homeMoneyline": "+154",
         "awayMoneyline": "-185",
