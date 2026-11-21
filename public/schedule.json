@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T15:03:13.235Z",
+  "generatedAt": "2026-11-21T16:07:17.444Z",
   "timezone": "America/New_York",
   "location": "Merritt Island, Florida",
   "range": {
@@ -291,7 +291,7 @@
     "failed": 0,
     "events": 728,
     "favorites": 20,
-    "withBroadcast": 617
+    "withBroadcast": 618
   },
   "warnings": [],
   "events": [
@@ -481,8 +481,8 @@
       "name": "Lecce at Lazio",
       "shortName": "LEC @ LAZ",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "46'",
+      "status": "final",
+      "statusDetail": "FT",
       "venue": "Olimpico",
       "teams": [
         {
@@ -492,7 +492,7 @@
           "abbreviation": "LEC",
           "homeAway": "away",
           "rank": null,
-          "record": "3-1-7",
+          "record": "3-1-8",
           "score": "0",
           "color": "#fced0b",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
@@ -505,8 +505,8 @@
           "abbreviation": "LAZ",
           "homeAway": "home",
           "rank": null,
-          "record": "9-2-0",
-          "score": "1",
+          "record": "10-2-0",
+          "score": "3",
           "color": "#74bde7",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
           "favorite": false
@@ -532,7 +532,7 @@
       "favoriteNames": [],
       "color": "#a9c0ff",
       "headline": "Sat, Nov 21 · 9:00 AM ET · Lecce at Lazio · Serie A · Paramount+",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401874981"
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874981/lecce-lazio"
     },
     {
       "id": "401875056",
@@ -554,8 +554,8 @@
       "name": "Cagliari at Como",
       "shortName": "CAG @ COMO",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "HT",
+      "status": "final",
+      "statusDetail": "FT",
       "venue": "Giuseppe Sinigaglia",
       "teams": [
         {
@@ -565,7 +565,7 @@
           "abbreviation": "CAG",
           "homeAway": "away",
           "rank": null,
-          "record": "5-1-5",
+          "record": "5-1-6",
           "score": "0",
           "color": "#282846",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
@@ -578,8 +578,8 @@
           "abbreviation": "COMO",
           "homeAway": "home",
           "rank": null,
-          "record": "7-2-2",
-          "score": "1",
+          "record": "8-2-2",
+          "score": "2",
           "color": "#4169e1",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
           "favorite": false
@@ -605,7 +605,7 @@
       "favoriteNames": [],
       "color": "#a9c0ff",
       "headline": "Sat, Nov 21 · 9:00 AM ET · Cagliari at Como · Serie A · Paramount+",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401875056"
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875056/cagliari-como"
     },
     {
       "id": "401884728",
@@ -628,7 +628,7 @@
       "shortName": "SCF @ ELV",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "33'",
+      "statusDetail": "78'",
       "venue": "URSAPHARM-Arena an der Kaiserlinde",
       "teams": [
         {
@@ -639,7 +639,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "6-1-2",
-          "score": "0",
+          "score": "1",
           "color": "#da0308",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
           "favorite": false
@@ -701,7 +701,7 @@
       "shortName": "DOR @ BMG",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "33'",
+      "statusDetail": "79'",
       "venue": "BORUSSIA-PARK",
       "teams": [
         {
@@ -774,7 +774,7 @@
       "shortName": "RBL @ FCU",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "33'",
+      "statusDetail": "75'",
       "venue": "Stadion An der Alten Försterei",
       "teams": [
         {
@@ -785,7 +785,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "6-0-3",
-          "score": "1",
+          "score": "3",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
           "favorite": false
@@ -798,7 +798,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "1-4-4",
-          "score": "0",
+          "score": "1",
           "color": "#da0308",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
           "favorite": false
@@ -847,7 +847,7 @@
       "shortName": "TSG @ SGE",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "33'",
+      "statusDetail": "78'",
       "venue": "Deutsche Bank Park",
       "teams": [
         {
@@ -920,7 +920,7 @@
       "shortName": "SCP @ B04",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "33'",
+      "statusDetail": "78'",
       "venue": "BayArena",
       "teams": [
         {
@@ -944,7 +944,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-1-3",
-          "score": "1",
+          "score": "4",
           "color": "#da0308",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
           "favorite": false
@@ -993,7 +993,7 @@
       "shortName": "IPS @ TOT",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "2'",
+      "statusDetail": "49'",
       "venue": "Tottenham Hotspur Stadium",
       "teams": [
         {
@@ -1017,7 +1017,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-3-4",
-          "score": "0",
+          "score": "1",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
           "favorite": true
@@ -1080,7 +1080,7 @@
       "shortName": "SUN @ AVL",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "3'",
+      "statusDetail": "50'",
       "venue": "Villa Park",
       "teams": [
         {
@@ -1153,7 +1153,7 @@
       "shortName": "CRY @ COV",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "3'",
+      "statusDetail": "HT",
       "venue": "Coventry Building Society Arena",
       "teams": [
         {
@@ -1164,7 +1164,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-1-7",
-          "score": "0",
+          "score": "2",
           "color": "#0202fb",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
           "favorite": false
@@ -1177,7 +1177,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-0-7",
-          "score": "0",
+          "score": "2",
           "color": "#87cced",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
           "favorite": false
@@ -1226,7 +1226,7 @@
       "shortName": "LEE @ CHE",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "3'",
+      "statusDetail": "HT",
       "venue": "Stamford Bridge",
       "teams": [
         {
@@ -1237,7 +1237,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-5-2",
-          "score": "0",
+          "score": "1",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
           "favorite": false
@@ -1250,7 +1250,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-1-4",
-          "score": "0",
+          "score": "1",
           "color": "#144992",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
           "favorite": false
@@ -1299,7 +1299,7 @@
       "shortName": "NFO @ BOU",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "3'",
+      "statusDetail": "49'",
       "venue": "Vitality Stadium",
       "teams": [
         {
@@ -1323,7 +1323,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-3-3",
-          "score": "0",
+          "score": "2",
           "color": "#f42727",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
           "favorite": false
@@ -1422,7 +1422,7 @@
       "favoriteNames": [],
       "color": "#ff8a7a",
       "headline": "Sat, Nov 21 · 10:00 AM ET · UFC Fight Night: Procházka vs. Stirling · UFC · Paramount+",
-      "link": "https://www.espn.com/mma/fightcenter/_/id/600061665/league/ufc"
+      "link": "https://www.espn.com/mma/fightcenter/_/id/600061665"
     },
     {
       "id": "401882799",
@@ -1444,8 +1444,8 @@
       "name": "Valencia at Rayo Vallecano",
       "shortName": "VAL @ RAY",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "Scheduled",
+      "status": "in-progress",
+      "statusDetail": "HT",
       "venue": "Estadio de Vallecas",
       "teams": [
         {
@@ -1456,7 +1456,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-3-7",
-          "score": null,
+          "score": "1",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
           "favorite": false
@@ -1469,7 +1469,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-3-5",
-          "score": null,
+          "score": "0",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
           "favorite": false
@@ -1505,7 +1505,7 @@
       "favoriteNames": [],
       "color": "#ffe08a",
       "headline": "Sat, Nov 21 · 10:15 AM ET · Valencia at Rayo Vallecano · La Liga · ESPN Deportes, ESPN+",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401882799/valencia-rayo-vallecano"
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882799"
     },
     {
       "id": "401876398",
@@ -11396,15 +11396,26 @@
           "favorite": false
         }
       ],
-      "broadcasts": [],
+      "broadcasts": [
+        {
+          "name": "BDG Sports Live",
+          "kind": "streaming",
+          "market": "home",
+          "region": "us",
+          "lang": "en",
+          "origin": "listed"
+        }
+      ],
       "channels": [],
-      "streaming": [],
-      "broadcastSummary": null,
+      "streaming": [
+        "BDG Sports Live"
+      ],
+      "broadcastSummary": "BDG Sports Live",
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#f5a6e0",
-      "headline": "Mon, Nov 23 · 1:30 PM ET · Utah Utes at Iowa Hawkeyes · NCAAW · channel not announced",
+      "headline": "Mon, Nov 23 · 1:30 PM ET · Utah Utes at Iowa Hawkeyes · NCAAW · BDG Sports Live",
       "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401921427/utah-iowa"
     },
     {
@@ -30215,7 +30226,7 @@
           "abbreviation": "LAZ",
           "homeAway": "away",
           "rank": null,
-          "record": "9-2-0",
+          "record": "10-2-0",
           "score": null,
           "color": "#74bde7",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
@@ -41038,7 +41049,7 @@
           "abbreviation": "COMO",
           "homeAway": "home",
           "rank": null,
-          "record": "7-2-2",
+          "record": "8-2-2",
           "score": null,
           "color": "#4169e1",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
@@ -42710,7 +42721,7 @@
           "abbreviation": "LEC",
           "homeAway": "home",
           "rank": null,
-          "record": "3-1-7",
+          "record": "3-1-8",
           "score": null,
           "color": "#fced0b",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png",
@@ -42866,7 +42877,7 @@
           "abbreviation": "CAG",
           "homeAway": "home",
           "rank": null,
-          "record": "5-1-5",
+          "record": "5-1-6",
           "score": null,
           "color": "#282846",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
