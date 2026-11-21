@@ -1,0 +1,26 @@
+{
+  "leagues": [
+    { "sport": "football", "slug": "nfl", "label": "NFL", "sportLabel": "Football", "emoji": "🏈", "competition": "NFL", "color": "#f0c36a" },
+    { "sport": "football", "slug": "college-football", "label": "NCAAF", "sportLabel": "Football", "emoji": "🏈", "competition": "College Football", "color": "#8fd6a6" },
+    { "sport": "basketball", "slug": "nba", "label": "NBA", "sportLabel": "Basketball", "emoji": "🏀", "competition": "NBA", "color": "#ffb086" },
+    { "sport": "basketball", "slug": "wnba", "label": "WNBA", "sportLabel": "Basketball", "emoji": "🏀", "competition": "WNBA", "color": "#ff9ec8" },
+    { "sport": "basketball", "slug": "mens-college-basketball", "label": "NCAAM", "sportLabel": "Basketball", "emoji": "🏀", "competition": "Men's College Basketball", "color": "#ffcf70" },
+    { "sport": "basketball", "slug": "womens-college-basketball", "label": "NCAAW", "sportLabel": "Basketball", "emoji": "🏀", "competition": "Women's College Basketball", "color": "#f5a6e0" },
+    { "sport": "hockey", "slug": "nhl", "label": "NHL", "sportLabel": "Hockey", "emoji": "🏒", "competition": "NHL", "color": "#9ad7f5" },
+    { "sport": "baseball", "slug": "mlb", "label": "MLB", "sportLabel": "Baseball", "emoji": "⚾", "competition": "MLB", "color": "#ff9b9b" },
+    { "sport": "soccer", "slug": "eng.1", "label": "Premier League", "sportLabel": "Soccer", "emoji": "⚽", "competition": "Premier League", "color": "#d7b4ff" },
+    { "sport": "soccer", "slug": "uefa.champions", "label": "Champions League", "sportLabel": "Soccer", "emoji": "⚽", "competition": "UEFA Champions League", "color": "#9ec1ff" },
+    { "sport": "soccer", "slug": "uefa.europa", "label": "Europa League", "sportLabel": "Soccer", "emoji": "⚽", "competition": "UEFA Europa League", "color": "#ffb07a" },
+    { "sport": "soccer", "slug": "uefa.europa.conf", "label": "Conference League", "sportLabel": "Soccer", "emoji": "⚽", "competition": "UEFA Conference League", "color": "#8ee0b0" },
+    { "sport": "soccer", "slug": "eng.fa", "label": "FA Cup", "sportLabel": "Soccer", "emoji": "⚽", "competition": "FA Cup", "color": "#ff9aa8" },
+    { "sport": "soccer", "slug": "eng.league_cup", "label": "EFL Cup", "sportLabel": "Soccer", "emoji": "⚽", "competition": "EFL Cup", "color": "#b7e3a1" },
+    { "sport": "soccer", "slug": "esp.1", "label": "La Liga", "sportLabel": "Soccer", "emoji": "⚽", "competition": "La Liga", "color": "#ffe08a" },
+    { "sport": "soccer", "slug": "ger.1", "label": "Bundesliga", "sportLabel": "Soccer", "emoji": "⚽", "competition": "Bundesliga", "color": "#ff8d8d" },
+    { "sport": "soccer", "slug": "ita.1", "label": "Serie A", "sportLabel": "Soccer", "emoji": "⚽", "competition": "Serie A", "color": "#a9c0ff" },
+    { "sport": "soccer", "slug": "fra.1", "label": "Ligue 1", "sportLabel": "Soccer", "emoji": "⚽", "competition": "Ligue 1", "color": "#c4d0ff" },
+    { "sport": "soccer", "slug": "usa.1", "label": "MLS", "sportLabel": "Soccer", "emoji": "⚽", "competition": "MLS", "color": "#ff8fb3" },
+    { "sport": "soccer", "slug": "usa.nwsl", "label": "NWSL", "sportLabel": "Soccer", "emoji": "⚽", "competition": "NWSL", "color": "#7ee0d6" },
+    { "sport": "soccer", "slug": "mex.1", "label": "Liga MX", "sportLabel": "Soccer", "emoji": "⚽", "competition": "Liga MX", "color": "#9be59a" },
+    { "sport": "mma", "slug": "ufc", "label": "UFC", "sportLabel": "MMA", "emoji": "🥊", "competition": "UFC", "color": "#ff8a7a", "mode": "fight-card" }
+  ]
+}

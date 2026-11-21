@@ -1,0 +1,59 @@
+{
+  "location": "Merritt Island, Florida",
+  "timezone": "America/New_York",
+  "favorites": [
+    {
+      "id": "iowa-football",
+      "name": "Iowa Hawkeyes",
+      "note": "Football only. Iowa basketball shares ESPN team id 2294 and is excluded by leagues.",
+      "sport": "football",
+      "leagues": ["college-football"],
+      "teamIds": ["2294"],
+      "names": ["Iowa Hawkeyes"]
+    },
+    {
+      "id": "georgia-football",
+      "name": "Georgia Bulldogs",
+      "note": "Football only. Not Georgia Tech, Georgia State, or Georgia basketball.",
+      "sport": "football",
+      "leagues": ["college-football"],
+      "teamIds": ["61"],
+      "names": ["Georgia Bulldogs"]
+    },
+    {
+      "id": "tottenham",
+      "name": "Tottenham Hotspur",
+      "note": "Men's team. Tottenham Hotspur Women is ESPN id 20062 and will not match. Empty leagues means any soccer competition.",
+      "sport": "soccer",
+      "leagues": [],
+      "teamIds": ["367"],
+      "names": ["Tottenham Hotspur"]
+    },
+    {
+      "id": "steelers",
+      "name": "Pittsburgh Steelers",
+      "note": "NFL only. Not the Pittsburgh Panthers.",
+      "sport": "football",
+      "leagues": ["nfl"],
+      "teamIds": ["23"],
+      "names": ["Pittsburgh Steelers"]
+    },
+    {
+      "id": "florida-panthers",
+      "name": "Florida Panthers",
+      "note": "NHL only. Not the Carolina Panthers (NFL) or the Carolina Hurricanes.",
+      "sport": "hockey",
+      "leagues": ["nhl"],
+      "teamIds": ["26"],
+      "names": ["Florida Panthers"]
+    },
+    {
+      "id": "nuggets",
+      "name": "Denver Nuggets",
+      "sport": "basketball",
+      "leagues": ["nba"],
+      "teamIds": ["7"],
+      "names": ["Denver Nuggets"]
+    }
+  ]
+}
