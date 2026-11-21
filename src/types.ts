@@ -7,7 +7,7 @@ export type GameStatus =
   | "canceled"
   | "other";
 
-export type GameFormat = "teams" | "fight";
+export type GameFormat = "teams" | "fight" | "race";
 
 export type Team = {
   id: string;
@@ -102,6 +102,7 @@ export type LeagueMeta = {
   emoji: string;
   competition: string;
   color: string;
+  groups?: string;
 };
 
 export type Schedule = {

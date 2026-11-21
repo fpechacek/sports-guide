@@ -7,7 +7,8 @@ const COVERAGE = [
   "If ESPN lists no US broadcast, non-US feeds are kept and tagged with their region.",
   "A TV channel is not turned into a streaming service. Streams appear only when ESPN lists them.",
   "Channels for later days are often blank until closer to game time.",
-  "TBD at TBD placeholders are dropped. A UFC event is one card, not every bout.",
+  "TBD at TBD placeholders are dropped. College football keeps the FBS slate, including an FBS team hosting an FCS opponent, and drops FCS-only games.",
+  "UFC is one row per fight. Auto racing is one row per session.",
 ];
 
 async function mapPool(items, limit, worker) {
@@ -79,7 +80,7 @@ export async function buildSchedule({ now = new Date(), days = 14, leagues, favo
 
   for (const event of events) {
     if (mustWatch) {
-      const classified = classifyMustWatch(event, mustWatch);
+      const classified = classifyMustWatch(event, { ...mustWatch, signals: mustWatch.signals ?? [] });
       event.mustWatch = classified.mustWatch;
       event.mustWatchReasons = classified.mustWatchReasons;
     } else {
@@ -121,6 +122,7 @@ export async function buildSchedule({ now = new Date(), days = 14, leagues, favo
       emoji: league.emoji,
       competition: league.competition,
       color: league.color,
+      ...(league.groups ? { groups: String(league.groups) } : {}),
     })),
     counts: {
       requests: jobs.length,

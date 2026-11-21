@@ -18,26 +18,32 @@ export const defaultFilters: Filters = {
   date: "",
 };
 
-export function readFilters(search: string): Filters {
+export function readFilters(search: string, today = ""): Filters {
   const params = new URLSearchParams(search);
+  const dateParam = params.get("date");
+  let date = today;
+  if (dateParam === "all") date = "";
+  else if (dateParam) date = dateParam;
+  else if (!today) date = "";
   return {
     query: params.get("q") ?? "",
     watch: params.get("watch") === "1" || params.get("mine") === "1",
     onTv: params.get("tv") !== "0",
     sport: params.get("sport") ?? "",
     league: params.get("league") ?? "",
-    date: params.get("date") ?? "",
+    date,
   };
 }
 
-export function filtersToSearch(filters: Filters): string {
+export function filtersToSearch(filters: Filters, today = ""): string {
   const params = new URLSearchParams();
   if (filters.query) params.set("q", filters.query);
   if (filters.watch) params.set("watch", "1");
   if (!filters.onTv) params.set("tv", "0");
   if (filters.sport) params.set("sport", filters.sport);
   if (filters.league) params.set("league", filters.league);
-  if (filters.date) params.set("date", filters.date);
+  if (!filters.date) params.set("date", "all");
+  else if (filters.date !== today) params.set("date", filters.date);
   const query = params.toString();
   return query ? `?${query}` : "";
 }

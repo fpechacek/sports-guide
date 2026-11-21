@@ -104,6 +104,7 @@ function baseTeam(competitor, status) {
       score: scoreOf(competitor, status),
       color: hexColor(team),
       logo: team.logo || null,
+      conferenceId: team.conferenceId == null ? null : String(team.conferenceId),
     };
   }
   if (athlete) {
@@ -119,6 +120,7 @@ function baseTeam(competitor, status) {
       score: scoreOf(competitor, status),
       color: null,
       logo: null,
+      conferenceId: null,
     };
   }
   return null;
@@ -253,14 +255,14 @@ function timeIsTbd(competition, status) {
   return /\bTBD\b/i.test(detail);
 }
 
-function finishListing({ id, start, when, league, event, competition, teams, hits, broadcasts, format, name, shortName }) {
+function finishListing({ id, start, when, league, event, competition, teams, hits, broadcasts, format, name, shortName, stage }) {
   const channels = uniqueNames(broadcasts, "tv");
   const streaming = uniqueNames(broadcasts, "streaming");
   const listed = [];
   for (const broadcast of broadcasts) {
     if (!listed.includes(broadcast.name)) listed.push(broadcast.name);
   }
-  const stage = stageFor(league, event);
+  const stageLabel = stage === undefined ? stageFor(league, event) : stage;
   const favoriteIds = [];
   const favoriteNames = [];
   for (const hit of hits) {
@@ -270,7 +272,7 @@ function finishListing({ id, start, when, league, event, competition, teams, hit
   }
   const competitionLabel = league.competition;
   const where = listed.length > 0 ? listed.join(", ") : "channel not announced";
-  const stageBit = stage ? ` · ${stage}` : "";
+  const stageBit = stageLabel ? ` · ${stageLabel}` : "";
   const statusSource = competition?.status || event?.status;
   const timeTbd = timeIsTbd(competition, statusSource);
   const whenText = timeTbd ? "Time TBD" : `${when.timeEt} ET`;
@@ -289,7 +291,7 @@ function finishListing({ id, start, when, league, event, competition, teams, hit
     league: league.label,
     leagueSlug: league.slug,
     competition: competitionLabel,
-    stage,
+    stage: stageLabel,
     season: event?.season?.slug ?? null,
     week: typeof event?.week?.number === "number" ? event.week.number : null,
     name,
@@ -371,19 +373,123 @@ export function normalizeFightCard(event, league, favorites, channelNames) {
   });
 }
 
+const NON_FBS_CONFERENCE_IDS = new Set([
+  "20",
+  "21",
+  "22",
+  "24",
+  "25",
+  "27",
+  "28",
+  "29",
+  "30",
+  "31",
+  "32",
+  "48",
+  "177",
+  "179",
+]);
+
+function isFbsSlate(listing) {
+  const ids = listing.teams.map((team) => team.conferenceId).filter(Boolean);
+  if (ids.length === 0) return true;
+  return ids.some((id) => !NON_FBS_CONFERENCE_IDS.has(String(id)));
+}
+
+function keepListing(listing, league) {
+  if (!listing) return false;
+  if (league.fbsOnly && !isFbsSlate(listing)) return false;
+  return true;
+}
+
+function sessionLabel(competition) {
+  const type = competition?.type;
+  const label = type?.text || type?.abbreviation || type?.shortName || "";
+  const trimmed = String(label).trim();
+  if (!trimmed || /^r(ace)?$/i.test(trimmed)) return "";
+  return trimmed;
+}
+
+export function normalizeBout(event, competition, league, favorites, channelNames) {
+  const start = competition?.date || event?.date;
+  if (!start) return null;
+  const status = mapStatus(competition?.status || event?.status);
+  const built = [];
+  for (const competitor of competition?.competitors ?? []) {
+    const base = baseTeam(competitor, status);
+    if (base) built.push(withFavorite(base, league, favorites));
+  }
+  const teams = built.map((item) => item.team);
+  if (teams.length < 2 || teams.every(isTbd)) return null;
+  const name = `${teams[0].name} vs ${teams[1].name}`;
+  const card = event?.shortName || event?.name || null;
+  return finishListing({
+    id: String(competition?.id || event?.id),
+    start,
+    when: formatEt(start),
+    league,
+    event,
+    competition,
+    teams,
+    hits: built.flatMap((item) => item.hits),
+    broadcasts: pickBroadcasts(competition?.geoBroadcasts, channelNames),
+    format: "fight",
+    name,
+    shortName: name,
+    stage: card && card !== name ? card : null,
+  });
+}
+
+export function normalizeRace(event, competition, league, channelNames) {
+  const start = competition?.date || event?.date;
+  if (!start) return null;
+  const session = sessionLabel(competition);
+  const eventName = event?.name || league.label;
+  const name = session ? `${eventName} · ${session}` : eventName;
+  return finishListing({
+    id: String(competition?.id || event?.id),
+    start,
+    when: formatEt(start),
+    league,
+    event,
+    competition,
+    teams: [],
+    hits: [],
+    broadcasts: pickBroadcasts(competition?.geoBroadcasts, channelNames),
+    format: "race",
+    name,
+    shortName: event?.shortName ? (session ? `${event.shortName} · ${session}` : event.shortName) : name,
+    stage: null,
+  });
+}
+
 export function listingsFromScoreboard(json, league, favorites, channelNames) {
   const events = json?.events ?? [];
   const listings = [];
   if (league.mode === "fight-card") {
     for (const event of events) {
       const listing = normalizeFightCard(event, league, favorites, channelNames);
-      if (listing) listings.push(listing);
+      if (keepListing(listing, league)) listings.push(listing);
+    }
+  } else if (league.mode === "bouts") {
+    for (const event of events) {
+      for (const competition of event?.competitions ?? []) {
+        const listing = normalizeBout(event, competition, league, favorites, channelNames);
+        if (keepListing(listing, league)) listings.push(listing);
+      }
+    }
+  } else if (league.mode === "race") {
+    for (const event of events) {
+      for (const competition of event?.competitions ?? []) {
+        const listing = normalizeRace(event, competition, league, channelNames);
+        if (keepListing(listing, league)) listings.push(listing);
+      }
     }
   } else {
     for (const event of events) {
       for (const competition of event?.competitions ?? []) {
         const listing = normalizeCompetition(event, competition, league, favorites, channelNames);
-        if (listing) listings.push(listing);
+        if (keepListing(listing, league)) listings.push(listing);
       }
     }
   }

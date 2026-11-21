@@ -2,6 +2,7 @@ import { readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildSchedule } from "./lib/build.mjs";
+import { loadWatchSignals } from "./lib/signals.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const USER_AGENT = "sports-guide/1.0 (personal tv guide; no AI)";
@@ -67,6 +68,17 @@ async function main() {
   const mustWatch = await readJson("config/must-watch.json");
   const favorites = favoriteConfig.favorites ?? [];
   const leagues = leagueConfig.leagues ?? [];
+  let signals = [];
+  try {
+    signals = await loadWatchSignals(fetch);
+  } catch {
+    signals = [];
+  }
+  console.log(
+    signals.length > 0
+      ? `Watch signals: ${signals.length} from public rating pages.`
+      : "Watch signals: none. DGB Ratings and Game of the Day did not publish a game list.",
+  );
 
   console.log(`Fetching ${leagues.length} leagues for ${days} days in ${favoriteConfig.timezone}.`);
   const schedule = await buildSchedule({
@@ -74,7 +86,7 @@ async function main() {
     leagues,
     favorites,
     channelNames,
-    mustWatch,
+    mustWatch: { ...mustWatch, signals },
     meta: {
       timezone: favoriteConfig.timezone ?? "America/New_York",
       location: favoriteConfig.location ?? "Merritt Island, Florida",

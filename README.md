@@ -54,7 +54,7 @@ Use the `id`, `sport`, and `league` from the team result. Iowa football and Iowa
 
 ## Sync picks
 
-The guide can be read with no account. Checks stay on the phone until Supabase is connected. `public/sync-config.json` has `"enabled": false` until then, so nothing on the site asks you to sign in.
+The guide can be read with no account. Checks stay on the phone until you sign in. `public/sync-config.json` has sync turned on. The email box is at the top of the page.
 
 When it is on, sign-in is an email link. The browser remembers it. Only the signed-in person can change their own rows. The morning job copies those rows into `must-watch.json` for the TV, and that same visit keeps the free Supabase project from being paused. The service key stays in GitHub Actions secrets, not in the repo.
 
@@ -62,7 +62,7 @@ The steps to turn it on are the checklist from the setup note. SQL for the table
 
 ## Must Watch
 
-`config/must-watch.json` decides which games are pinned, on top of your favorites. It is plain rules: ranked college games, top 10, rivalries, bowls, conference titles, NFL primetime, NBA and NHL national TV, Premier League big-six matches, and Champions League knockouts. Change the file and run `npm run fetch`.
+`config/must-watch.json` decides which games are pinned, on top of your favorites. It is plain rules: ranked-versus-ranked college football and men's college basketball, rivalries, bowls, conference titles, NFL primetime, NBA and NHL national TV, Premier League big-six matches, and Champions League knockouts. A top-10 team playing an unranked team is not added by itself. Women's sports are never added automatically. Check the box on a game to add it yourself. Change the file and run `npm run fetch`.
 
 On the phone, every game has a checkbox. Checking adds it. Unchecking hides it, including a game the rules added. Those choices stay in the browser and follow the ESPN event id when the morning file is replaced. Games from past dates are dropped.
 
@@ -76,7 +76,7 @@ Copy an object in `config/leagues.json`. `sport` and `slug` are the two pieces o
 https://site.api.espn.com/apis/site/v2/sports/{sport}/{slug}/scoreboard
 ```
 
-`label` is the short tag on each card. `competition` is the longer name stored in the JSON. Set `"enabled": false` to skip a league without deleting it. `"mode": "fight-card"` collapses an event to one row (used for UFC).
+`label` is the short tag on each card. `competition` is the longer name stored in the JSON. Set `"enabled": false` to skip a league without deleting it. `"mode": "bouts"` lists each UFC fight. `"mode": "race"` lists each session instead of each driver. `"fbsOnly": true` drops a college football game when neither team is FBS.
 
 Channel abbreviations such as `USA Net` are renamed in `config/channel-names.json`.
 
@@ -88,9 +88,11 @@ One source: ESPN's public scoreboard JSON. No API key.
 https://site.api.espn.com/apis/site/v2/sports/{sport}/{slug}/scoreboard?dates=YYYYMMDD&limit=1000
 ```
 
-The script requests each league for each day in the window, keeps US TV and streaming from `geoBroadcasts`, and writes one file. It does not send `limit=1000`: on college football that value returns only the early slate and drops evening games such as a 7:30 PM kickoff. College football asks for FBS (`groups=80`). Men's and women's college basketball ask for Division I (`groups=50`). Without those groups, ESPN returns a short list and the rest of the day never arrives. Radio is dropped. A national listing is stored ahead of a local one.
+The script requests each league for each day in the window, keeps US TV and streaming from `geoBroadcasts`, and writes one file. It does not send `limit=1000`: on college football that value returns only the early slate and drops evening games such as a 7:30 PM kickoff. College football asks for FBS (`groups=80`) and then drops a game only when every team is in an FCS conference. An FBS team hosting an FCS opponent stays. Men's and women's college basketball ask for Division I (`groups=50`). Without those groups, ESPN returns a short list and the rest of the day never arrives. Radio is dropped. A national listing is stored ahead of a local one.
 
-Leagues included: NFL, college football, NBA, WNBA, men's and women's college basketball, NHL, MLB, Premier League, Champions League, Europa League, Conference League, FA Cup, EFL Cup, La Liga, Bundesliga, Serie A, Ligue 1, MLS, NWSL, Liga MX, and UFC.
+The page opens on today. A sport tab is grayed out when that sport has nothing on the selected day. While the page is open it asks ESPN again every few minutes for today's scoreboards, and it also treats a game as live once the listed start time has passed. Scores stay behind the Score button.
+
+Leagues included: NFL, college football (FBS), NBA, WNBA, men's and women's college basketball, NHL, MLB, Premier League, Champions League, Europa League, Conference League, FA Cup, EFL Cup, La Liga, Bundesliga, Serie A, Ligue 1, MLS, NWSL, Liga MX, Formula 1, IndyCar, NASCAR Cup, NASCAR Xfinity, NASCAR Truck, NHRA, and UFC.
 
 ### Gaps
 
@@ -100,7 +102,9 @@ Leagues included: NFL, college football, NBA, WNBA, men's and women's college ba
 - If ESPN has no US feed, non-US feeds are kept and tagged with their region. Otherwise they are dropped.
 - Blackouts and "also in the team app" are only as complete as ESPN's list.
 - WNBA and MLB are included. In November they usually have no games. An empty league is not an error.
-- Placeholder `TBD at TBD` games are dropped. A UFC event is one row for the card, not every bout.
+- Placeholder `TBD at TBD` games are dropped. UFC is one row per fight. Auto racing is one row per session (practice, qualifying, race), not one row per driver.
+- ESPN's public racing scoreboard has Formula 1, IndyCar, NASCAR Cup, the O'Reilly series (Xfinity), Trucks, and NHRA. IMSA, WEC, and MotoGP are not on that scoreboard.
+- DGB Ratings and Game of the Day allow their homepages in robots.txt, but those pages do not include a game list. The morning job looks anyway and adds a DGB or Game of the day tag only when a matchup is actually in the page. Otherwise it skips them.
 - Rankings are ESPN's `curatedRank` when it is a real rank. The value 99 means unranked and is omitted.
 - This is an unofficial public endpoint. If ESPN changes the shape, `npm test` still passes and `npm run fetch` is what will fail. The script keeps the previous `schedule.json` when a run comes back with zero games.
 

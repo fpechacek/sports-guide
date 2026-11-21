@@ -6,6 +6,7 @@ type SportChip = {
   slug: string;
   label: string;
   emoji: string;
+  disabled?: boolean;
 };
 
 type Props = {
@@ -20,15 +21,17 @@ type Props = {
 
 function Chip({
   pressed,
+  disabled = false,
   onClick,
   children,
 }: {
   pressed: boolean;
+  disabled?: boolean;
   onClick: () => void;
   children: string | (string | number)[];
 }) {
   return (
-    <button type="button" className="chip" aria-pressed={pressed} onClick={onClick}>
+    <button type="button" className="chip" aria-pressed={pressed} disabled={disabled} onClick={onClick}>
       {children}
     </button>
   );
@@ -71,6 +74,7 @@ export function FilterBar({ filters, sports, leagues, dates, today, dateLabel, o
           <Chip
             key={sport.slug}
             pressed={filters.sport === sport.slug}
+            disabled={sport.disabled}
             onClick={() =>
               onChange({
                 ...filters,
@@ -112,7 +116,7 @@ export function FilterBar({ filters, sports, leagues, dates, today, dateLabel, o
           All days
         </Chip>
         {dates.map((date) => (
-          <Chip key={date} pressed={filters.date === date} onClick={() => onChange({ ...filters, date: filters.date === date ? "" : date })}>
+          <Chip key={date} pressed={filters.date === date} onClick={() => onChange({ ...filters, date })}>
             {`${dateLabel(date)}${date === today ? " · today" : ""}`}
           </Chip>
         ))}

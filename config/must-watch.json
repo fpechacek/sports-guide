@@ -1,8 +1,8 @@
 {
-  "notes": "Rules for the Must Watch list. Favorite teams always qualify. Edit this file and run npm run fetch. No AI is involved.",
-  "topRank": 10,
+  "notes": "Rules for the Must Watch list. Favorite teams always qualify. Women's sports are never added automatically. Edit this file and run npm run fetch. No AI is involved.",
   "rankedCeiling": 25,
-  "collegeLeagues": ["college-football", "mens-college-basketball", "womens-college-basketball"],
+  "collegeLeagues": ["college-football", "mens-college-basketball"],
+  "womensLeagues": ["wnba", "womens-college-basketball", "usa.nwsl"],
   "primetime": {
     "leagues": ["nfl"],
     "thursday": true,

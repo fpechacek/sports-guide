@@ -1,7 +1,7 @@
 {
   "leagues": [
     { "sport": "football", "slug": "nfl", "label": "NFL", "sportLabel": "Football", "emoji": "🏈", "competition": "NFL", "color": "#f0c36a" },
-    { "sport": "football", "slug": "college-football", "label": "NCAAF", "sportLabel": "Football", "emoji": "🏈", "competition": "College Football", "color": "#8fd6a6", "groups": "80" },
+    { "sport": "football", "slug": "college-football", "label": "NCAAF", "sportLabel": "Football", "emoji": "🏈", "competition": "College Football", "color": "#8fd6a6", "groups": "80", "fbsOnly": true },
     { "sport": "basketball", "slug": "nba", "label": "NBA", "sportLabel": "Basketball", "emoji": "🏀", "competition": "NBA", "color": "#ffb086" },
     { "sport": "basketball", "slug": "wnba", "label": "WNBA", "sportLabel": "Basketball", "emoji": "🏀", "competition": "WNBA", "color": "#ff9ec8" },
     { "sport": "basketball", "slug": "mens-college-basketball", "label": "NCAAM", "sportLabel": "Basketball", "emoji": "🏀", "competition": "Men's College Basketball", "color": "#ffcf70", "groups": "50" },
@@ -21,6 +21,12 @@
     { "sport": "soccer", "slug": "usa.1", "label": "MLS", "sportLabel": "Soccer", "emoji": "⚽", "competition": "MLS", "color": "#ff8fb3" },
     { "sport": "soccer", "slug": "usa.nwsl", "label": "NWSL", "sportLabel": "Soccer", "emoji": "⚽", "competition": "NWSL", "color": "#7ee0d6" },
     { "sport": "soccer", "slug": "mex.1", "label": "Liga MX", "sportLabel": "Soccer", "emoji": "⚽", "competition": "Liga MX", "color": "#9be59a" },
-    { "sport": "mma", "slug": "ufc", "label": "UFC", "sportLabel": "MMA", "emoji": "🥊", "competition": "UFC", "color": "#ff8a7a", "mode": "fight-card" }
+    { "sport": "racing", "slug": "f1", "label": "F1", "sportLabel": "Auto Racing", "emoji": "🏎️", "competition": "Formula 1", "color": "#ff5a6a", "mode": "race" },
+    { "sport": "racing", "slug": "irl", "label": "IndyCar", "sportLabel": "Auto Racing", "emoji": "🏎️", "competition": "IndyCar", "color": "#ffb086", "mode": "race" },
+    { "sport": "racing", "slug": "nascar-premier", "label": "NASCAR Cup", "sportLabel": "Auto Racing", "emoji": "🏎️", "competition": "NASCAR Cup Series", "color": "#f0c36a", "mode": "race" },
+    { "sport": "racing", "slug": "nascar-secondary", "label": "NASCAR Xfinity", "sportLabel": "Auto Racing", "emoji": "🏎️", "competition": "NASCAR O'Reilly Auto Parts Series", "color": "#ffcf70", "mode": "race" },
+    { "sport": "racing", "slug": "nascar-truck", "label": "NASCAR Truck", "sportLabel": "Auto Racing", "emoji": "🏎️", "competition": "NASCAR Truck Series", "color": "#9ad7f5", "mode": "race" },
+    { "sport": "racing", "slug": "nhra", "label": "NHRA", "sportLabel": "Auto Racing", "emoji": "🏎️", "competition": "NHRA", "color": "#e7a0ff", "mode": "race" },
+    { "sport": "mma", "slug": "ufc", "label": "UFC", "sportLabel": "MMA", "emoji": "🥊", "competition": "UFC", "color": "#ff8a7a", "mode": "bouts" }
   ]
 }

@@ -5,6 +5,7 @@ import { FilterBar } from "./components/FilterBar";
 import { GameCard } from "./components/GameCard";
 import { SyncPicks } from "./components/SyncPicks";
 import { applyFilters, defaultFilters, filtersToSearch, groupByDate, passesView, readFilters, type Filters } from "./lib/filter";
+import { displayEvent, fetchLivePatches, type LivePatch } from "./lib/live";
 import { longDate, shortDate, todayEt, updatedLabel } from "./lib/time";
 import { createSyncClient, loadSyncConfig, markDirty, pushAfterToggle, syncOnSignIn } from "./lib/sync";
 import { isWatched, loadWatch, toggleStoredWatch, type WatchStore } from "./lib/watch";
@@ -20,12 +21,14 @@ type LoadState =
   | { status: "error"; message: string }
   | { status: "ready"; schedule: Schedule };
 
-function sportsIn(schedule: Schedule, events: GuideEvent[]) {
-  const present = new Set(events.map((event) => event.sportSlug));
-  const sports: { slug: string; label: string; emoji: string }[] = [];
+function sportsIn(schedule: Schedule, date: string) {
+  const sports: { slug: string; label: string; emoji: string; disabled: boolean }[] = [];
   for (const league of schedule.leagues) {
-    if (!present.has(league.sport) || sports.some((sport) => sport.slug === league.sport)) continue;
-    sports.push({ slug: league.sport, label: league.sportLabel, emoji: league.emoji });
+    if (sports.some((sport) => sport.slug === league.sport)) continue;
+    const count = schedule.events.filter(
+      (event) => event.sportSlug === league.sport && (!date || event.date === date),
+    ).length;
+    sports.push({ slug: league.sport, label: league.sportLabel, emoji: league.emoji, disabled: count === 0 });
   }
   return sports;
 }
@@ -39,9 +42,9 @@ function leaguesIn(schedule: Schedule, events: GuideEvent[]): LeagueMeta[] {
 export function App() {
   const [load, setLoad] = useState<LoadState>({ status: "loading" });
   const [attempt, setAttempt] = useState(0);
-  const [filters, setFilters] = useState<Filters>(() =>
-    typeof window === "undefined" ? defaultFilters : readFilters(window.location.search),
-  );
+  const [filters, setFilters] = useState<Filters>(() => readFilters(typeof window === "undefined" ? "" : window.location.search, todayEt()));
+  const [live, setLive] = useState<Map<string, LivePatch>>(() => new Map());
+  const [now, setNow] = useState(() => Date.now());
   const [installEvent, setInstallEvent] = useState<BeforeInstallPromptEvent | null>(null);
   const [installHelp, setInstallHelp] = useState(false);
   const [scores, setScores] = useState<Record<string, boolean>>({});
@@ -123,29 +126,53 @@ export function App() {
   }, []);
 
   useEffect(() => {
-    const next = `${window.location.pathname}${filtersToSearch(filters)}`;
+    const next = `${window.location.pathname}${filtersToSearch(filters, today)}`;
     const current = `${window.location.pathname}${window.location.search}`;
     if (next !== current) window.history.replaceState(null, "", next);
-  }, [filters]);
+  }, [filters, today]);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => setNow(Date.now()), 60_000);
+    return () => window.clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    if (load.status !== "ready") return;
+    let stop = false;
+    const run = () => {
+      if (document.visibilityState === "hidden") return;
+      setNow(Date.now());
+      void fetchLivePatches(load.schedule).then((patches) => {
+        if (!stop) setLive(patches);
+      });
+    };
+    run();
+    const timer = window.setInterval(run, 3 * 60 * 1000);
+    document.addEventListener("visibilitychange", run);
+    return () => {
+      stop = true;
+      window.clearInterval(timer);
+      document.removeEventListener("visibilitychange", run);
+    };
+  }, [load]);
 
   const view = useMemo(() => {
     if (load.status !== "ready") return null;
     const schedule = load.schedule;
+    const shown = schedule.events.map((event) => displayEvent(event, live.get(`${event.leagueSlug}:${event.id}`), now));
     const watched = (event: GuideEvent) => isWatched(event, watchStore);
-    const events = applyFilters(schedule.events, filters).filter((event) => !filters.watch || watched(event));
-    const preview = schedule.events.filter(
-      (event) => watched(event) && event.status !== "canceled" && passesView(event, filters),
-    );
+    const events = applyFilters(shown, filters).filter((event) => !filters.watch || watched(event));
+    const preview = shown.filter((event) => watched(event) && event.status !== "canceled" && passesView(event, filters));
     return {
       schedule,
       events,
       groups: groupByDate(events),
       preview,
-      sports: sportsIn(schedule, schedule.events),
+      sports: sportsIn(schedule, filters.date),
       leagues: leaguesIn(schedule, schedule.events),
-      watchTotal: schedule.events.filter((event) => watched(event) && event.status !== "canceled").length,
+      watchTotal: shown.filter((event) => watched(event) && event.status !== "canceled").length,
     };
-  }, [load, filters, watchStore]);
+  }, [load, filters, watchStore, live, now]);
 
   function toggleScore(id: string) {
     setScores((current) => ({ ...current, [id]: !current[id] }));
@@ -174,8 +201,15 @@ export function App() {
     setInstallEvent(null);
   }
 
+  if (load.status === "ready" && filters.sport) {
+    const selected = sportsIn(load.schedule, filters.date).find((item) => item.slug === filters.sport);
+    if (selected?.disabled) {
+      setFilters({ ...filters, sport: "", league: "" });
+    }
+  }
+
   function clearFilters() {
-    setFilters(defaultFilters);
+    setFilters({ ...defaultFilters, date: today });
   }
 
   return (

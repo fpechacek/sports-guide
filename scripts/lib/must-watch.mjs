@@ -5,8 +5,9 @@ const REASON_ORDER = [
   "knockout",
   "playoff",
   "primetime",
-  "top-10",
   "ranked-matchup",
+  "dgb",
+  "game-of-the-day",
   "big-six",
   "rivalry",
   "national-tv",
@@ -19,8 +20,9 @@ export const REASON_LABELS = {
   knockout: "Knockout",
   playoff: "Playoffs",
   primetime: "Primetime",
-  "top-10": "Top 10",
   "ranked-matchup": "Ranked matchup",
+  dgb: "DGB",
+  "game-of-the-day": "Game of the day",
   "big-six": "Big Six",
   rivalry: "Rivalry",
   "national-tv": "National TV",
@@ -94,6 +96,24 @@ function isBigSix(event, rule) {
   return matched.length >= 2;
 }
 
+function isWomensSport(event, config) {
+  const listed = new Set(config.womensLeagues ?? ["wnba", "womens-college-basketball", "usa.nwsl"]);
+  if (listed.has(event.leagueSlug)) return true;
+  const blob = `${event.league ?? ""} ${event.competition ?? ""} ${event.leagueSlug ?? ""}`.toLowerCase();
+  return /\bwomen(?:'s|s)?\b/.test(blob) || blob.includes("nwsl") || blob.includes("wnba");
+}
+
+function signalIds(event, signals) {
+  const found = [];
+  for (const signal of signals ?? []) {
+    const wanted = signal?.teams ?? [];
+    if (wanted.length < 2) continue;
+    const matched = wanted.every((name) => event.teams.some((team) => namesMatch(team.name, name)));
+    if (matched && signal.id) found.push(signal.id);
+  }
+  return found;
+}
+
 function isKnockout(event, rule) {
   if (!rule || event.leagueSlug !== rule.league) return false;
   const stage = event.stage ?? "";
@@ -103,6 +123,10 @@ function isKnockout(event, rule) {
 }
 
 export function classifyMustWatch(event, config) {
+  if (isWomensSport(event, config)) {
+    return { mustWatch: false, mustWatchReasons: [] };
+  }
+
   const reasons = [];
   if (event.favorite) reasons.push("my-team");
 
@@ -111,8 +135,9 @@ export function classifyMustWatch(event, config) {
     const ranks = event.teams.map((team) => team.rank).filter((rank) => typeof rank === "number");
     const ceiling = config.rankedCeiling ?? 25;
     if (ranks.length >= 2 && ranks.every((rank) => rank <= ceiling)) reasons.push("ranked-matchup");
-    if (ranks.some((rank) => rank <= (config.topRank ?? 10))) reasons.push("top-10");
   }
+
+  reasons.push(...signalIds(event, config.signals));
 
   if (isRivalry(event, config.rivalries)) reasons.push("rivalry");
   if (includesKeyword(event, config.keywords?.title)) reasons.push("title");

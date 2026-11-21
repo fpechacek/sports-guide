@@ -4,7 +4,8 @@ import { readFile } from "node:fs/promises";
 import { buildSchedule, scoreboardUrl } from "./lib/build.mjs";
 import { matchingFavorites } from "./lib/favorites.mjs";
 import { classifyMustWatch } from "./lib/must-watch.mjs";
-import { normalizeCompetition, pickBroadcasts } from "./lib/normalize.mjs";
+import { listingsFromScoreboard, normalizeCompetition, pickBroadcasts } from "./lib/normalize.mjs";
+import { matchupsFromHtml, loadWatchSignals } from "./lib/signals.mjs";
 import { formatEt } from "./lib/time.mjs";
 import { emptyWatch, isWatched, pruneWatch, toggleWatch } from "./lib/watch-state.mjs";
 
@@ -352,7 +353,7 @@ test("Must Watch rules mark big games and leave ordinary ones out", async () => 
   assert.equal(georgia.mustWatch, true);
   assert.deepEqual(
     georgia.mustWatchReasons.map((reason) => reason.id),
-    ["my-team", "top-10", "rivalry"],
+    ["my-team", "rivalry"],
   );
 
   const ranked = classifyMustWatch(
@@ -367,7 +368,90 @@ test("Must Watch rules mark big games and leave ordinary ones out", async () => 
     rules,
   );
   assert.ok(ranked.mustWatchReasons.some((reason) => reason.id === "ranked-matchup"));
-  assert.ok(ranked.mustWatchReasons.some((reason) => reason.id === "top-10"));
+  assert.equal(ranked.mustWatchReasons.some((reason) => reason.id === "top-10"), false);
+
+  const topTenOnly = classifyMustWatch(
+    {
+      ...base,
+      name: "Kentucky Wildcats at Texas Longhorns",
+      leagueSlug: "college-football",
+      teams: [
+        { name: "Kentucky Wildcats", rank: null },
+        { name: "Texas Longhorns", rank: 5 },
+      ],
+    },
+    rules,
+  );
+  assert.equal(topTenOnly.mustWatch, false);
+
+  const womensRanked = classifyMustWatch(
+    {
+      ...base,
+      leagueSlug: "womens-college-basketball",
+      competition: "Women's College Basketball",
+      teams: [
+        { name: "South Carolina Gamecocks", rank: 1 },
+        { name: "UConn Huskies", rank: 2 },
+      ],
+    },
+    rules,
+  );
+  assert.equal(womensRanked.mustWatch, false);
+
+  const nwslFinal = classifyMustWatch(
+    {
+      ...base,
+      name: "NWSL Championship",
+      leagueSlug: "usa.nwsl",
+      competition: "NWSL",
+      stage: "Final",
+      teams: [
+        { name: "Orlando Pride", rank: null },
+        { name: "Washington Spirit", rank: null },
+      ],
+    },
+    rules,
+  );
+  assert.equal(nwslFinal.mustWatch, false);
+
+  const wnba = classifyMustWatch(
+    {
+      ...base,
+      name: "WNBA Finals",
+      leagueSlug: "wnba",
+      competition: "WNBA",
+      teams: [
+        { name: "Las Vegas Aces", rank: null },
+        { name: "New York Liberty", rank: null },
+      ],
+    },
+    rules,
+  );
+  assert.equal(wnba.mustWatch, false);
+
+  const signaled = classifyMustWatch(
+    {
+      ...base,
+      name: "Buffalo Bills at Kansas City Chiefs",
+      leagueSlug: "nfl",
+      competition: "NFL",
+      teams: [
+        { name: "Buffalo Bills", rank: null },
+        { name: "Kansas City Chiefs", rank: null },
+      ],
+    },
+    {
+      ...rules,
+      signals: [
+        { id: "dgb", teams: ["Buffalo Bills", "Kansas City Chiefs"] },
+        { id: "game-of-the-day", teams: ["Buffalo Bills", "Kansas City Chiefs"] },
+      ],
+    },
+  );
+  assert.deepEqual(
+    signaled.mustWatchReasons.map((reason) => reason.id),
+    ["dgb", "game-of-the-day"],
+  );
 
   const noon = {
     ...base,
@@ -450,6 +534,134 @@ test("Must Watch rules mark big games and leave ordinary ones out", async () => 
     rules,
   );
   assert.ok(espn.mustWatchReasons.some((reason) => reason.id === "national-tv"));
+});
+
+test("college football keeps an FBS game and drops an FCS-only game", () => {
+  const league = { ...leagues.cfb, fbsOnly: true, groups: "80" };
+  const fbs = eventFor(
+    "Wofford Terriers at Ole Miss Rebels",
+    "2026-11-21T17:00:00Z",
+    [team(145, "Wofford Terriers"), team(145, "Ole Miss Rebels", { homeAway: "home" })],
+    [],
+    { id: "fbs", competitionId: "fbs" },
+  );
+  fbs.competitions[0].competitors[0].team.conferenceId = "29";
+  fbs.competitions[0].competitors[1].team.conferenceId = "8";
+  const fcs = eventFor(
+    "Furman Paladins at VMI Keydets",
+    "2026-11-21T18:00:00Z",
+    [team(231, "Furman Paladins"), team(329, "VMI Keydets", { homeAway: "home" })],
+    [],
+    { id: "fcs", competitionId: "fcs" },
+  );
+  fcs.competitions[0].competitors[0].team.conferenceId = "29";
+  fcs.competitions[0].competitors[1].team.conferenceId = "29";
+  const parsed = listingsFromScoreboard({ events: [fbs, fcs] }, league, favorites, channelNames);
+  assert.equal(parsed.listings.length, 1);
+  assert.match(parsed.listings[0].name, /Ole Miss/);
+});
+
+test("UFC lists each fight and a race lists the session, not every driver", () => {
+  const card = {
+    id: "ufc1",
+    name: "UFC Fight Night: Main Card",
+    shortName: "UFC Fight Night",
+    date: "2026-11-21T23:00:00Z",
+    status: { type: { name: "STATUS_SCHEDULED", state: "pre", shortDetail: "Scheduled" } },
+    competitions: [
+      {
+        id: "bout-1",
+        date: "2026-11-21T23:00:00Z",
+        competitors: [
+          { athlete: { id: "1", displayName: "Alex Pereira", shortName: "A. Pereira" } },
+          { athlete: { id: "2", displayName: "Jiri Prochazka", shortName: "J. Prochazka" } },
+        ],
+        geoBroadcasts: [{ type: { shortName: "Streaming" }, market: { type: "National" }, media: { shortName: "Paramount+" }, region: "us" }],
+      },
+      {
+        id: "bout-2",
+        date: "2026-11-22T01:00:00Z",
+        competitors: [
+          { athlete: { id: "3", displayName: "Sean Strickland", shortName: "S. Strickland" } },
+          { athlete: { id: "4", displayName: "Dricus Du Plessis", shortName: "D. Du Plessis" } },
+        ],
+        geoBroadcasts: [{ type: { shortName: "Streaming" }, market: { type: "National" }, media: { shortName: "Paramount+" }, region: "us" }],
+      },
+    ],
+  };
+  const ufc = listingsFromScoreboard(
+    { events: [card] },
+    {
+      sport: "mma",
+      slug: "ufc",
+      label: "UFC",
+      sportLabel: "MMA",
+      emoji: "🥊",
+      competition: "UFC",
+      color: "#ff8a7a",
+      mode: "bouts",
+    },
+    favorites,
+    channelNames,
+  );
+  assert.equal(ufc.listings.length, 2);
+  assert.equal(ufc.listings[0].name, "Alex Pereira vs Jiri Prochazka");
+  assert.equal(ufc.listings[0].stage, "UFC Fight Night");
+  assert.equal(ufc.listings[1].id, "bout-2");
+
+  const race = listingsFromScoreboard(
+    {
+      events: [
+        {
+          id: "gp",
+          name: "Las Vegas Grand Prix",
+          shortName: "Las Vegas GP",
+          date: "2026-11-21T20:00:00Z",
+          status: { type: { state: "pre" } },
+          competitions: [
+            {
+              id: "fp1",
+              date: "2026-11-20T21:30:00Z",
+              type: { abbreviation: "FP1" },
+              competitors: [
+                { athlete: { id: "10", displayName: "Sergio Perez" } },
+                { athlete: { id: "11", displayName: "Max Verstappen" } },
+                { athlete: { id: "12", displayName: "Lando Norris" } },
+              ],
+              geoBroadcasts: [{ type: { shortName: "Streaming" }, market: { type: "National" }, media: { shortName: "Apple TV" }, region: "us" }],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      sport: "racing",
+      slug: "f1",
+      label: "F1",
+      sportLabel: "Auto Racing",
+      emoji: "🏎️",
+      competition: "Formula 1",
+      color: "#ff5a6a",
+      mode: "race",
+    },
+    favorites,
+    channelNames,
+  );
+  assert.equal(race.listings.length, 1);
+  assert.equal(race.listings[0].name, "Las Vegas Grand Prix · FP1");
+  assert.equal(race.listings[0].teams.length, 0);
+  assert.equal(race.listings[0].format, "race");
+});
+
+test("rating pages are skipped when they do not list matchups", async () => {
+  const games = matchupsFromHtml("<html><body><p>No games found for today.</p><p>Subscribe for the weekend.</p></body></html>");
+  assert.deepEqual(games, []);
+  const parsed = matchupsFromHtml("<p>Buffalo Bills vs Kansas City Chiefs</p>");
+  assert.deepEqual(parsed, [{ teams: ["Buffalo Bills", "Kansas City Chiefs"] }]);
+  const none = await loadWatchSignals(async () => {
+    throw new Error("offline");
+  });
+  assert.deepEqual(none, []);
 });
 
 test("scoreboard urls do not use the limit that truncates a college day", async () => {

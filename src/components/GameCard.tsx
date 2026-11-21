@@ -110,12 +110,20 @@ function Side({ team, showScore }: { team: Team; showScore: boolean }) {
   );
 }
 
+function FightScores({ event }: { event: GuideEvent }) {
+  const scored = event.teams.filter((team) => team.score != null);
+  if (scored.length === 0) return null;
+  return <p className="nicknames">{scored.map((team) => `${team.shortName} ${team.score}`).join(" · ")}</p>;
+}
+
 function Matchup({ event, showScore }: { event: GuideEvent; showScore: boolean }) {
   switch (event.format) {
     case "fight":
+    case "race":
       return (
         <div className="matchup">
           <p className="fight-name">{event.name}</p>
+          {showScore ? <FightScores event={event} /> : null}
         </div>
       );
     case "teams": {
