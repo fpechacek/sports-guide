@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T16:43:24.503Z",
+  "generatedAt": "2026-11-21T19:10:42.933Z",
   "timezone": "America/New_York",
   "location": "Merritt Island, Florida",
   "range": {
@@ -1030,8 +1030,8 @@
       "name": "Ipswich Town at Tottenham Hotspur",
       "shortName": "IPS @ TOT",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "85'",
+      "status": "final",
+      "statusDetail": "FT",
       "venue": "Tottenham Hotspur Stadium",
       "teams": [
         {
@@ -1041,7 +1041,7 @@
           "abbreviation": "IPS",
           "homeAway": "away",
           "rank": null,
-          "record": "3-2-5",
+          "record": "3-2-6",
           "score": "0",
           "color": "#0000fa",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
@@ -1054,7 +1054,7 @@
           "abbreviation": "TOT",
           "homeAway": "home",
           "rank": null,
-          "record": "3-3-4",
+          "record": "4-3-4",
           "score": "2",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
@@ -1086,15 +1086,7 @@
         "Universo"
       ],
       "broadcastSummary": "USA Network · Universo",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "TOT -205",
-        "overUnder": "3.5",
-        "homeMoneyline": "-205",
-        "awayMoneyline": "+500",
-        "homeAbbreviation": "TOT",
-        "awayAbbreviation": "IPS"
-      },
+      "odds": null,
       "favorite": true,
       "favoriteIds": [
         "tottenham"
@@ -1104,7 +1096,7 @@
       ],
       "color": "#d7b4ff",
       "headline": "Sat, Nov 21 · 10:00 AM ET · Ipswich Town at Tottenham Hotspur · Premier League · USA Network, Universo",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401878754",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401878754/ipswich-town-tottenham-hotspur",
       "mustWatch": true,
       "mustWatchReasons": [
         {
@@ -1134,8 +1126,8 @@
       "name": "Sunderland at Aston Villa",
       "shortName": "SUN @ AVL",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "86'",
+      "status": "final",
+      "statusDetail": "FT",
       "venue": "Villa Park",
       "teams": [
         {
@@ -1145,7 +1137,7 @@
           "abbreviation": "SUN",
           "homeAway": "away",
           "rank": null,
-          "record": "2-2-6",
+          "record": "2-3-6",
           "score": "0",
           "color": "#eb172b",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
@@ -1158,7 +1150,7 @@
           "abbreviation": "AVL",
           "homeAway": "home",
           "rank": null,
-          "record": "3-4-3",
+          "record": "3-5-3",
           "score": "0",
           "color": "#660e36",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
@@ -1180,21 +1172,13 @@
         "Peacock"
       ],
       "broadcastSummary": "Peacock",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "AVL -145",
-        "overUnder": "2.5",
-        "homeMoneyline": "-145",
-        "awayMoneyline": "+400",
-        "homeAbbreviation": "AVL",
-        "awayAbbreviation": "SUN"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#d7b4ff",
       "headline": "Sat, Nov 21 · 10:00 AM ET · Sunderland at Aston Villa · Premier League · Peacock",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401878756",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401878756/sunderland-aston-villa",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1219,8 +1203,8 @@
       "name": "Crystal Palace at Coventry City",
       "shortName": "CRY @ COV",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "81'",
+      "status": "final",
+      "statusDetail": "FT",
       "venue": "Coventry Building Society Arena",
       "teams": [
         {
@@ -1230,7 +1214,7 @@
           "abbreviation": "CRY",
           "homeAway": "away",
           "rank": null,
-          "record": "2-1-7",
+          "record": "2-1-8",
           "score": "2",
           "color": "#0202fb",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
@@ -1243,8 +1227,8 @@
           "abbreviation": "COV",
           "homeAway": "home",
           "rank": null,
-          "record": "3-0-7",
-          "score": "2",
+          "record": "4-0-7",
+          "score": "3",
           "color": "#87cced",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
           "favorite": false
@@ -1265,21 +1249,13 @@
         "Peacock"
       ],
       "broadcastSummary": "Peacock",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "COV +155",
-        "overUnder": "2.5",
-        "homeMoneyline": "+155",
-        "awayMoneyline": "+170",
-        "homeAbbreviation": "COV",
-        "awayAbbreviation": "CRY"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#d7b4ff",
       "headline": "Sat, Nov 21 · 10:00 AM ET · Crystal Palace at Coventry City · Premier League · Peacock",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401879235",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879235/crystal-palace-coventry-city",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1304,8 +1280,8 @@
       "name": "Leeds United at Chelsea",
       "shortName": "LEE @ CHE",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "82'",
+      "status": "final",
+      "statusDetail": "FT",
       "venue": "Stamford Bridge",
       "teams": [
         {
@@ -1315,8 +1291,8 @@
           "abbreviation": "LEE",
           "homeAway": "away",
           "rank": null,
-          "record": "3-5-2",
-          "score": "3",
+          "record": "4-5-2",
+          "score": "4",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
           "favorite": false
@@ -1328,7 +1304,7 @@
           "abbreviation": "CHE",
           "homeAway": "home",
           "rank": null,
-          "record": "5-1-4",
+          "record": "5-1-5",
           "score": "1",
           "color": "#144992",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
@@ -1350,21 +1326,13 @@
         "Peacock"
       ],
       "broadcastSummary": "Peacock",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "CHE -105",
-        "overUnder": "2.5",
-        "homeMoneyline": "-105",
-        "awayMoneyline": "+280",
-        "homeAbbreviation": "CHE",
-        "awayAbbreviation": "LEE"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#d7b4ff",
       "headline": "Sat, Nov 21 · 10:00 AM ET · Leeds United at Chelsea · Premier League · Peacock",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401879236",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879236/leeds-united-chelsea",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1389,8 +1357,8 @@
       "name": "Nottingham Forest at AFC Bournemouth",
       "shortName": "NFO @ BOU",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "85'",
+      "status": "final",
+      "statusDetail": "FT",
       "venue": "Vitality Stadium",
       "teams": [
         {
@@ -1400,7 +1368,7 @@
           "abbreviation": "NFO",
           "homeAway": "away",
           "rank": null,
-          "record": "2-3-5",
+          "record": "2-3-6",
           "score": "0",
           "color": "#c8102e",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
@@ -1413,7 +1381,7 @@
           "abbreviation": "BOU",
           "homeAway": "home",
           "rank": null,
-          "record": "4-3-3",
+          "record": "5-3-3",
           "score": "2",
           "color": "#f42727",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
@@ -1435,21 +1403,13 @@
         "Peacock"
       ],
       "broadcastSummary": "Peacock",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "BOU +115",
-        "overUnder": "2.5",
-        "homeMoneyline": "+115",
-        "awayMoneyline": "+260",
-        "homeAbbreviation": "BOU",
-        "awayAbbreviation": "NFO"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#d7b4ff",
       "headline": "Sat, Nov 21 · 10:00 AM ET · Nottingham Forest at AFC Bournemouth · Premier League · Peacock",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401879238",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879238/nottingham-forest-afc-bournemouth",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1551,8 +1511,8 @@
       "name": "Valencia at Rayo Vallecano",
       "shortName": "VAL @ RAY",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "68'",
+      "status": "final",
+      "statusDetail": "FT",
       "venue": "Estadio de Vallecas",
       "teams": [
         {
@@ -1562,7 +1522,7 @@
           "abbreviation": "VAL",
           "homeAway": "away",
           "rank": null,
-          "record": "2-3-7",
+          "record": "3-3-7",
           "score": "1",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
@@ -1575,7 +1535,7 @@
           "abbreviation": "RAY",
           "homeAway": "home",
           "rank": null,
-          "record": "3-3-5",
+          "record": "3-3-6",
           "score": "0",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
@@ -1607,21 +1567,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN Deportes · ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "RAY +100",
-        "overUnder": "2.5",
-        "homeMoneyline": "+100",
-        "awayMoneyline": "+295",
-        "homeAbbreviation": "RAY",
-        "awayAbbreviation": "VAL"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffe08a",
       "headline": "Sat, Nov 21 · 10:15 AM ET · Valencia at Rayo Vallecano · La Liga · ESPN Deportes, ESPN+",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401882799",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882799/valencia-rayo-vallecano",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1646,8 +1598,8 @@
       "name": "South Carolina Upstate Spartans at UNC Greensboro Spartans",
       "shortName": "UPST @ UNCG",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "0:38 - 1st",
+      "status": "final",
+      "statusDetail": "Final",
       "venue": "Bodford Arena",
       "teams": [
         {
@@ -1657,8 +1609,8 @@
           "abbreviation": "UPST",
           "homeAway": "away",
           "rank": null,
-          "record": "1-5",
-          "score": "25",
+          "record": "1-6",
+          "score": "66",
           "color": "#008545",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2908.png",
           "favorite": false
@@ -1670,8 +1622,8 @@
           "abbreviation": "UNCG",
           "homeAway": "home",
           "rank": null,
-          "record": "3-2",
-          "score": "41",
+          "record": "4-2",
+          "score": "85",
           "color": "#003559",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2430.png",
           "favorite": false
@@ -1698,7 +1650,7 @@
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 11:00 AM ET · South Carolina Upstate Spartans at UNC Greensboro Spartans · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401922284",
+      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401922284/sc-upstate-unc-greensboro",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1723,8 +1675,8 @@
       "name": "Siena Saints at Bucknell Bison",
       "shortName": "SIE @ BUCK",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "6:05 - 1st",
+      "status": "final",
+      "statusDetail": "Final",
       "venue": "Sojka Pavilion",
       "teams": [
         {
@@ -1734,8 +1686,8 @@
           "abbreviation": "SIE",
           "homeAway": "away",
           "rank": null,
-          "record": "3-2",
-          "score": "34",
+          "record": "4-2",
+          "score": "93",
           "color": "#037961",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2561.png",
           "favorite": false
@@ -1747,8 +1699,8 @@
           "abbreviation": "BUCK",
           "homeAway": "home",
           "rank": null,
-          "record": "1-4",
-          "score": "36",
+          "record": "1-5",
+          "score": "87",
           "color": "#000060",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2083.png",
           "favorite": false
@@ -1775,7 +1727,7 @@
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 11:00 AM ET · Siena Saints at Bucknell Bison · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401924884",
+      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924884/siena-bucknell",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1800,8 +1752,8 @@
       "name": "Paris Saint-Germain at Nice",
       "shortName": "PSG @ NICE",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "28'",
+      "status": "final",
+      "statusDetail": "FT",
       "venue": "Allianz Riviera",
       "teams": [
         {
@@ -1811,8 +1763,8 @@
           "abbreviation": "PSG",
           "homeAway": "away",
           "rank": null,
-          "record": "7-2-1",
-          "score": "0",
+          "record": "8-2-1",
+          "score": "3",
           "color": "#011f68",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
           "favorite": false
@@ -1824,8 +1776,8 @@
           "abbreviation": "NICE",
           "homeAway": "home",
           "rank": null,
-          "record": "5-2-3",
-          "score": "1",
+          "record": "5-2-4",
+          "score": "2",
           "color": "#ef2f24",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
           "favorite": false
@@ -1846,21 +1798,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "beIn Sports",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "PSG -230",
-        "overUnder": "3.5",
-        "homeMoneyline": "+500",
-        "awayMoneyline": "-230",
-        "homeAbbreviation": "NICE",
-        "awayAbbreviation": "PSG"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#c4d0ff",
       "headline": "Sat, Nov 21 · 11:15 AM ET · Paris Saint-Germain at Nice · Ligue 1 · beIn Sports",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401876398",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876398/paris-saint-germain-nice",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1885,8 +1829,8 @@
       "name": "Vanderbilt Commodores at Florida Gators",
       "shortName": "VAN @ FLA",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "9:20 - 3rd",
       "venue": "Ben Hill Griffin Stadium",
       "teams": [
         {
@@ -1897,7 +1841,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-6",
-          "score": null,
+          "score": "24",
           "color": "#cfae70",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/238.png",
           "favorite": false
@@ -1910,7 +1854,7 @@
           "homeAway": "home",
           "rank": 24,
           "record": "6-4",
-          "score": null,
+          "score": "17",
           "color": "#0021a5",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
           "favorite": false
@@ -1931,21 +1875,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "SEC Network",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "FLA -13.5",
-        "overUnder": "47.5",
-        "homeMoneyline": "-575",
-        "awayMoneyline": "+425",
-        "homeAbbreviation": "FLA",
-        "awayAbbreviation": "VAN"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · Vanderbilt Commodores at Florida Gators · NCAAF · Week 12 · SEC Network",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401856748/vanderbilt-florida",
+      "link": "https://www.espn.com/college-football/game?gameId=401856748",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1970,8 +1906,8 @@
       "name": "Wofford Terriers at Ole Miss Rebels",
       "shortName": "WOF @ MISS",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "9:37 - 3rd",
       "venue": "Vaught-Hemingway Stadium",
       "teams": [
         {
@@ -1982,7 +1918,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "5-6",
-          "score": null,
+          "score": "3",
           "color": "#533b23",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png",
           "favorite": false
@@ -1995,7 +1931,7 @@
           "homeAway": "home",
           "rank": 25,
           "record": "6-4",
-          "score": null,
+          "score": "56",
           "color": "#13294b",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/145.png",
           "favorite": false
@@ -2016,21 +1952,13 @@
         "SECN+"
       ],
       "broadcastSummary": "SECN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "MISS -49.5",
-        "overUnder": "60.5",
-        "homeMoneyline": "OFF",
-        "awayMoneyline": "OFF",
-        "homeAbbreviation": "MISS",
-        "awayAbbreviation": "WOF"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · Wofford Terriers at Ole Miss Rebels · NCAAF · Week 12 · SECN+",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401856749/wofford-ole-miss",
+      "link": "https://www.espn.com/college-football/game?gameId=401856749",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -2055,8 +1983,8 @@
       "name": "BYU Cougars at Kansas Jayhawks",
       "shortName": "BYU @ KU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:29 - 3rd",
       "venue": "David Booth Kansas Memorial Stadium",
       "teams": [
         {
@@ -2067,7 +1995,7 @@
           "homeAway": "away",
           "rank": 10,
           "record": "8-2",
-          "score": null,
+          "score": "9",
           "color": "#0047ba",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png",
           "favorite": false
@@ -2080,7 +2008,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-6",
-          "score": null,
+          "score": "6",
           "color": "#0051ba",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png",
           "favorite": false
@@ -2101,21 +2029,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "ABC",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "BYU -4.5",
-        "overUnder": "46.5",
-        "homeMoneyline": "+164",
-        "awayMoneyline": "-198",
-        "homeAbbreviation": "KU",
-        "awayAbbreviation": "BYU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · BYU Cougars at Kansas Jayhawks · NCAAF · Week 12 · ABC",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401856866/byu-kansas",
+      "link": "https://www.espn.com/college-football/game?gameId=401856866",
       "mustWatch": true,
       "mustWatchReasons": [
         {
@@ -2145,8 +2065,8 @@
       "name": "Colorado Buffaloes at Cincinnati Bearcats",
       "shortName": "COLO @ CIN",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "7:53 - 3rd",
       "venue": "Nippert Stadium",
       "teams": [
         {
@@ -2157,7 +2077,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-6",
-          "score": null,
+          "score": "14",
           "color": "#cfb87c",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
           "favorite": false
@@ -2170,7 +2090,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-5",
-          "score": null,
+          "score": "28",
           "color": "#e00122",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2132.png",
           "favorite": false
@@ -2191,21 +2111,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "CIN -3",
-        "overUnder": "56.5",
-        "homeMoneyline": "-155",
-        "awayMoneyline": "+130",
-        "homeAbbreviation": "CIN",
-        "awayAbbreviation": "COLO"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · Colorado Buffaloes at Cincinnati Bearcats · NCAAF · Week 12 · ESPN+",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401856867/colorado-cincinnati",
+      "link": "https://www.espn.com/college-football/game?gameId=401856867",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -2230,8 +2142,8 @@
       "name": "Syracuse Orange at Boston College Eagles",
       "shortName": "SYR @ BC",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "12:43 - 3rd",
       "venue": "Alumni Stadium (Chestnut Hill, MA)",
       "teams": [
         {
@@ -2242,7 +2154,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "5-5",
-          "score": null,
+          "score": "3",
           "color": "#000e54",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png",
           "favorite": false
@@ -2255,7 +2167,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-6",
-          "score": null,
+          "score": "13",
           "color": "#8c2232",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
           "favorite": false
@@ -2276,21 +2188,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "ACC Network",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "SYR -3",
-        "overUnder": "52.5",
-        "homeMoneyline": "+130",
-        "awayMoneyline": "-155",
-        "homeAbbreviation": "BC",
-        "awayAbbreviation": "SYR"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · Syracuse Orange at Boston College Eagles · NCAAF · Week 12 · ACC Network",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401858309/syracuse-boston-college",
+      "link": "https://www.espn.com/college-football/game?gameId=401858309",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -2315,8 +2219,8 @@
       "name": "Wake Forest Demon Deacons at Georgia Tech Yellow Jackets",
       "shortName": "WAKE @ GT",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "14:09 - 3rd",
       "venue": "Bobby Dodd Stadium",
       "teams": [
         {
@@ -2327,7 +2231,7 @@
           "homeAway": "away",
           "rank": 11,
           "record": "9-1",
-          "score": null,
+          "score": "36",
           "color": "#ceb888",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
           "favorite": false
@@ -2340,7 +2244,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-7",
-          "score": null,
+          "score": "7",
           "color": "#b3a369",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/59.png",
           "favorite": false
@@ -2361,21 +2265,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "ESPN",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "WAKE -22.5",
-        "overUnder": "55.5",
-        "homeMoneyline": "+1100",
-        "awayMoneyline": "-2100",
-        "homeAbbreviation": "GT",
-        "awayAbbreviation": "WAKE"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · Wake Forest Demon Deacons at Georgia Tech Yellow Jackets · NCAAF · Week 12 · ESPN",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401858310/wake-forest-georgia-tech",
+      "link": "https://www.espn.com/college-football/game?gameId=401858310",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -2400,8 +2296,8 @@
       "name": "Northwestern Wildcats at Minnesota Golden Gophers",
       "shortName": "NU @ MINN",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:16 - 3rd",
       "venue": "Huntington Bank Stadium",
       "teams": [
         {
@@ -2412,7 +2308,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "6-4",
-          "score": null,
+          "score": "7",
           "color": "#492f92",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
           "favorite": false
@@ -2425,7 +2321,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-5",
-          "score": null,
+          "score": "14",
           "color": "#5e0a2f",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/135.png",
           "favorite": false
@@ -2446,21 +2342,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "FS1",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "NU -3",
-        "overUnder": "41.5",
-        "homeMoneyline": "+124",
-        "awayMoneyline": "-148",
-        "homeAbbreviation": "MINN",
-        "awayAbbreviation": "NU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · Northwestern Wildcats at Minnesota Golden Gophers · NCAAF · Week 12 · FS1",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401858530/northwestern-minnesota",
+      "link": "https://www.espn.com/college-football/game?gameId=401858530",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -2485,8 +2373,8 @@
       "name": "Ohio State Buckeyes at Nebraska Cornhuskers",
       "shortName": "OSU @ NEB",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "Halftime",
       "venue": "Memorial Stadium (Lincoln, NE)",
       "teams": [
         {
@@ -2497,7 +2385,7 @@
           "homeAway": "away",
           "rank": 14,
           "record": "7-3",
-          "score": null,
+          "score": "14",
           "color": "#ba0c2f",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png",
           "favorite": false
@@ -2510,7 +2398,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "6-4",
-          "score": null,
+          "score": "21",
           "color": "#e31937",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/158.png",
           "favorite": false
@@ -2531,21 +2419,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "Fox",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "OSU -4",
-        "overUnder": "42.5",
-        "homeMoneyline": "+154",
-        "awayMoneyline": "-185",
-        "homeAbbreviation": "NEB",
-        "awayAbbreviation": "OSU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · Ohio State Buckeyes at Nebraska Cornhuskers · NCAAF · Week 12 · Fox",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401858531/ohio-state-nebraska",
+      "link": "https://www.espn.com/college-football/game?gameId=401858531",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -2570,8 +2450,8 @@
       "name": "Wisconsin Badgers at Purdue Boilermakers",
       "shortName": "WIS @ PUR",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "5:35 - 3rd",
       "venue": "Ross-Ade Stadium",
       "teams": [
         {
@@ -2582,7 +2462,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "6-4",
-          "score": null,
+          "score": "28",
           "color": "#a00000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
           "favorite": false
@@ -2595,7 +2475,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-7",
-          "score": null,
+          "score": "10",
           "color": "#ceb888",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
           "favorite": false
@@ -2616,21 +2496,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "NBC",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "WIS -4.5",
-        "overUnder": "46.5",
-        "homeMoneyline": "+170",
-        "awayMoneyline": "-205",
-        "homeAbbreviation": "PUR",
-        "awayAbbreviation": "WIS"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · Wisconsin Badgers at Purdue Boilermakers · NCAAF · Week 12 · NBC",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401858533/wisconsin-purdue",
+      "link": "https://www.espn.com/college-football/game?gameId=401858533",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -2655,8 +2527,8 @@
       "name": "East Carolina Pirates at Army Black Knights",
       "shortName": "ECU @ ARMY",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "1:44 - 3rd",
       "venue": "Michie Stadium",
       "teams": [
         {
@@ -2667,7 +2539,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "6-4",
-          "score": null,
+          "score": "0",
           "color": "#582c83",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/151.png",
           "favorite": false
@@ -2680,7 +2552,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-4",
-          "score": null,
+          "score": "3",
           "color": "#d3bc8d",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
           "favorite": false
@@ -2701,21 +2573,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "CBS Sports Network",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "ARMY -4.5",
-        "overUnder": "45.5",
-        "homeMoneyline": "-205",
-        "awayMoneyline": "+170",
-        "homeAbbreviation": "ARMY",
-        "awayAbbreviation": "ECU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · East Carolina Pirates at Army Black Knights · NCAAF · Week 12 · CBS Sports Network",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401862831/east-carolina-army",
+      "link": "https://www.espn.com/college-football/game?gameId=401862831",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -2740,8 +2604,8 @@
       "name": "Memphis Tigers at Navy Midshipmen",
       "shortName": "MEM @ NAVY",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "8:39 - 3rd",
       "venue": "Navy-Marine Corps Memorial Stadium",
       "teams": [
         {
@@ -2752,7 +2616,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "8-2",
-          "score": null,
+          "score": "17",
           "color": "#004991",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png",
           "favorite": false
@@ -2765,7 +2629,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-6",
-          "score": null,
+          "score": "17",
           "color": "#00225b",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2426.png",
           "favorite": false
@@ -2786,21 +2650,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "ESPN2",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "MEM -2.5",
-        "overUnder": "68.5",
-        "homeMoneyline": "+114",
-        "awayMoneyline": "-135",
-        "homeAbbreviation": "NAVY",
-        "awayAbbreviation": "MEM"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · Memphis Tigers at Navy Midshipmen · NCAAF · Week 12 · ESPN2",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401862834/memphis-navy",
+      "link": "https://www.espn.com/college-football/game?gameId=401862834",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -2825,8 +2681,8 @@
       "name": "North Texas Mean Green at Tulane Green Wave",
       "shortName": "UNT @ TULN",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "6:47 - 3rd",
       "venue": "Yulman Stadium",
       "teams": [
         {
@@ -2837,7 +2693,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "7-3",
-          "score": null,
+          "score": "17",
           "color": "#068f33",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/249.png",
           "favorite": false
@@ -2850,7 +2706,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-5",
-          "score": null,
+          "score": "14",
           "color": "#006747",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2655.png",
           "favorite": false
@@ -2871,21 +2727,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "ESPNU",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "UNT -7.5",
-        "overUnder": "56.5",
-        "homeMoneyline": "+235",
-        "awayMoneyline": "-290",
-        "homeAbbreviation": "TULN",
-        "awayAbbreviation": "UNT"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:00 PM ET · North Texas Mean Green at Tulane Green Wave · NCAAF · Week 12 · ESPNU",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401862835/north-texas-tulane",
+      "link": "https://www.espn.com/college-football/game?gameId=401862835",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -2910,8 +2758,8 @@
       "name": "AS Roma at Parma",
       "shortName": "ROMA @ PAR",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "Scheduled",
+      "status": "final",
+      "statusDetail": "FT",
       "venue": "Ennio Tardini",
       "teams": [
         {
@@ -2921,8 +2769,8 @@
           "abbreviation": "ROMA",
           "homeAway": "away",
           "rank": null,
-          "record": "8-3-0",
-          "score": null,
+          "record": "9-3-0",
+          "score": "5",
           "color": "#990a2c",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
           "favorite": false
@@ -2934,8 +2782,8 @@
           "abbreviation": "PAR",
           "homeAway": "home",
           "rank": null,
-          "record": "2-2-7",
-          "score": null,
+          "record": "2-2-8",
+          "score": "1",
           "color": "#19161d",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
           "favorite": false
@@ -2956,15 +2804,7 @@
         "Paramount+"
       ],
       "broadcastSummary": "Paramount+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "ROMA -475",
-        "overUnder": "3.5",
-        "homeMoneyline": "+950",
-        "awayMoneyline": "-475",
-        "homeAbbreviation": "PAR",
-        "awayAbbreviation": "ROMA"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -2995,8 +2835,8 @@
       "name": "Columbia Lions at Boston University Terriers",
       "shortName": "COLU @ BU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "0:39 - OT",
       "venue": "Case Gym",
       "teams": [
         {
@@ -3007,7 +2847,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-1",
-          "score": null,
+          "score": "74",
           "color": "#7ba4db",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/171.png",
           "favorite": false
@@ -3020,7 +2860,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-1",
-          "score": null,
+          "score": "68",
           "color": "#cc0000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/104.png",
           "favorite": false
@@ -3050,21 +2890,13 @@
         "Patriot League TV"
       ],
       "broadcastSummary": "ESPN+ · Patriot League TV",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "COLU -1.5",
-        "overUnder": "142.5",
-        "homeMoneyline": "-105",
-        "awayMoneyline": "-115",
-        "homeAbbreviation": "BU",
-        "awayAbbreviation": "COLU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 12:00 PM ET · Columbia Lions at Boston University Terriers · NCAAM · ESPN+, Patriot League TV",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401923402/columbia-boston-u",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401923402",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3089,8 +2921,8 @@
       "name": "Detroit Mercy Titans at Michigan State Spartans",
       "shortName": "DETM @ MSU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "final",
+      "statusDetail": "Final",
       "venue": "Breslin Center",
       "teams": [
         {
@@ -3100,8 +2932,8 @@
           "abbreviation": "DETM",
           "homeAway": "away",
           "rank": null,
-          "record": "0-4",
-          "score": null,
+          "record": "0-5",
+          "score": "70",
           "color": "#165b9e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2174.png",
           "favorite": false
@@ -3113,8 +2945,8 @@
           "abbreviation": "MSU",
           "homeAway": "home",
           "rank": 2,
-          "record": "4-1",
-          "score": null,
+          "record": "5-1",
+          "score": "91",
           "color": "#173f35",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
           "favorite": false
@@ -3135,15 +2967,7 @@
       ],
       "streaming": [],
       "broadcastSummary": "Big Ten Network",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "MSU -40.5",
-        "overUnder": "150.5",
-        "homeMoneyline": "OFF",
-        "awayMoneyline": "OFF",
-        "homeAbbreviation": "MSU",
-        "awayAbbreviation": "DETM"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -3179,8 +3003,8 @@
       "name": "UCF Knights at Florida State Seminoles",
       "shortName": "UCF VS FSU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "final",
+      "statusDetail": "Final",
       "venue": "State Farm Field House",
       "teams": [
         {
@@ -3190,8 +3014,8 @@
           "abbreviation": "UCF",
           "homeAway": "away",
           "rank": null,
-          "record": "6-1",
-          "score": null,
+          "record": "6-2",
+          "score": "54",
           "color": "#b4a169",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
           "favorite": false
@@ -3203,8 +3027,8 @@
           "abbreviation": "FSU",
           "homeAway": "home",
           "rank": null,
-          "record": "6-0",
-          "score": null,
+          "record": "7-0",
+          "score": "81",
           "color": "#782f40",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
           "favorite": false
@@ -3256,8 +3080,8 @@
       "name": "James Madison Dukes at George Mason Patriots",
       "shortName": "JMU @ GMU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "final",
+      "statusDetail": "Final",
       "venue": "EagleBank Arena",
       "teams": [
         {
@@ -3267,8 +3091,8 @@
           "abbreviation": "JMU",
           "homeAway": "away",
           "rank": null,
-          "record": "3-3",
-          "score": null,
+          "record": "3-4",
+          "score": "52",
           "color": "#450084",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
           "favorite": false
@@ -3280,8 +3104,8 @@
           "abbreviation": "GMU",
           "homeAway": "home",
           "rank": null,
-          "record": "3-3",
-          "score": null,
+          "record": "4-3",
+          "score": "55",
           "color": "#016600",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2244.png",
           "favorite": false
@@ -3333,8 +3157,8 @@
       "name": "Morgan State Lady Bears at Maryland Terrapins",
       "shortName": "MORG @ MD",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:00 PM EST",
+      "status": "final",
+      "statusDetail": "Final",
       "venue": "XFINITY Center",
       "teams": [
         {
@@ -3344,8 +3168,8 @@
           "abbreviation": "MORG",
           "homeAway": "away",
           "rank": null,
-          "record": "2-5",
-          "score": null,
+          "record": "2-6",
+          "score": "39",
           "color": "#014786",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2415.png",
           "favorite": false
@@ -3357,8 +3181,8 @@
           "abbreviation": "MD",
           "homeAway": "home",
           "rank": 18,
-          "record": "3-1",
-          "score": null,
+          "record": "4-1",
+          "score": "109",
           "color": "#ce1126",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
           "favorite": false
@@ -3379,15 +3203,7 @@
         "B1G+"
       ],
       "broadcastSummary": "B1G+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "MD -45.5",
-        "overUnder": "142.5",
-        "homeMoneyline": "OFF",
-        "awayMoneyline": "OFF",
-        "homeAbbreviation": "MD",
-        "awayAbbreviation": "MORG"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -3418,8 +3234,8 @@
       "name": "North Carolina Tar Heels at Virginia Cavaliers",
       "shortName": "UNC @ UVA",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 12:30 PM EST",
+      "status": "in-progress",
+      "statusDetail": "Halftime",
       "venue": "Scott Stadium",
       "teams": [
         {
@@ -3430,7 +3246,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "5-5",
-          "score": null,
+          "score": "10",
           "color": "#7bafd4",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png",
           "favorite": false
@@ -3443,7 +3259,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-5",
-          "score": null,
+          "score": "20",
           "color": "#232d4b",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png",
           "favorite": false
@@ -3464,21 +3280,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "CW",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "UNC -1.5",
-        "overUnder": "41.5",
-        "homeMoneyline": "-105",
-        "awayMoneyline": "-115",
-        "homeAbbreviation": "UVA",
-        "awayAbbreviation": "UNC"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 12:30 PM ET · North Carolina Tar Heels at Virginia Cavaliers · NCAAF · Week 12 · CW",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401858305/north-carolina-virginia",
+      "link": "https://www.espn.com/college-football/game?gameId=401858305",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3503,8 +3311,8 @@
       "name": "Arsenal at Newcastle United",
       "shortName": "ARS @ NEW",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "Scheduled",
+      "status": "in-progress",
+      "statusDetail": "83'",
       "venue": "St. James' Park",
       "teams": [
         {
@@ -3515,7 +3323,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "9-0-1",
-          "score": null,
+          "score": "2",
           "color": "#e20520",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
           "favorite": false
@@ -3528,7 +3336,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-3-4",
-          "score": null,
+          "score": "2",
           "color": "#0b1b3d",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
           "favorite": false
@@ -3560,10 +3368,10 @@
       "broadcastSummary": "USA Network · Telemundo",
       "odds": {
         "provider": "DraftKings",
-        "spread": "ARS -185",
+        "spread": "ARS -200",
         "overUnder": "2.5",
         "homeMoneyline": "+500",
-        "awayMoneyline": "-185",
+        "awayMoneyline": "-200",
         "homeAbbreviation": "NEW",
         "awayAbbreviation": "ARS"
       },
@@ -3572,7 +3380,7 @@
       "favoriteNames": [],
       "color": "#d7b4ff",
       "headline": "Sat, Nov 21 · 12:30 PM ET · Arsenal at Newcastle United · Premier League · USA Network, Telemundo",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401879232/arsenal-newcastle-united",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879232",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3597,8 +3405,8 @@
       "name": "Real Betis at Sevilla",
       "shortName": "BET @ SEV",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "Scheduled",
+      "status": "in-progress",
+      "statusDetail": "78'",
       "venue": "Ramón Sánchez Pizjuán Stadium",
       "teams": [
         {
@@ -3609,7 +3417,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "8-2-2",
-          "score": null,
+          "score": "1",
           "color": "#288a00",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
           "favorite": false
@@ -3622,7 +3430,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-3-4",
-          "score": null,
+          "score": "0",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
           "favorite": false
@@ -3655,10 +3463,10 @@
       "broadcastSummary": "ESPN Deportes · ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "BET +160",
+        "spread": "SEV +165",
         "overUnder": "2.5",
-        "homeMoneyline": "+180",
-        "awayMoneyline": "+160",
+        "homeMoneyline": "+165",
+        "awayMoneyline": "+175",
         "homeAbbreviation": "SEV",
         "awayAbbreviation": "BET"
       },
@@ -3667,7 +3475,7 @@
       "favoriteNames": [],
       "color": "#ffe08a",
       "headline": "Sat, Nov 21 · 12:30 PM ET · Real Betis at Sevilla · La Liga · ESPN Deportes, ESPN+",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401882797/real-betis-sevilla",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882797",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3692,8 +3500,8 @@
       "name": "VfB Stuttgart at Schalke 04",
       "shortName": "VFB @ S04",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "Scheduled",
+      "status": "in-progress",
+      "statusDetail": "83'",
       "venue": "Veltins Arena",
       "teams": [
         {
@@ -3704,7 +3512,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-0-5",
-          "score": null,
+          "score": "0",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
           "favorite": false
@@ -3717,7 +3525,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "1-3-5",
-          "score": null,
+          "score": "0",
           "color": "#0000dd",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
           "favorite": false
@@ -3740,10 +3548,10 @@
       "broadcastSummary": "Fandango",
       "odds": {
         "provider": "DraftKings",
-        "spread": "VFB -110",
+        "spread": "VFB -105",
         "overUnder": "3.5",
-        "homeMoneyline": "+240",
-        "awayMoneyline": "-110",
+        "homeMoneyline": "+230",
+        "awayMoneyline": "-105",
         "homeAbbreviation": "S04",
         "awayAbbreviation": "VFB"
       },
@@ -3752,7 +3560,7 @@
       "favoriteNames": [],
       "color": "#ff8d8d",
       "headline": "Sat, Nov 21 · 12:30 PM ET · VfB Stuttgart at Schalke 04 · Bundesliga · Fandango",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401884729/vfb-stuttgart-schalke-04",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401884729",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3777,8 +3585,8 @@
       "name": "Tennessee Tech Golden Eagles at Mississippi State Bulldogs",
       "shortName": "TNTC @ MSST",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "5:39 - 2nd",
       "venue": "Davis Wade Stadium",
       "teams": [
         {
@@ -3789,7 +3597,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "9-2",
-          "score": null,
+          "score": "10",
           "color": "#5a4099",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2635.png",
           "favorite": false
@@ -3802,7 +3610,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-6",
-          "score": null,
+          "score": "17",
           "color": "#5d1725",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/344.png",
           "favorite": false
@@ -3823,21 +3631,13 @@
         "SECN+"
       ],
       "broadcastSummary": "SECN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "MSST -29.5",
-        "overUnder": "59.5",
-        "homeMoneyline": "-2400",
-        "awayMoneyline": "+1200",
-        "homeAbbreviation": "MSST",
-        "awayAbbreviation": "TNTC"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Tennessee Tech Golden Eagles at Mississippi State Bulldogs · NCAAF · Week 12 · SECN+",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401856750/tennessee-tech-mississippi-st",
+      "link": "https://www.espn.com/college-football/game?gameId=401856750",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3862,8 +3662,8 @@
       "name": "Houston Cougars at West Virginia Mountaineers",
       "shortName": "HOU @ WVU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "7:15 - 2nd",
       "venue": "Milan Puskar Stadium",
       "teams": [
         {
@@ -3874,7 +3674,7 @@
           "homeAway": "away",
           "rank": 20,
           "record": "7-3",
-          "score": null,
+          "score": "14",
           "color": "#c8102e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
           "favorite": false
@@ -3887,7 +3687,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-5",
-          "score": null,
+          "score": "17",
           "color": "#eaaa00",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
           "favorite": false
@@ -3908,21 +3708,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "TNT",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "HOU -7",
-        "overUnder": "72.5",
-        "homeMoneyline": "+220",
-        "awayMoneyline": "-270",
-        "homeAbbreviation": "WVU",
-        "awayAbbreviation": "HOU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Houston Cougars at West Virginia Mountaineers · NCAAF · Week 12 · TNT",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401856868/houston-west-virginia",
+      "link": "https://www.espn.com/college-football/game?gameId=401856868",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3947,8 +3739,8 @@
       "name": "Western Kentucky Hilltoppers at Liberty Flames",
       "shortName": "WKU @ LIB",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:55 - 2nd",
       "venue": "Williams Stadium (VA)",
       "teams": [
         {
@@ -3959,7 +3751,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-6",
-          "score": null,
+          "score": "0",
           "color": "#e13a3e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/98.png",
           "favorite": false
@@ -3972,7 +3764,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "9-1",
-          "score": null,
+          "score": "28",
           "color": "#0a254e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2335.png",
           "favorite": false
@@ -3993,21 +3785,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "LIB -17.5",
-        "overUnder": "53.5",
-        "homeMoneyline": "-1000",
-        "awayMoneyline": "+650",
-        "homeAbbreviation": "LIB",
-        "awayAbbreviation": "WKU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Western Kentucky Hilltoppers at Liberty Flames · NCAAF · Week 12 · ESPN+",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401871080/western-ky-liberty",
+      "link": "https://www.espn.com/college-football/game?gameId=401871080",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4032,8 +3816,8 @@
       "name": "Denver Pioneers at Eastern Michigan Eagles",
       "shortName": "DEN @ EMU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "16:30 - 2nd",
       "venue": "Gervin GameAbove Center",
       "teams": [
         {
@@ -4044,7 +3828,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-3",
-          "score": null,
+          "score": "40",
           "color": "#98002e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2172.png",
           "favorite": false
@@ -4057,7 +3841,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-1",
-          "score": null,
+          "score": "30",
           "color": "#006938",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2199.png",
           "favorite": false
@@ -4078,21 +3862,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "EMU -6.5",
-        "overUnder": "139.5",
-        "homeMoneyline": "-310",
-        "awayMoneyline": "+250",
-        "homeAbbreviation": "EMU",
-        "awayAbbreviation": "DEN"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Denver Pioneers at Eastern Michigan Eagles · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920948/denver-e-michigan",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401920948",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4117,8 +3893,8 @@
       "name": "Kent State Golden Flashes at Cleveland State Vikings",
       "shortName": "KENT @ CLE",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "17:33 - 2nd",
       "venue": "Wolstein Center",
       "teams": [
         {
@@ -4129,7 +3905,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-3",
-          "score": null,
+          "score": "42",
           "color": "#002664",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2309.png",
           "favorite": false
@@ -4142,7 +3918,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-3",
-          "score": null,
+          "score": "29",
           "color": "#006633",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/325.png",
           "favorite": false
@@ -4163,21 +3939,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "KENT -3.5",
-        "overUnder": "146.5",
-        "homeMoneyline": "+136",
-        "awayMoneyline": "-162",
-        "homeAbbreviation": "CLE",
-        "awayAbbreviation": "KENT"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Kent State Golden Flashes at Cleveland State Vikings · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921169/kent-state-cleveland-st",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401921169",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4202,8 +3970,8 @@
       "name": "Queens University Royals at LSU Tigers",
       "shortName": "QUC @ LSU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "Halftime",
       "venue": "Pete Maravich Assembly Center",
       "teams": [
         {
@@ -4214,7 +3982,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-2",
-          "score": null,
+          "score": "40",
           "color": "#192c66",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2511.png",
           "favorite": false
@@ -4227,7 +3995,7 @@
           "homeAway": "home",
           "rank": 25,
           "record": "5-0",
-          "score": null,
+          "score": "52",
           "color": "#461d76",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/99.png",
           "favorite": false
@@ -4248,21 +4016,13 @@
         "SECN+"
       ],
       "broadcastSummary": "SECN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "LSU -25.5",
-        "overUnder": "173.5",
-        "homeMoneyline": "-9000",
-        "awayMoneyline": "+2500",
-        "homeAbbreviation": "LSU",
-        "awayAbbreviation": "QUC"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Queens University Royals at LSU Tigers · NCAAM · SECN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921811/queens-lsu",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401921811",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4287,8 +4047,8 @@
       "name": "New Hampshire Wildcats at New Haven Chargers",
       "shortName": "UNH @ NHVN",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "14:47 - 2nd",
       "venue": "Jeffery P. Hazell Athletics Center",
       "teams": [
         {
@@ -4299,7 +4059,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-2",
-          "score": null,
+          "score": "37",
           "color": "#004990",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/160.png",
           "favorite": false
@@ -4312,7 +4072,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "34",
           "color": "#041e42",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2441.png",
           "favorite": false
@@ -4322,21 +4082,13 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "UNH -2.5",
-        "overUnder": "130.5",
-        "homeMoneyline": "+114",
-        "awayMoneyline": "-135",
-        "homeAbbreviation": "NHVN",
-        "awayAbbreviation": "UNH"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 1:00 PM ET · New Hampshire Wildcats at New Haven Chargers · NCAAM · channel not announced",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401923312/new-hampshire-new-haven",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401923312",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4361,8 +4113,8 @@
       "name": "Milwaukee Bucks at Philadelphia 76ers",
       "shortName": "MIL @ PHI",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "Halftime",
       "venue": "Xfinity Mobile Arena",
       "teams": [
         {
@@ -4373,7 +4125,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-15",
-          "score": null,
+          "score": "59",
           "color": "#00471b",
           "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
           "favorite": false
@@ -4386,7 +4138,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "13-3",
-          "score": null,
+          "score": "60",
           "color": "#1d428a",
           "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
           "favorite": false
@@ -4417,21 +4169,13 @@
         "Bucks App"
       ],
       "broadcastSummary": "MyMi · Bucks App",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "PHI -11.5",
-        "overUnder": "228.5",
-        "homeMoneyline": "-545",
-        "awayMoneyline": "+411",
-        "homeAbbreviation": "PHI",
-        "awayAbbreviation": "MIL"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffb086",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Milwaukee Bucks at Philadelphia 76ers · NBA · MyMi, Bucks App",
-      "link": "https://www.espn.com/nba/game/_/gameId/401910023/bucks-76ers",
+      "link": "https://www.espn.com/nba/game?gameId=401910023",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4456,8 +4200,8 @@
       "name": "Edmonton Oilers at Carolina Hurricanes",
       "shortName": "EDM @ CAR",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "End of 1st",
       "venue": "Lenovo Center",
       "teams": [
         {
@@ -4468,7 +4212,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "17-4-3",
-          "score": null,
+          "score": "2",
           "color": "#00205b",
           "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/edm.png",
           "favorite": false
@@ -4481,7 +4225,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "16-3-3",
-          "score": null,
+          "score": "0",
           "color": "#e30426",
           "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/car.png",
           "favorite": false
@@ -4511,21 +4255,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "NHL Network · CARNHL",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "CAR -218",
-        "overUnder": "6.5",
-        "homeMoneyline": "-218",
-        "awayMoneyline": "+180",
-        "homeAbbreviation": "CAR",
-        "awayAbbreviation": "EDM"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#9ad7f5",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Edmonton Oilers at Carolina Hurricanes · NHL · NHL Network, CARNHL",
-      "link": "https://www.espn.com/nhl/game/_/gameId/401892754/oilers-hurricanes",
+      "link": "https://www.espn.com/nhl/game/_/gameId/401892754",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4550,8 +4286,8 @@
       "name": "UMBC Retrievers at Brown Bears",
       "shortName": "UMBC @ BRWN",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "5:36 - 3rd",
       "venue": "Pizzitola Sports Center",
       "teams": [
         {
@@ -4562,7 +4298,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-2",
-          "score": null,
+          "score": "46",
           "color": "#ad860a",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2378.png",
           "favorite": false
@@ -4575,7 +4311,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-4",
-          "score": null,
+          "score": "37",
           "color": "#411e09",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/225.png",
           "favorite": false
@@ -4602,7 +4338,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:00 PM ET · UMBC Retrievers at Brown Bears · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401909687/umbc-brown",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401909687",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4627,8 +4363,8 @@
       "name": "Xavier Musketeers at Ohio Bobcats",
       "shortName": "XAV @ OHIO",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "7:38 - 3rd",
       "venue": "Convocation Center (OH)",
       "teams": [
         {
@@ -4639,7 +4375,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-0",
-          "score": null,
+          "score": "24",
           "color": "#21304e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2752.png",
           "favorite": false
@@ -4652,7 +4388,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-1",
-          "score": null,
+          "score": "40",
           "color": "#154734",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/195.png",
           "favorite": false
@@ -4679,7 +4415,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Xavier Musketeers at Ohio Bobcats · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401913019/xavier-ohio",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401913019",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4704,8 +4440,8 @@
       "name": "Bryant Bulldogs at Northeastern Huskies",
       "shortName": "BRY @ NE",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "7:33 - 3rd",
       "venue": "Cabot Center",
       "teams": [
         {
@@ -4716,7 +4452,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "5-0",
-          "score": null,
+          "score": "21",
           "color": "#9f8343",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2803.png",
           "favorite": false
@@ -4729,7 +4465,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-2",
-          "score": null,
+          "score": "29",
           "color": "#cc0001",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/111.png",
           "favorite": false
@@ -4756,7 +4492,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Bryant Bulldogs at Northeastern Huskies · NCAAW · FloSports",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401913758/bryant-northeastern",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401913758",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4781,8 +4517,8 @@
       "name": "Stony Brook Seawolves at Duquesne Dukes",
       "shortName": "STBK @ DUQ",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "5:07 - 3rd",
       "venue": "UPMC Cooper Fieldhouse",
       "teams": [
         {
@@ -4793,7 +4529,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-0",
-          "score": null,
+          "score": "34",
           "color": "#990000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2619.png",
           "favorite": false
@@ -4806,7 +4542,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-1",
-          "score": null,
+          "score": "49",
           "color": "#002d62",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2184.png",
           "favorite": false
@@ -4833,7 +4569,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Stony Brook Seawolves at Duquesne Dukes · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401915767/stony-brook-duquesne",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401915767",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4858,8 +4594,8 @@
       "name": "St. Mary's (MD) Seahawks at Mount St. Mary's Mountaineers",
       "shortName": "SMMD @ MSM",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "8:07 - 3rd",
       "venue": "Knott Arena",
       "teams": [
         {
@@ -4870,7 +4606,7 @@
           "homeAway": "away",
           "rank": null,
           "record": null,
-          "score": null,
+          "score": "17",
           "color": null,
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/117.png",
           "favorite": false
@@ -4883,7 +4619,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "0-6",
-          "score": null,
+          "score": "47",
           "color": "#005596",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/116.png",
           "favorite": false
@@ -4910,7 +4646,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:00 PM ET · St. Mary's (MD) Seahawks at Mount St. Mary's Mountaineers · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401916166/st-marys-md-mount-st-marys",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401916166",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -4935,8 +4671,8 @@
       "name": "Le Moyne Dolphins at Niagara Purple Eagles",
       "shortName": "LEM @ NIA",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "6:52 - 3rd",
       "venue": "Gallagher Center",
       "teams": [
         {
@@ -4947,7 +4683,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-4",
-          "score": null,
+          "score": "36",
           "color": null,
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2330.png",
           "favorite": false
@@ -4960,7 +4696,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "0-6",
-          "score": null,
+          "score": "43",
           "color": "#69207e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/315.png",
           "favorite": false
@@ -4987,7 +4723,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Le Moyne Dolphins at Niagara Purple Eagles · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401916197/le-moyne-niagara",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401916197",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -5012,8 +4748,8 @@
       "name": "North Dakota State Bison at UTSA Roadrunners",
       "shortName": "NDSU @ UTSA",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:53 - 3rd",
       "venue": "UTSA Convocation Center",
       "teams": [
         {
@@ -5024,7 +4760,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "27",
           "color": "#01402a",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2449.png",
           "favorite": false
@@ -5037,7 +4773,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-2",
-          "score": null,
+          "score": "35",
           "color": "#0c2340",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png",
           "favorite": false
@@ -5064,7 +4800,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:00 PM ET · North Dakota State Bison at UTSA Roadrunners · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401918798/n-dakota-st-utsa",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401918798",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -5089,8 +4825,8 @@
       "name": "Sacred Heart Pioneers at Detroit Mercy Titans",
       "shortName": "SHU @ DETM",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "7:29 - 3rd",
       "venue": "Calihan Hall",
       "teams": [
         {
@@ -5101,7 +4837,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-4",
-          "score": null,
+          "score": "30",
           "color": "#a40012",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2529.png",
           "favorite": false
@@ -5114,7 +4850,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-3",
-          "score": null,
+          "score": "39",
           "color": "#165b9e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2174.png",
           "favorite": false
@@ -5141,7 +4877,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Sacred Heart Pioneers at Detroit Mercy Titans · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401919439/sacred-heart-detroit-mercy",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401919439",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -5166,8 +4902,8 @@
       "name": "Saint Peter's Peacocks at Long Island University Sharks",
       "shortName": "SPU @ LIU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "6:18 - 3rd",
       "venue": "Brooklyn Athletic Center",
       "teams": [
         {
@@ -5178,7 +4914,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-3",
-          "score": null,
+          "score": "28",
           "color": "#004cc2",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2612.png",
           "favorite": false
@@ -5191,7 +4927,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "0-6",
-          "score": null,
+          "score": "43",
           "color": "#50c9f7",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/112358.png",
           "favorite": false
@@ -5218,7 +4954,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Saint Peter's Peacocks at Long Island University Sharks · NCAAW · NEC Front Row",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401919450/saint-peters-long-island",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401919450",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -5243,8 +4979,8 @@
       "name": "Daemen Wildcats at Binghamton Bearcats",
       "shortName": "DMN @ BING",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "6:03 - 3rd",
       "venue": "Events Center (Binghamton)",
       "teams": [
         {
@@ -5255,7 +4991,7 @@
           "homeAway": "away",
           "rank": null,
           "record": null,
-          "score": null,
+          "score": "22",
           "color": null,
           "logo": "https://a.espncdn.com/guid/5363e87a-7933-dcbf-024d-d15e1a82155a/logos/default.png",
           "favorite": false
@@ -5268,7 +5004,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-3",
-          "score": null,
+          "score": "50",
           "color": "#00614a",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2066.png",
           "favorite": false
@@ -5295,7 +5031,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:00 PM ET · Daemen Wildcats at Binghamton Bearcats · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401925994/daemen-binghamton",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401925994",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -5320,8 +5056,8 @@
       "name": "Western Illinois Leathernecks at Mercyhurst Lakers",
       "shortName": "WIU VS MERC",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:30 PM EST",
+      "status": "in-progress",
+      "statusDetail": "3:10 - 1st",
       "venue": "Koessler Athletic Center",
       "teams": [
         {
@@ -5332,7 +5068,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-5",
-          "score": null,
+          "score": "31",
           "color": "#4e1e8a",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2710.png",
           "favorite": false
@@ -5345,7 +5081,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "1-5",
-          "score": null,
+          "score": "23",
           "color": null,
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2385.png",
           "favorite": false
@@ -5366,21 +5102,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "MERC -5.5",
-        "overUnder": "129.5",
-        "homeMoneyline": "-245",
-        "awayMoneyline": "+200",
-        "homeAbbreviation": "MERC",
-        "awayAbbreviation": "WIU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 1:30 PM ET · Western Illinois Leathernecks at Mercyhurst Lakers · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919828/w-illinois-mercyhurst",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401919828",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -5405,8 +5133,8 @@
       "name": "South Carolina Gamecocks at Providence Friars",
       "shortName": "SC @ PROV",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:30 PM EST",
+      "status": "in-progress",
+      "statusDetail": "3:58 - 2nd",
       "venue": "Alumni Hall (RI)",
       "teams": [
         {
@@ -5417,7 +5145,7 @@
           "homeAway": "away",
           "rank": 1,
           "record": "5-0",
-          "score": null,
+          "score": "31",
           "color": "#73000a",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
           "favorite": false
@@ -5430,7 +5158,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "12",
           "color": "#a3a19e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png",
           "favorite": false
@@ -5451,21 +5179,13 @@
         "Peacock"
       ],
       "broadcastSummary": "Peacock",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "SC -35.5",
-        "overUnder": "134.5",
-        "homeMoneyline": "OFF",
-        "awayMoneyline": "OFF",
-        "homeAbbreviation": "PROV",
-        "awayAbbreviation": "SC"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:30 PM ET · South Carolina Gamecocks at Providence Friars · NCAAW · Peacock",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401913038/south-carolina-providence",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401913038",
       "mustWatch": true,
       "mustWatchReasons": [
         {
@@ -5495,8 +5215,8 @@
       "name": "Kennesaw State Owls at East Tennessee State Buccaneers",
       "shortName": "KENN @ ETSU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 1:30 PM EST",
+      "status": "in-progress",
+      "statusDetail": "0:00 - 2nd",
       "venue": "Freedom Hall (TN)",
       "teams": [
         {
@@ -5507,7 +5227,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-2",
-          "score": null,
+          "score": "28",
           "color": "#fdbb30",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/338.png",
           "favorite": false
@@ -5520,7 +5240,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-1",
-          "score": null,
+          "score": "41",
           "color": "#002d61",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2193.png",
           "favorite": false
@@ -5547,7 +5267,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 1:30 PM ET · Kennesaw State Owls at East Tennessee State Buccaneers · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401927997/kennesaw-st-etsu",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401927997",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -5572,8 +5292,8 @@
       "name": "Chattanooga Mocs at Alabama Crimson Tide",
       "shortName": "UTC @ ALA",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "10:15 - 1st",
       "venue": "Bryant-Denny Stadium",
       "teams": [
         {
@@ -5584,7 +5304,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "7-4",
-          "score": null,
+          "score": "0",
           "color": "#00386b",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/236.png",
           "favorite": false
@@ -5597,7 +5317,7 @@
           "homeAway": "home",
           "rank": 3,
           "record": "8-2",
-          "score": null,
+          "score": "0",
           "color": "#9e1b32",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png",
           "favorite": false
@@ -5618,21 +5338,13 @@
         "SECN+"
       ],
       "broadcastSummary": "SECN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "ALA -48.5",
-        "overUnder": "57.5",
-        "homeMoneyline": "OFF",
-        "awayMoneyline": "OFF",
-        "homeAbbreviation": "ALA",
-        "awayAbbreviation": "UTC"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Chattanooga Mocs at Alabama Crimson Tide · NCAAF · Week 12 · SECN+",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401856746/chattanooga-alabama",
+      "link": "https://www.espn.com/college-football/game?gameId=401856746",
       "mustWatch": true,
       "mustWatchReasons": [
         {
@@ -5662,8 +5374,8 @@
       "name": "Charlotte 49ers at Tulsa Golden Hurricane",
       "shortName": "CLT @ TLSA",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "12:39 - 1st",
       "venue": "H. A. Chapman Stadium",
       "teams": [
         {
@@ -5674,7 +5386,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-9",
-          "score": null,
+          "score": "0",
           "color": "#005035",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2429.png",
           "favorite": false
@@ -5687,7 +5399,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "6-4",
-          "score": null,
+          "score": "0",
           "color": "#003595",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/202.png",
           "favorite": false
@@ -5708,21 +5420,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "TLSA -22.5",
-        "overUnder": "51.5",
-        "homeMoneyline": "-2100",
-        "awayMoneyline": "+1100",
-        "homeAbbreviation": "TLSA",
-        "awayAbbreviation": "CLT"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Charlotte 49ers at Tulsa Golden Hurricane · NCAAF · Week 12 · ESPN+",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401862832/charlotte-tulsa",
+      "link": "https://www.espn.com/college-football/game?gameId=401862832",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -5747,8 +5451,8 @@
       "name": "Missouri State Bears at Jacksonville State Gamecocks",
       "shortName": "MOST @ JXST",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "11:51 - 1st",
       "venue": "AmFirst Stadium",
       "teams": [
         {
@@ -5759,7 +5463,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-6",
-          "score": null,
+          "score": "0",
           "color": "#5e0009",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2623.png",
           "favorite": false
@@ -5772,7 +5476,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "7-3",
-          "score": null,
+          "score": "0",
           "color": "#cc0000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/55.png",
           "favorite": false
@@ -5793,21 +5497,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "JXST -10.5",
-        "overUnder": "52.5",
-        "homeMoneyline": "-410",
-        "awayMoneyline": "+320",
-        "homeAbbreviation": "JXST",
-        "awayAbbreviation": "MOST"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Missouri State Bears at Jacksonville State Gamecocks · NCAAF · Week 12 · ESPN+",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401871079/missouri-st-jax-state",
+      "link": "https://www.espn.com/college-football/game?gameId=401871079",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -5832,8 +5528,8 @@
       "name": "Middle Tennessee Blue Raiders at Sam Houston Bearkats",
       "shortName": "MTSU @ SHSU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "11:56 - 1st",
       "venue": "Elliott T. Bowers Stadium",
       "teams": [
         {
@@ -5844,7 +5540,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "5-5",
-          "score": null,
+          "score": "7",
           "color": "#036eb7",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2393.png",
           "favorite": false
@@ -5857,7 +5553,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "1-9",
-          "score": null,
+          "score": "0",
           "color": "#f56423",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2534.png",
           "favorite": false
@@ -5878,21 +5574,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "MTSU -6.5",
-        "overUnder": "47.5",
-        "homeMoneyline": "+190",
-        "awayMoneyline": "-230",
-        "homeAbbreviation": "SHSU",
-        "awayAbbreviation": "MTSU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#8fd6a6",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Middle Tennessee Blue Raiders at Sam Houston Bearkats · NCAAF · Week 12 · ESPN+",
-      "link": "https://www.espn.com/college-football/game/_/gameId/401871081/mtsu-sam-houston",
+      "link": "https://www.espn.com/college-football/game?gameId=401871081",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -5917,8 +5605,8 @@
       "name": "Lafayette Leopards at Syracuse Orange",
       "shortName": "LAF @ SYR",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "15:28 - 1st",
       "venue": "JMA Wireless Dome",
       "teams": [
         {
@@ -5929,7 +5617,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-3",
-          "score": null,
+          "score": "4",
           "color": "#790000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/322.png",
           "favorite": false
@@ -5942,7 +5630,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-2",
-          "score": null,
+          "score": "8",
           "color": "#000e54",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png",
           "favorite": false
@@ -5963,21 +5651,13 @@
         "ACCNX"
       ],
       "broadcastSummary": "ACCNX",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "SYR -24.5",
-        "overUnder": "142.5",
-        "homeMoneyline": "-8000",
-        "awayMoneyline": "+2200",
-        "homeAbbreviation": "SYR",
-        "awayAbbreviation": "LAF"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Lafayette Leopards at Syracuse Orange · NCAAM · ACCNX",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401909719/lafayette-syracuse",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401909719",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6002,8 +5682,8 @@
       "name": "Western Carolina Catamounts at Wake Forest Demon Deacons",
       "shortName": "WCU @ WAKE",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "14:09 - 1st",
       "venue": "LJVM Coliseum",
       "teams": [
         {
@@ -6014,7 +5694,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "5",
           "color": "#492f91",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2717.png",
           "favorite": false
@@ -6027,7 +5707,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-1",
-          "score": null,
+          "score": "9",
           "color": "#ceb888",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/154.png",
           "favorite": false
@@ -6048,21 +5728,13 @@
         "ACCNX"
       ],
       "broadcastSummary": "ACCNX",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "WAKE -14.5",
-        "overUnder": "147.5",
-        "homeMoneyline": "-1450",
-        "awayMoneyline": "+850",
-        "homeAbbreviation": "WAKE",
-        "awayAbbreviation": "WCU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Western Carolina Catamounts at Wake Forest Demon Deacons · NCAAM · ACCNX",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401909730/w-carolina-wake-forest",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401909730",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6087,8 +5759,8 @@
       "name": "Northern Illinois Huskies at Bowling Green Falcons",
       "shortName": "NIU @ BGSU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "15:26 - 1st",
       "venue": "Stroh Center",
       "teams": [
         {
@@ -6099,7 +5771,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-3",
-          "score": null,
+          "score": "7",
           "color": "#c8102e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png",
           "favorite": false
@@ -6112,7 +5784,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-1",
-          "score": null,
+          "score": "9",
           "color": "#fd5000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/189.png",
           "favorite": false
@@ -6133,21 +5805,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "BGSU -5.5",
-        "overUnder": "147.5",
-        "homeMoneyline": "-225",
-        "awayMoneyline": "+185",
-        "homeAbbreviation": "BGSU",
-        "awayAbbreviation": "NIU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Northern Illinois Huskies at Bowling Green Falcons · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401911022/n-illinois-bowling-green",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401911022",
       "mustWatch": true,
       "mustWatchReasons": [
         {
@@ -6177,8 +5841,8 @@
       "name": "Fordham Rams at Portland Pilots",
       "shortName": "FOR VS PORT",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "15:46 - 1st",
       "venue": "Acrisure Arena",
       "teams": [
         {
@@ -6189,7 +5853,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-1",
-          "score": null,
+          "score": "13",
           "color": "#830032",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2230.png",
           "favorite": false
@@ -6202,7 +5866,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-2",
-          "score": null,
+          "score": "0",
           "color": "#330072",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2501.png",
           "favorite": false
@@ -6223,21 +5887,13 @@
         "FloSports"
       ],
       "broadcastSummary": "FloSports",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "FOR -4.5",
-        "overUnder": "151.5",
-        "homeMoneyline": "+170",
-        "awayMoneyline": "-205",
-        "homeAbbreviation": "PORT",
-        "awayAbbreviation": "FOR"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Fordham Rams at Portland Pilots · NCAAM · FloSports",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401911199/fordham-portland",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401911199",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6262,8 +5918,8 @@
       "name": "New Mexico Lobos at Wichita State Shockers",
       "shortName": "UNM @ WICH",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "14:31 - 1st",
       "venue": "Charles Koch Arena",
       "teams": [
         {
@@ -6274,7 +5930,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-1",
-          "score": null,
+          "score": "6",
           "color": "#ba0c2f",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/167.png",
           "favorite": false
@@ -6287,7 +5943,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-1",
-          "score": null,
+          "score": "10",
           "color": "#ffcd00",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2724.png",
           "favorite": false
@@ -6308,21 +5964,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "UNM -1.5",
-        "overUnder": "156.5",
-        "homeMoneyline": "+110",
-        "awayMoneyline": "-130",
-        "homeAbbreviation": "WICH",
-        "awayAbbreviation": "UNM"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · New Mexico Lobos at Wichita State Shockers · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401919031/new-mexico-wichita-st",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401919031",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6347,8 +5995,8 @@
       "name": "Penn State Behrend Lions at Colgate Raiders",
       "shortName": "PSBH @ COLG",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "15:57 - 1st",
       "venue": "Cotterell Court",
       "teams": [
         {
@@ -6359,7 +6007,7 @@
           "homeAway": "away",
           "rank": null,
           "record": null,
-          "score": null,
+          "score": "6",
           "color": null,
           "logo": null,
           "favorite": false
@@ -6372,7 +6020,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "1-4",
-          "score": null,
+          "score": "9",
           "color": "#821019",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2142.png",
           "favorite": false
@@ -6399,7 +6047,7 @@
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Penn State Behrend Lions at Colgate Raiders · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920773/psu-behrend-colgate",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401920773",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6424,8 +6072,8 @@
       "name": "Navy Midshipmen at Rider Broncs",
       "shortName": "NAVY @ RID",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "14:58 - 1st",
       "venue": "Canastra Hammer Arena",
       "teams": [
         {
@@ -6436,7 +6084,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-2",
-          "score": null,
+          "score": "6",
           "color": "#00225b",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2426.png",
           "favorite": false
@@ -6449,7 +6097,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "1-5",
-          "score": null,
+          "score": "14",
           "color": "#a80532",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2520.png",
           "favorite": false
@@ -6470,21 +6118,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "NAVY -4.5",
-        "overUnder": "134.5",
-        "homeMoneyline": "+170",
-        "awayMoneyline": "-205",
-        "homeAbbreviation": "RID",
-        "awayAbbreviation": "NAVY"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Navy Midshipmen at Rider Broncs · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921222/navy-rider",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401921222",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6509,8 +6149,8 @@
       "name": "Little Rock Trojans at North Florida Ospreys",
       "shortName": "LR @ UNF",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "16:41 - 1st",
       "venue": "UNF Arena",
       "teams": [
         {
@@ -6521,7 +6161,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "7",
           "color": "#ad0000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2031.png",
           "favorite": false
@@ -6534,7 +6174,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "4",
           "color": "#004b8d",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2454.png",
           "favorite": false
@@ -6555,21 +6195,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "LR -4.5",
-        "overUnder": "159.5",
-        "homeMoneyline": "+170",
-        "awayMoneyline": "-205",
-        "homeAbbreviation": "UNF",
-        "awayAbbreviation": "LR"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Little Rock Trojans at North Florida Ospreys · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401922222/little-rock-north-florida",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401922222",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6594,8 +6226,8 @@
       "name": "Cornell Big Red at Morgan State Bears",
       "shortName": "COR @ MORG",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "15:56 - 1st",
       "venue": "Hill Field House",
       "teams": [
         {
@@ -6606,7 +6238,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "13",
           "color": "#b31b1b",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/172.png",
           "favorite": false
@@ -6619,7 +6251,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-2",
-          "score": null,
+          "score": "6",
           "color": "#014786",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2415.png",
           "favorite": false
@@ -6629,21 +6261,13 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "COR -5.5",
-        "overUnder": "162.5",
-        "homeMoneyline": "+210",
-        "awayMoneyline": "-258",
-        "homeAbbreviation": "MORG",
-        "awayAbbreviation": "COR"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Cornell Big Red at Morgan State Bears · NCAAM · channel not announced",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924722/cornell-morgan-st",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401924722",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6668,8 +6292,8 @@
       "name": "Stony Brook Seawolves at Saint Peter's Peacocks",
       "shortName": "STBK @ SPU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "15:44 - 1st",
       "venue": "Yanitelli Center",
       "teams": [
         {
@@ -6680,7 +6304,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-2",
-          "score": null,
+          "score": "11",
           "color": "#990000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2619.png",
           "favorite": false
@@ -6693,7 +6317,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "0-5",
-          "score": null,
+          "score": "7",
           "color": "#004cc2",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2612.png",
           "favorite": false
@@ -6714,21 +6338,13 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "STBK -5.5",
-        "overUnder": "125.5",
-        "homeMoneyline": "+180",
-        "awayMoneyline": "-218",
-        "homeAbbreviation": "SPU",
-        "awayAbbreviation": "STBK"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Stony Brook Seawolves at Saint Peter's Peacocks · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401924882/stony-brook-saint-peters",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401924882",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6753,8 +6369,8 @@
       "name": "Calumet St. Joseph Crimson Wave at Purdue Fort Wayne Mastodons",
       "shortName": "CSJ @ PFW",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "14:54 - 1st",
       "venue": "Hilliard Gates Sports Center",
       "teams": [
         {
@@ -6765,7 +6381,7 @@
           "homeAway": "away",
           "rank": null,
           "record": null,
-          "score": null,
+          "score": "4",
           "color": null,
           "logo": null,
           "favorite": false
@@ -6778,7 +6394,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-2",
-          "score": null,
+          "score": "8",
           "color": "#cfb991",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2870.png",
           "favorite": false
@@ -6805,7 +6421,7 @@
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Calumet St. Joseph Crimson Wave at Purdue Fort Wayne Mastodons · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401928819/calumet-purdue-fw",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401928819",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6830,8 +6446,8 @@
       "name": "Virginia Lynchburg Dragons at James Madison Dukes",
       "shortName": "VUL @ JMU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "14:31 - 1st",
       "venue": "Atlantic Union Bank Center",
       "teams": [
         {
@@ -6842,7 +6458,7 @@
           "homeAway": "away",
           "rank": null,
           "record": null,
-          "score": null,
+          "score": "10",
           "color": null,
           "logo": null,
           "favorite": false
@@ -6855,7 +6471,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-2",
-          "score": null,
+          "score": "19",
           "color": "#450084",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
           "favorite": false
@@ -6882,7 +6498,7 @@
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Virginia Lynchburg Dragons at James Madison Dukes · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401929452/va-lynchburg-james-madison",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401929452",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -6955,10 +6571,10 @@
       "broadcastSummary": "Apple TV",
       "odds": {
         "provider": "DraftKings",
-        "spread": "PHI +120",
-        "overUnder": "2.5",
-        "homeMoneyline": "+200",
-        "awayMoneyline": "+120",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": "OFF",
+        "awayMoneyline": "OFF",
         "homeAbbreviation": "NE",
         "awayAbbreviation": "PHI"
       },
@@ -6997,8 +6613,8 @@
       "name": "Loyola Chicago Ramblers at Western Illinois Leathernecks",
       "shortName": "LUC @ WIU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "6:21 - 1st",
       "venue": "Western Hall",
       "teams": [
         {
@@ -7009,7 +6625,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "2",
           "color": "#9d1244",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2350.png",
           "favorite": false
@@ -7022,7 +6638,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-1",
-          "score": null,
+          "score": "11",
           "color": "#4e1e8a",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2710.png",
           "favorite": false
@@ -7049,7 +6665,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Loyola Chicago Ramblers at Western Illinois Leathernecks · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401911758/loyola-chicago-w-illinois",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401911758",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7074,8 +6690,8 @@
       "name": "Delaware State Hornets at Rutgers Scarlet Knights",
       "shortName": "DSU @ RUTG",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "5:18 - 1st",
       "venue": "Jersey Mike’s Arena",
       "teams": [
         {
@@ -7086,7 +6702,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-4",
-          "score": null,
+          "score": "3",
           "color": "#009cdb",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2169.png",
           "favorite": false
@@ -7099,7 +6715,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "6-0",
-          "score": null,
+          "score": "6",
           "color": "#ce0e2d",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/164.png",
           "favorite": false
@@ -7126,7 +6742,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Delaware State Hornets at Rutgers Scarlet Knights · NCAAW · B1G+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401913009/delaware-st-rutgers",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401913009",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7151,8 +6767,8 @@
       "name": "Canisius Golden Griffins at Pittsburgh Panthers",
       "shortName": "CAN @ PITT",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:21 - 1st",
       "venue": "Petersen Events Center",
       "teams": [
         {
@@ -7163,7 +6779,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-2",
-          "score": null,
+          "score": "10",
           "color": "#004a81",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2099.png",
           "favorite": false
@@ -7176,7 +6792,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-0",
-          "score": null,
+          "score": "16",
           "color": "#003594",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/221.png",
           "favorite": false
@@ -7203,7 +6819,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Canisius Golden Griffins at Pittsburgh Panthers · NCAAW · ACCNX",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401913749/canisius-pitt",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401913749",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7228,8 +6844,8 @@
       "name": "Cornell Big Red at UAlbany Great Danes",
       "shortName": "COR @ UALB",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:13 - 1st",
       "venue": "Broadview Center",
       "teams": [
         {
@@ -7240,7 +6856,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-2",
-          "score": null,
+          "score": "8",
           "color": "#b31b1b",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/172.png",
           "favorite": false
@@ -7253,7 +6869,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-2",
-          "score": null,
+          "score": "2",
           "color": "#3d2777",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/399.png",
           "favorite": false
@@ -7280,7 +6896,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Cornell Big Red at UAlbany Great Danes · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401913802/cornell-ualbany",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401913802",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7305,8 +6921,8 @@
       "name": "Coker Cobras at Queens University Royals",
       "shortName": "COKR @ QUC",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "5:20 - 1st",
       "venue": "Curry Arena",
       "teams": [
         {
@@ -7317,7 +6933,7 @@
           "homeAway": "away",
           "rank": null,
           "record": null,
-          "score": null,
+          "score": "9",
           "color": null,
           "logo": null,
           "favorite": false
@@ -7330,7 +6946,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "5",
           "color": "#192c66",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2511.png",
           "favorite": false
@@ -7357,7 +6973,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Coker Cobras at Queens University Royals · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401913887/coker-queens",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401913887",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7382,8 +6998,8 @@
       "name": "Tarleton State Texans at Nicholls Colonels",
       "shortName": "TAR @ NICH",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:46 - 1st",
       "venue": "David R. Stopher Gymnasium",
       "teams": [
         {
@@ -7394,7 +7010,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "4",
           "color": null,
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2627.png",
           "favorite": false
@@ -7407,7 +7023,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-3",
-          "score": null,
+          "score": "4",
           "color": "#c41230",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2447.png",
           "favorite": false
@@ -7434,7 +7050,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Tarleton State Texans at Nicholls Colonels · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401918435/tarleton-st-nicholls",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401918435",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7459,8 +7075,8 @@
       "name": "La Salle Explorers at American University Eagles",
       "shortName": "LAS @ AMER",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "5:26 - 1st",
       "venue": "Bender Arena",
       "teams": [
         {
@@ -7471,7 +7087,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-3",
-          "score": null,
+          "score": "14",
           "color": "#003356",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2325.png",
           "favorite": false
@@ -7484,7 +7100,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "0-4",
-          "score": null,
+          "score": "3",
           "color": "#c41130",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/44.png",
           "favorite": false
@@ -7511,7 +7127,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · La Salle Explorers at American University Eagles · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401919467/la-salle-american",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401919467",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7536,8 +7152,8 @@
       "name": "Maryland Eastern Shore Hawks at Monmouth Hawks",
       "shortName": "UMES @ MONM",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "5:20 - 1st",
       "venue": "Hackensack Meridian Athletic Center",
       "teams": [
         {
@@ -7548,7 +7164,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-4",
-          "score": null,
+          "score": "8",
           "color": "#5c2301",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2379.png",
           "favorite": false
@@ -7561,7 +7177,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-1",
-          "score": null,
+          "score": "8",
           "color": "#051844",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2405.png",
           "favorite": false
@@ -7577,7 +7193,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Maryland Eastern Shore Hawks at Monmouth Hawks · NCAAW · channel not announced",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401919627/md-eastern-monmouth",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401919627",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7602,8 +7218,8 @@
       "name": "Lindenwood Lions at Evansville Purple Aces",
       "shortName": "LIN @ EVAN",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "5:40 - 1st",
       "venue": "Meeks Family Fieldhouse",
       "teams": [
         {
@@ -7614,7 +7230,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-5",
-          "score": null,
+          "score": "0",
           "color": null,
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2815.png",
           "favorite": false
@@ -7627,7 +7243,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "0-5",
-          "score": null,
+          "score": "8",
           "color": "#663399",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/339.png",
           "favorite": false
@@ -7654,7 +7270,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Lindenwood Lions at Evansville Purple Aces · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401919683/lindenwood-evansville",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401919683",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7679,8 +7295,8 @@
       "name": "Northern Illinois Huskies at Northwestern Wildcats",
       "shortName": "NIU @ NU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:41 - 1st",
       "venue": "Welsh-Ryan Arena",
       "teams": [
         {
@@ -7691,7 +7307,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "2-2",
-          "score": null,
+          "score": "0",
           "color": "#c8102e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2459.png",
           "favorite": false
@@ -7704,7 +7320,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-4",
-          "score": null,
+          "score": "7",
           "color": "#492f92",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png",
           "favorite": false
@@ -7731,7 +7347,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Northern Illinois Huskies at Northwestern Wildcats · NCAAW · B1G+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401919969/n-illinois-northwestern",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401919969",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7756,8 +7372,8 @@
       "name": "Houston Christian Huskies at Houston Cougars",
       "shortName": "HCU @ HOU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "6:48 - 1st",
       "venue": "Fertitta Center",
       "teams": [
         {
@@ -7768,7 +7384,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-5",
-          "score": null,
+          "score": "6",
           "color": "#00539c",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2277.png",
           "favorite": false
@@ -7781,7 +7397,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-0",
-          "score": null,
+          "score": "7",
           "color": "#c8102e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png",
           "favorite": false
@@ -7808,7 +7424,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Houston Christian Huskies at Houston Cougars · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401923003/hou-christian-houston",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401923003",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7833,8 +7449,8 @@
       "name": "Presbyterian Blue Hose at Wofford Terriers",
       "shortName": "PRES @ WOF",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:34 - 1st",
       "venue": "Jerry Richardson Indoor Stadium",
       "teams": [
         {
@@ -7845,7 +7461,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-4",
-          "score": null,
+          "score": "4",
           "color": "#194896",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2506.png",
           "favorite": false
@@ -7858,7 +7474,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-3",
-          "score": null,
+          "score": "11",
           "color": "#533b24",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2747.png",
           "favorite": false
@@ -7885,7 +7501,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Presbyterian Blue Hose at Wofford Terriers · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401927038/presbyterian-wofford",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401927038",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7910,8 +7526,8 @@
       "name": "South Carolina Upstate Spartans at Tennessee Tech Golden Eagles",
       "shortName": "UPST @ TNTC",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:30 - 1st",
       "venue": "Hooper Eblen Center",
       "teams": [
         {
@@ -7922,7 +7538,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-2",
-          "score": null,
+          "score": "11",
           "color": "#008545",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2908.png",
           "favorite": false
@@ -7935,7 +7551,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "1-3",
-          "score": null,
+          "score": "10",
           "color": "#5a4099",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2635.png",
           "favorite": false
@@ -7962,7 +7578,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · South Carolina Upstate Spartans at Tennessee Tech Golden Eagles · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401927097/sc-upstate-tennessee-tech",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401927097",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -7987,8 +7603,8 @@
       "name": "Long Beach State Beach at San José State Spartans",
       "shortName": "LBSU @ SJSU",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "6:00 - 1st",
       "venue": "Provident Credit Union Event Center",
       "teams": [
         {
@@ -7999,7 +7615,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "0-3",
-          "score": null,
+          "score": "3",
           "color": "#f1f2f3",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/299.png",
           "favorite": false
@@ -8012,7 +7628,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "1-3",
-          "score": null,
+          "score": "7",
           "color": "#0038a8",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/23.png",
           "favorite": false
@@ -8039,7 +7655,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Long Beach State Beach at San José State Spartans · NCAAW · MW+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401927840/long-beach-st-san-jose-st",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401927840",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -8064,8 +7680,8 @@
       "name": "Ball State Cardinals at UIC Flames",
       "shortName": "BALL @ UIC",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/21 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:48 - 1st",
       "venue": "Credit Union 1 Arena",
       "teams": [
         {
@@ -8076,7 +7692,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-3",
-          "score": null,
+          "score": "8",
           "color": "#ba0c2f",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2050.png",
           "favorite": false
@@ -8089,7 +7705,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-2",
-          "score": null,
+          "score": "9",
           "color": "#001e62",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/82.png",
           "favorite": false
@@ -8116,7 +7732,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sat, Nov 21 · 2:00 PM ET · Ball State Cardinals at UIC Flames · NCAAW · ESPN+",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401929143/ball-state-uic",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401929143",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -8283,10 +7899,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "USF -1.5",
+        "spread": "USF -2.5",
         "overUnder": "63.5",
-        "homeMoneyline": "-105",
-        "awayMoneyline": "-115",
+        "homeMoneyline": "+105",
+        "awayMoneyline": "-125",
         "homeAbbreviation": "FAU",
         "awayAbbreviation": "USF"
       },
@@ -8519,10 +8135,10 @@
       "broadcastSummary": null,
       "odds": {
         "provider": "DraftKings",
-        "spread": "STR +125",
+        "spread": "STR +120",
         "overUnder": "2.5",
-        "homeMoneyline": "+125",
-        "awayMoneyline": "+215",
+        "homeMoneyline": "+120",
+        "awayMoneyline": "+225",
         "homeAbbreviation": "STR",
         "awayAbbreviation": "BRE"
       },
@@ -8604,10 +8220,10 @@
       "broadcastSummary": "beIn Sports",
       "odds": {
         "provider": "DraftKings",
-        "spread": "MON -240",
+        "spread": "MON -255",
         "overUnder": "2.5",
-        "homeMoneyline": "-240",
-        "awayMoneyline": "+650",
+        "homeMoneyline": "-255",
+        "awayMoneyline": "+700",
         "homeAbbreviation": "MON",
         "awayAbbreviation": "AUX"
       },
@@ -8837,9 +8453,9 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "NAP -200",
+        "spread": "NAP -190",
         "overUnder": "2.5",
-        "homeMoneyline": "-200",
+        "homeMoneyline": "-190",
         "awayMoneyline": "+475",
         "homeAbbreviation": "NAP",
         "awayAbbreviation": "TOR"
@@ -9007,10 +8623,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "DEL -3",
+        "spread": "DEL -2.5",
         "overUnder": "53.5",
-        "homeMoneyline": "+130",
-        "awayMoneyline": "-155",
+        "homeMoneyline": "+114",
+        "awayMoneyline": "-135",
         "homeAbbreviation": "NMSU",
         "awayAbbreviation": "DEL"
       },
@@ -9094,8 +8710,8 @@
         "provider": "DraftKings",
         "spread": "KENN -2.5",
         "overUnder": "44.5",
-        "homeMoneyline": "-125",
-        "awayMoneyline": "+105",
+        "homeMoneyline": "-122",
+        "awayMoneyline": "+102",
         "homeAbbreviation": "KENN",
         "awayAbbreviation": "FIU"
       },
@@ -9272,10 +8888,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "APSU -4.5",
+        "spread": "APSU -5.5",
         "overUnder": "143.5",
-        "homeMoneyline": "-192",
-        "awayMoneyline": "+160",
+        "homeMoneyline": "-218",
+        "awayMoneyline": "+180",
         "homeAbbreviation": "APSU",
         "awayAbbreviation": "RGV"
       },
@@ -9358,9 +8974,9 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "MTSU -2.5",
-        "overUnder": "149.5",
-        "homeMoneyline": "+124",
-        "awayMoneyline": "-148",
+        "overUnder": "148.5",
+        "homeMoneyline": "+120",
+        "awayMoneyline": "-142",
         "homeAbbreviation": "INST",
         "awayAbbreviation": "MTSU"
       },
@@ -10455,7 +10071,7 @@
       "broadcastSummary": "FS1",
       "odds": {
         "provider": "DraftKings",
-        "spread": "PSU -26.5",
+        "spread": "PSU -25.5",
         "overUnder": "48.5",
         "homeMoneyline": "-3200",
         "awayMoneyline": "+1400",
@@ -10541,9 +10157,9 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "IU -9.5",
-        "overUnder": "43.5",
-        "homeMoneyline": "+270",
-        "awayMoneyline": "-340",
+        "overUnder": "44.5",
+        "homeMoneyline": "+280",
+        "awayMoneyline": "-355",
         "homeAbbreviation": "WASH",
         "awayAbbreviation": "IU"
       },
@@ -10630,7 +10246,7 @@
       "broadcastSummary": "CBS Sports Network",
       "odds": {
         "provider": "DraftKings",
-        "spread": "CONN -13.5",
+        "spread": "CONN -14",
         "overUnder": "48.5",
         "homeMoneyline": "-600",
         "awayMoneyline": "+440",
@@ -10716,7 +10332,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "ARMY -1.5",
-        "overUnder": "136.5",
+        "overUnder": "137.5",
         "homeMoneyline": "+100",
         "awayMoneyline": "-120",
         "homeAbbreviation": "BING",
@@ -11652,7 +11268,7 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "ETSU -5.5",
+        "spread": "ETSU -4.5",
         "overUnder": "141.5",
         "homeMoneyline": "-225",
         "awayMoneyline": "+185",
@@ -11737,10 +11353,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "UALB -1.5",
-        "overUnder": "141.5",
-        "homeMoneyline": "+110",
-        "awayMoneyline": "-130",
+        "spread": "UALB -2.5",
+        "overUnder": "140.5",
+        "homeMoneyline": "+124",
+        "awayMoneyline": "-148",
         "homeAbbreviation": "CAN",
         "awayAbbreviation": "UALB"
       },
@@ -11965,10 +11581,10 @@
       "broadcastSummary": "Apple TV",
       "odds": {
         "provider": "DraftKings",
-        "spread": "DAL -115",
+        "spread": "DAL -120",
         "overUnder": "3.5",
-        "homeMoneyline": "-115",
-        "awayMoneyline": "+245",
+        "homeMoneyline": "-120",
+        "awayMoneyline": "+260",
         "homeAbbreviation": "DAL",
         "awayAbbreviation": "POR"
       },
@@ -12287,9 +11903,9 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "UCI -4.5",
-        "overUnder": "132.5",
-        "homeMoneyline": "+170",
-        "awayMoneyline": "-205",
+        "overUnder": "134.5",
+        "homeMoneyline": "+164",
+        "awayMoneyline": "-198",
         "homeAbbreviation": "USD",
         "awayAbbreviation": "UCI"
       },
@@ -12371,10 +11987,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "UTSA -6.5",
+        "spread": "UTSA -5.5",
         "overUnder": "173.5",
-        "homeMoneyline": "-270",
-        "awayMoneyline": "+220",
+        "homeMoneyline": "-238",
+        "awayMoneyline": "+195",
         "homeAbbreviation": "UTSA",
         "awayAbbreviation": "AF"
       },
@@ -12456,10 +12072,10 @@
       "broadcastSummary": "NEC Front Row",
       "odds": {
         "provider": "DraftKings",
-        "spread": "NE -8.5",
-        "overUnder": "147.5",
-        "homeMoneyline": "+300",
-        "awayMoneyline": "-380",
+        "spread": "NE -9.5",
+        "overUnder": "146.5",
+        "homeMoneyline": "+310",
+        "awayMoneyline": "-395",
         "homeAbbreviation": "STO",
         "awayAbbreviation": "NE"
       },
@@ -12627,7 +12243,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "WOF -6.5",
-        "overUnder": "164.5",
+        "overUnder": "163.5",
         "homeMoneyline": "-270",
         "awayMoneyline": "+220",
         "homeAbbreviation": "WOF",
@@ -12709,7 +12325,15 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": null,
+      "odds": {
+        "provider": "DraftKings",
+        "spread": "UNC -4.5",
+        "overUnder": "136.5",
+        "homeMoneyline": "-218",
+        "awayMoneyline": "+180",
+        "homeAbbreviation": "UNC",
+        "awayAbbreviation": "ALA"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -13180,8 +12804,8 @@
         "provider": "DraftKings",
         "spread": "TXST -13.5",
         "overUnder": "61.5",
-        "homeMoneyline": "-535",
-        "awayMoneyline": "+400",
+        "homeMoneyline": "-575",
+        "awayMoneyline": "+425",
         "homeAbbreviation": "TXST",
         "awayAbbreviation": "WSU"
       },
@@ -13510,7 +13134,7 @@
         "spread": "SAN +140",
         "overUnder": "2.5",
         "homeMoneyline": "+140",
-        "awayMoneyline": "+165",
+        "awayMoneyline": "+175",
         "homeAbbreviation": "SAN",
         "awayAbbreviation": "LEO"
       },
@@ -13967,7 +13591,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "USC -17.5",
-        "overUnder": "57.5",
+        "overUnder": "56.5",
         "homeMoneyline": "-950",
         "awayMoneyline": "+625",
         "homeAbbreviation": "USC",
@@ -14147,7 +13771,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "MIA -20.5",
-        "overUnder": "60.5",
+        "overUnder": "61.5",
         "homeMoneyline": "-1650",
         "awayMoneyline": "+950",
         "homeAbbreviation": "MIA",
@@ -14576,10 +14200,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "VMI -8.5",
+        "spread": "VMI -7.5",
         "overUnder": "145.5",
-        "homeMoneyline": "-375",
-        "awayMoneyline": "+295",
+        "homeMoneyline": "-340",
+        "awayMoneyline": "+270",
         "homeAbbreviation": "VMI",
         "awayAbbreviation": "GWEB"
       },
@@ -14663,8 +14287,8 @@
         "provider": "DraftKings",
         "spread": "LMU -13.5",
         "overUnder": "135.5",
-        "homeMoneyline": "-1350",
-        "awayMoneyline": "+800",
+        "homeMoneyline": "-1200",
+        "awayMoneyline": "+750",
         "homeAbbreviation": "LMU",
         "awayAbbreviation": "CBU"
       },
@@ -14747,7 +14371,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "CP -7.5",
-        "overUnder": "156.5",
+        "overUnder": "154.5",
         "homeMoneyline": "-375",
         "awayMoneyline": "+295",
         "homeAbbreviation": "CP",
@@ -14916,10 +14540,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "UTC -8.5",
-        "overUnder": "152.5",
-        "homeMoneyline": "-395",
-        "awayMoneyline": "+310",
+        "spread": "UTC -7.5",
+        "overUnder": "151.5",
+        "homeMoneyline": "-355",
+        "awayMoneyline": "+280",
         "homeAbbreviation": "UTC",
         "awayAbbreviation": "RAD"
       },
@@ -15105,10 +14729,10 @@
       "broadcastSummary": "ESPN+ · NESN · MNMT",
       "odds": {
         "provider": "DraftKings",
-        "spread": "BOS -125",
+        "spread": "BOS -135",
         "overUnder": "6.5",
-        "homeMoneyline": "-125",
-        "awayMoneyline": "+105",
+        "homeMoneyline": "-135",
+        "awayMoneyline": "+114",
         "homeAbbreviation": "BOS",
         "awayAbbreviation": "WSH"
       },
@@ -15294,10 +14918,10 @@
       "broadcastSummary": "NHL Network · NBC Sports Phil",
       "odds": {
         "provider": "DraftKings",
-        "spread": "MTL -155",
+        "spread": "MTL -162",
         "overUnder": "5.5",
-        "homeMoneyline": "-155",
-        "awayMoneyline": "+130",
+        "homeMoneyline": "-162",
+        "awayMoneyline": "+136",
         "homeAbbreviation": "MTL",
         "awayAbbreviation": "PHI"
       },
@@ -15389,10 +15013,10 @@
       "broadcastSummary": "ESPN+ · ABTV",
       "odds": {
         "provider": "DraftKings",
-        "spread": "OTT -175",
+        "spread": "OTT -185",
         "overUnder": "5.5",
-        "homeMoneyline": "-175",
-        "awayMoneyline": "+145",
+        "homeMoneyline": "-185",
+        "awayMoneyline": "+154",
         "homeAbbreviation": "OTT",
         "awayAbbreviation": "LA"
       },
@@ -15783,7 +15407,15 @@
         "ESPN+"
       ],
       "broadcastSummary": "ESPN+",
-      "odds": null,
+      "odds": {
+        "provider": "DraftKings",
+        "spread": "DUKE -17.5",
+        "overUnder": "134.5",
+        "homeMoneyline": "+1000",
+        "awayMoneyline": "-1800",
+        "homeAbbreviation": "COLU",
+        "awayAbbreviation": "DUKE"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -16381,8 +16013,8 @@
         "provider": "DraftKings",
         "spread": "ND -20.5",
         "overUnder": "55.5",
-        "homeMoneyline": "-1650",
-        "awayMoneyline": "+950",
+        "homeMoneyline": "-1600",
+        "awayMoneyline": "+900",
         "homeAbbreviation": "ND",
         "awayAbbreviation": "SMU"
       },
@@ -16640,7 +16272,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "TNTC -7.5",
-        "overUnder": "164.5",
+        "overUnder": "163.5",
         "homeMoneyline": "-345",
         "awayMoneyline": "+275",
         "homeAbbreviation": "TNTC",
@@ -16828,7 +16460,7 @@
       "broadcastSummary": "ESPNU",
       "odds": {
         "provider": "DraftKings",
-        "spread": "UTSA -4.5",
+        "spread": "UTSA -4",
         "overUnder": "49.5",
         "homeMoneyline": "+160",
         "awayMoneyline": "-192",
@@ -16991,7 +16623,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "ORU -3.5",
-        "overUnder": "139.5",
+        "overUnder": "140.5",
         "homeMoneyline": "-155",
         "awayMoneyline": "+130",
         "homeAbbreviation": "ORU",
@@ -17076,7 +16708,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "VAL -4.5",
-        "overUnder": "138.5",
+        "overUnder": "136.5",
         "homeMoneyline": "-192",
         "awayMoneyline": "+160",
         "homeAbbreviation": "VAL",
@@ -17149,9 +16781,9 @@
       "broadcastSummary": null,
       "odds": {
         "provider": "DraftKings",
-        "spread": "UNAM +160",
+        "spread": "MTY +160",
         "overUnder": "2.5",
-        "homeMoneyline": "+160",
+        "homeMoneyline": "+165",
         "awayMoneyline": "+160",
         "homeAbbreviation": "UNAM",
         "awayAbbreviation": "MTY"
@@ -17255,8 +16887,8 @@
         "provider": "DraftKings",
         "spread": "DAL -5.5",
         "overUnder": "230.5",
-        "homeMoneyline": "-217",
-        "awayMoneyline": "+180",
+        "homeMoneyline": "-204",
+        "awayMoneyline": "+170",
         "homeAbbreviation": "DAL",
         "awayAbbreviation": "LAC"
       },
@@ -17451,9 +17083,9 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "SA -18.5",
-        "overUnder": "228.5",
-        "homeMoneyline": "-1580",
-        "awayMoneyline": "+900",
+        "overUnder": "227.5",
+        "homeMoneyline": "-1740",
+        "awayMoneyline": "+950",
         "homeAbbreviation": "SA",
         "awayAbbreviation": "NO"
       },
@@ -17722,7 +17354,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "TXSO -1.5",
-        "overUnder": "156.5",
+        "overUnder": "154.5",
         "homeMoneyline": "-120",
         "awayMoneyline": "+100",
         "homeAbbreviation": "TXSO",
@@ -18189,10 +17821,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "PAC -9.5",
-        "overUnder": "128.5",
-        "homeMoneyline": "-440",
-        "awayMoneyline": "+340",
+        "spread": "PAC -8.5",
+        "overUnder": "129.5",
+        "homeMoneyline": "-395",
+        "awayMoneyline": "+310",
         "homeAbbreviation": "PAC",
         "awayAbbreviation": "BRAD"
       },
@@ -18263,10 +17895,10 @@
       "broadcastSummary": null,
       "odds": {
         "provider": "DraftKings",
-        "spread": "AME +115",
+        "spread": "AME +110",
         "overUnder": "2.5",
-        "homeMoneyline": "+225",
-        "awayMoneyline": "+115",
+        "homeMoneyline": "+230",
+        "awayMoneyline": "+110",
         "homeAbbreviation": "UANL",
         "awayAbbreviation": "AME"
       },
@@ -18803,10 +18435,10 @@
       "broadcastSummary": "CBS Sports Network",
       "odds": {
         "provider": "DraftKings",
-        "spread": "ORST -7.5",
+        "spread": "ORST -7",
         "overUnder": "51.5",
-        "homeMoneyline": "-290",
-        "awayMoneyline": "+235",
+        "homeMoneyline": "-278",
+        "awayMoneyline": "+225",
         "homeAbbreviation": "ORST",
         "awayAbbreviation": "USU"
       },
@@ -20724,10 +20356,10 @@
       "broadcastSummary": "NHL Network · MSG · CARNHL",
       "odds": {
         "provider": "DraftKings",
-        "spread": "CAR -142",
+        "spread": "CAR -148",
         "overUnder": "6.5",
-        "homeMoneyline": "+120",
-        "awayMoneyline": "-142",
+        "homeMoneyline": "+124",
+        "awayMoneyline": "-148",
         "homeAbbreviation": "NYR",
         "awayAbbreviation": "CAR"
       },
@@ -21358,8 +20990,8 @@
         "provider": "DraftKings",
         "spread": "CAR -3",
         "overUnder": "43.5",
-        "homeMoneyline": "-149",
-        "awayMoneyline": "+126",
+        "homeMoneyline": "-148",
+        "awayMoneyline": "+125",
         "homeAbbreviation": "CAR",
         "awayAbbreviation": "BAL"
       },
@@ -21443,7 +21075,7 @@
         "provider": "DraftKings",
         "spread": "BUF -16.5",
         "overUnder": "44.5",
-        "homeMoneyline": "-1520",
+        "homeMoneyline": "-1540",
         "awayMoneyline": "+880",
         "homeAbbreviation": "BUF",
         "awayAbbreviation": "MIA"
@@ -21528,8 +21160,8 @@
         "provider": "DraftKings",
         "spread": "CHI -11.5",
         "overUnder": "48.5",
-        "homeMoneyline": "-610",
-        "awayMoneyline": "+448",
+        "homeMoneyline": "-573",
+        "awayMoneyline": "+430",
         "homeAbbreviation": "CHI",
         "awayAbbreviation": "NO"
       },
@@ -21613,8 +21245,8 @@
         "provider": "DraftKings",
         "spread": "DET -4.5",
         "overUnder": "46.5",
-        "homeMoneyline": "-221",
-        "awayMoneyline": "+184",
+        "homeMoneyline": "-213",
+        "awayMoneyline": "+178",
         "homeAbbreviation": "DET",
         "awayAbbreviation": "TB"
       },
@@ -21698,8 +21330,8 @@
         "provider": "DraftKings",
         "spread": "DAL -7.5",
         "overUnder": "54.5",
-        "homeMoneyline": "-378",
-        "awayMoneyline": "+301",
+        "homeMoneyline": "-355",
+        "awayMoneyline": "+284",
         "homeAbbreviation": "DAL",
         "awayAbbreviation": "TEN"
       },
@@ -26857,8 +26489,8 @@
         "provider": "DraftKings",
         "spread": "JAX -6",
         "overUnder": "46.5",
-        "homeMoneyline": "+209",
-        "awayMoneyline": "-253",
+        "homeMoneyline": "+211",
+        "awayMoneyline": "-256",
         "homeAbbreviation": "NYG",
         "awayAbbreviation": "JAX"
       },
@@ -26943,7 +26575,7 @@
         "spread": "DEN -10.5",
         "overUnder": "40.5",
         "homeMoneyline": "-620",
-        "awayMoneyline": "+456",
+        "awayMoneyline": "+455",
         "homeAbbreviation": "DEN",
         "awayAbbreviation": "LV"
       },
@@ -29429,10 +29061,10 @@
       "broadcastSummary": "ESPN+ · Prime Video (Local)",
       "odds": {
         "provider": "DraftKings",
-        "spread": "DAL -238",
+        "spread": "DAL -225",
         "overUnder": "6.5",
-        "homeMoneyline": "-238",
-        "awayMoneyline": "+195",
+        "homeMoneyline": "-225",
+        "awayMoneyline": "+185",
         "homeAbbreviation": "DAL",
         "awayAbbreviation": "PIT"
       },
@@ -29909,7 +29541,7 @@
       "broadcastSummary": "ESPN+ · CHSN",
       "odds": {
         "provider": "DraftKings",
-        "spread": "VAN -112",
+        "spread": "CHI -108",
         "overUnder": "6.5",
         "homeMoneyline": "-112",
         "awayMoneyline": "-108",
@@ -30222,7 +29854,7 @@
       "broadcastSummary": "NBC",
       "odds": {
         "provider": "DraftKings",
-        "spread": "SF -3.5",
+        "spread": "SF -3",
         "overUnder": "46.5",
         "homeMoneyline": "-172",
         "awayMoneyline": "+145",
@@ -33102,7 +32734,7 @@
           "abbreviation": "MORG",
           "homeAway": "away",
           "rank": null,
-          "record": "2-5",
+          "record": "2-6",
           "score": null,
           "color": "#014786",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2415.png",
@@ -37276,7 +36908,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "CIN -6",
-        "overUnder": "53.5",
+        "overUnder": "54.5",
         "homeMoneyline": "+247",
         "awayMoneyline": "-303",
         "homeAbbreviation": "WSH",
@@ -37636,7 +37268,7 @@
           "abbreviation": "UNCG",
           "homeAway": "away",
           "rank": null,
-          "record": "3-2",
+          "record": "4-2",
           "score": null,
           "color": "#003559",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2430.png",
@@ -39298,10 +38930,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "AVL +145",
+        "spread": "AVL +140",
         "overUnder": "3.5",
-        "homeMoneyline": "+155",
-        "awayMoneyline": "+145",
+        "homeMoneyline": "+165",
+        "awayMoneyline": "+140",
         "homeAbbreviation": "GAL",
         "awayAbbreviation": "AVL"
       },
@@ -39383,10 +39015,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "BODO -180",
+        "spread": "BODO -175",
         "overUnder": "3.5",
-        "homeMoneyline": "-180",
-        "awayMoneyline": "+370",
+        "homeMoneyline": "-175",
+        "awayMoneyline": "+380",
         "homeAbbreviation": "BODO",
         "awayAbbreviation": "LAS"
       },
@@ -40179,7 +39811,7 @@
           "abbreviation": "GMU",
           "homeAway": "away",
           "rank": null,
-          "record": "3-3",
+          "record": "4-3",
           "score": null,
           "color": "#016600",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2244.png",
@@ -40489,7 +40121,7 @@
           "abbreviation": "DETM",
           "homeAway": "home",
           "rank": null,
-          "record": "0-4",
+          "record": "0-5",
           "score": null,
           "color": "#165b9e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2174.png",
@@ -41599,7 +41231,7 @@
           "abbreviation": "JMU",
           "homeAway": "away",
           "rank": null,
-          "record": "3-3",
+          "record": "3-4",
           "score": null,
           "color": "#450084",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
@@ -43683,7 +43315,7 @@
           "abbreviation": "UCF",
           "homeAway": "home",
           "rank": null,
-          "record": "6-1",
+          "record": "6-2",
           "score": null,
           "color": "#b4a169",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
@@ -45242,7 +44874,7 @@
           "abbreviation": "SIE",
           "homeAway": "home",
           "rank": null,
-          "record": "3-2",
+          "record": "4-2",
           "score": null,
           "color": "#037961",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2561.png",
@@ -46527,7 +46159,7 @@
           "abbreviation": "MD",
           "homeAway": "home",
           "rank": 18,
-          "record": "3-1",
+          "record": "4-1",
           "score": null,
           "color": "#ce1126",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
@@ -48071,7 +47703,7 @@
           "abbreviation": "BUCK",
           "homeAway": "away",
           "rank": null,
-          "record": "1-4",
+          "record": "1-5",
           "score": null,
           "color": "#000060",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2083.png",
@@ -49619,7 +49251,7 @@
           "abbreviation": "UNCG",
           "homeAway": "away",
           "rank": null,
-          "record": "3-2",
+          "record": "4-2",
           "score": null,
           "color": "#003559",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2430.png",
@@ -55412,10 +55044,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "PSG -320",
+        "spread": "PSG -270",
         "overUnder": "3.5",
-        "homeMoneyline": "-320",
-        "awayMoneyline": "+700",
+        "homeMoneyline": "-270",
+        "awayMoneyline": "+550",
         "homeAbbreviation": "PSG",
         "awayAbbreviation": "ROMA"
       },
@@ -57966,7 +57598,7 @@
           "abbreviation": "JMU",
           "homeAway": "home",
           "rank": null,
-          "record": "3-3",
+          "record": "3-4",
           "score": null,
           "color": "#450084",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/256.png",
@@ -58807,7 +58439,7 @@
           "abbreviation": "UPST",
           "homeAway": "away",
           "rank": null,
-          "record": "1-5",
+          "record": "1-6",
           "score": null,
           "color": "#008545",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2908.png",
@@ -63625,7 +63257,7 @@
         "spread": "SKBR +110",
         "overUnder": "3.5",
         "homeMoneyline": "+110",
-        "awayMoneyline": "+205",
+        "awayMoneyline": "+210",
         "homeAbbreviation": "SKBR",
         "awayAbbreviation": "AGF"
       },
@@ -63784,9 +63416,9 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "EGN -170",
+        "spread": "EGN -165",
         "overUnder": "2.5",
-        "homeMoneyline": "-170",
+        "homeMoneyline": "-165",
         "awayMoneyline": "+400",
         "homeAbbreviation": "EGN",
         "awayAbbreviation": "LRI"
@@ -63871,7 +63503,7 @@
         "provider": "DraftKings",
         "spread": "MON -155",
         "overUnder": "3.5",
-        "homeMoneyline": "+350",
+        "homeMoneyline": "+360",
         "awayMoneyline": "-155",
         "homeAbbreviation": "HOM",
         "awayAbbreviation": "MON"
@@ -63956,7 +63588,7 @@
         "provider": "DraftKings",
         "spread": "LUG +110",
         "overUnder": "2.5",
-        "homeMoneyline": "+215",
+        "homeMoneyline": "+220",
         "awayMoneyline": "+110",
         "homeAbbreviation": "JABL",
         "awayAbbreviation": "LUG"
@@ -64127,7 +63759,7 @@
         "spread": "BHA -700",
         "overUnder": "3.5",
         "homeMoneyline": "-700",
-        "awayMoneyline": "+1300",
+        "awayMoneyline": "+1400",
         "homeAbbreviation": "BHA",
         "awayAbbreviation": "UCRA"
       },
@@ -64209,9 +63841,9 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "AJA -550",
+        "spread": "AJA -525",
         "overUnder": "3.5",
-        "homeMoneyline": "-550",
+        "homeMoneyline": "-525",
         "awayMoneyline": "+1000",
         "homeAbbreviation": "AJA",
         "awayAbbreviation": "THUN"
@@ -65841,10 +65473,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "SCF +110",
+        "spread": "SCF +105",
         "overUnder": "3.5",
-        "homeMoneyline": "+110",
-        "awayMoneyline": "+200",
+        "homeMoneyline": "+105",
+        "awayMoneyline": "+205",
         "homeAbbreviation": "SCF",
         "awayAbbreviation": "TWE"
       },
@@ -66720,7 +66352,7 @@
           "abbreviation": "MSU",
           "homeAway": "home",
           "rank": 2,
-          "record": "4-1",
+          "record": "5-1",
           "score": null,
           "color": "#173f35",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
@@ -67308,15 +66940,7 @@
       ],
       "streaming": [],
       "broadcastSummary": "ESPN",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "TTU -10.5",
-        "overUnder": "47.5",
-        "homeMoneyline": "-360",
-        "awayMoneyline": "+285",
-        "homeAbbreviation": "TTU",
-        "awayAbbreviation": "TCU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -67540,7 +67164,7 @@
         "provider": "DraftKings",
         "spread": "BUF -3",
         "overUnder": "51.5",
-        "homeMoneyline": "-160",
+        "homeMoneyline": "-161",
         "awayMoneyline": "+135",
         "homeAbbreviation": "BUF",
         "awayAbbreviation": "KC"
@@ -67758,7 +67382,7 @@
           "abbreviation": "UCF",
           "homeAway": "home",
           "rank": null,
-          "record": "6-1",
+          "record": "6-2",
           "score": null,
           "color": "#b4a169",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
@@ -67967,7 +67591,7 @@
           "abbreviation": "GMU",
           "homeAway": "home",
           "rank": null,
-          "record": "3-3",
+          "record": "4-3",
           "score": null,
           "color": "#016600",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2244.png",
@@ -68725,15 +68349,7 @@
       ],
       "streaming": [],
       "broadcastSummary": "CBS",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "IOWA -6.5",
-        "overUnder": "38.5",
-        "homeMoneyline": "OFF",
-        "awayMoneyline": "OFF",
-        "homeAbbreviation": "IOWA",
-        "awayAbbreviation": "NEB"
-      },
+      "odds": null,
       "favorite": true,
       "favoriteIds": [
         "iowa-football"
@@ -72036,7 +71652,7 @@
           "abbreviation": "CHE",
           "homeAway": "away",
           "rank": null,
-          "record": "5-1-4",
+          "record": "5-1-5",
           "score": null,
           "color": "#144992",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
@@ -72049,7 +71665,7 @@
           "abbreviation": "NFO",
           "homeAway": "home",
           "rank": null,
-          "record": "2-3-5",
+          "record": "2-3-6",
           "score": null,
           "color": "#c8102e",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
@@ -72552,8 +72168,8 @@
         "provider": "DraftKings",
         "spread": "DEN -2.5",
         "overUnder": "40.5",
-        "homeMoneyline": "+111",
-        "awayMoneyline": "-131",
+        "homeMoneyline": "+112",
+        "awayMoneyline": "-133",
         "homeAbbreviation": "PIT",
         "awayAbbreviation": "DEN"
       },
@@ -73974,7 +73590,7 @@
           "abbreviation": "BUCK",
           "homeAway": "home",
           "rank": null,
-          "record": "1-4",
+          "record": "1-5",
           "score": null,
           "color": "#000060",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2083.png",
@@ -75768,7 +75384,7 @@
           "abbreviation": "FSU",
           "homeAway": "away",
           "rank": null,
-          "record": "6-0",
+          "record": "7-0",
           "score": null,
           "color": "#782f40",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
@@ -76736,7 +76352,7 @@
           "abbreviation": "UPST",
           "homeAway": "home",
           "rank": null,
-          "record": "1-5",
+          "record": "1-6",
           "score": null,
           "color": "#008545",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2908.png",
@@ -78078,15 +77694,7 @@
       ],
       "streaming": [],
       "broadcastSummary": "ABC",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "TEX -7.5",
-        "overUnder": "41.5",
-        "homeMoneyline": "+250",
-        "awayMoneyline": "-310",
-        "homeAbbreviation": "TA&M",
-        "awayAbbreviation": "TEX"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -80763,15 +80371,7 @@
       ],
       "streaming": [],
       "broadcastSummary": "ABC",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "ALA -15.5",
-        "overUnder": "50.5",
-        "homeMoneyline": "-650",
-        "awayMoneyline": "+470",
-        "homeAbbreviation": "ALA",
-        "awayAbbreviation": "AUB"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -80995,15 +80595,7 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "UK -1.5",
-        "overUnder": "54.5",
-        "homeMoneyline": "-118",
-        "awayMoneyline": "-102",
-        "homeAbbreviation": "UK",
-        "awayAbbreviation": "LOU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -81876,7 +81468,7 @@
           "abbreviation": "UCF",
           "homeAway": "home",
           "rank": null,
-          "record": "6-1",
+          "record": "6-2",
           "score": null,
           "color": "#b4a169",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
@@ -82000,7 +81592,7 @@
           "abbreviation": "RAY",
           "homeAway": "away",
           "rank": null,
-          "record": "3-3-5",
+          "record": "3-3-6",
           "score": null,
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
@@ -82095,7 +81687,7 @@
           "abbreviation": "PAR",
           "homeAway": "away",
           "rank": null,
-          "record": "2-2-7",
+          "record": "2-2-8",
           "score": null,
           "color": "#19161d",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
@@ -82132,10 +81724,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "FRO -220",
+        "spread": "FRO -210",
         "overUnder": "3.5",
-        "homeMoneyline": "-220",
-        "awayMoneyline": "+425",
+        "homeMoneyline": "-210",
+        "awayMoneyline": "+400",
         "homeAbbreviation": "FRO",
         "awayAbbreviation": "PAR"
       },
@@ -82550,7 +82142,7 @@
           "abbreviation": "COV",
           "homeAway": "away",
           "rank": null,
-          "record": "3-0-7",
+          "record": "4-0-7",
           "score": null,
           "color": "#87cced",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
@@ -82563,7 +82155,7 @@
           "abbreviation": "LEE",
           "homeAway": "home",
           "rank": null,
-          "record": "3-5-2",
+          "record": "4-5-2",
           "score": null,
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
@@ -83292,15 +82884,7 @@
       ],
       "streaming": [],
       "broadcastSummary": "ABC",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "ND -20.5",
-        "overUnder": "54.5",
-        "homeMoneyline": "+750",
-        "awayMoneyline": "-1200",
-        "homeAbbreviation": "SYR",
-        "awayAbbreviation": "ND"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -83382,15 +82966,7 @@
       ],
       "streaming": [],
       "broadcastSummary": "Fox",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "OSU -12.5",
-        "overUnder": "41.5",
-        "homeMoneyline": "-440",
-        "awayMoneyline": "+340",
-        "homeAbbreviation": "OSU",
-        "awayAbbreviation": "MICH"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -83907,7 +83483,7 @@
           "abbreviation": "SIE",
           "homeAway": "away",
           "rank": null,
-          "record": "3-2",
+          "record": "4-2",
           "score": null,
           "color": "#037961",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2561.png",
@@ -84061,7 +83637,7 @@
           "abbreviation": "GMU",
           "homeAway": "away",
           "rank": null,
-          "record": "3-3",
+          "record": "4-3",
           "score": null,
           "color": "#016600",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2244.png",
@@ -84424,7 +84000,7 @@
           "abbreviation": "AVL",
           "homeAway": "away",
           "rank": null,
-          "record": "3-4-3",
+          "record": "3-5-3",
           "score": null,
           "color": "#660e36",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
@@ -84437,7 +84013,7 @@
           "abbreviation": "IPS",
           "homeAway": "home",
           "rank": null,
-          "record": "3-2-5",
+          "record": "3-2-6",
           "score": null,
           "color": "#0000fa",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
@@ -89729,7 +89305,7 @@
           "abbreviation": "PSG",
           "homeAway": "home",
           "rank": null,
-          "record": "7-2-1",
+          "record": "8-2-1",
           "score": null,
           "color": "#011f68",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
@@ -89803,7 +89379,7 @@
           "abbreviation": "NICE",
           "homeAway": "home",
           "rank": null,
-          "record": "5-2-3",
+          "record": "5-2-4",
           "score": null,
           "color": "#ef2f24",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
@@ -89964,10 +89540,10 @@
       "broadcastSummary": null,
       "odds": {
         "provider": "DraftKings",
-        "spread": "STR +125",
+        "spread": "STR +130",
         "overUnder": "2.5",
         "homeMoneyline": "+185",
-        "awayMoneyline": "+125",
+        "awayMoneyline": "+130",
         "homeAbbreviation": "HAC",
         "awayAbbreviation": "STR"
       },
@@ -91627,15 +91203,7 @@
       ],
       "streaming": [],
       "broadcastSummary": "CBS",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "UCLA -2.5",
-        "overUnder": "52.5",
-        "homeMoneyline": "-135",
-        "awayMoneyline": "+114",
-        "homeAbbreviation": "UCLA",
-        "awayAbbreviation": "USC"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -93525,7 +93093,7 @@
           "abbreviation": "MD",
           "homeAway": "away",
           "rank": 18,
-          "record": "3-1",
+          "record": "4-1",
           "score": null,
           "color": "#ce1126",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
@@ -93791,15 +93359,7 @@
       ],
       "streaming": [],
       "broadcastSummary": "SEC Network",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "MIZ -1.5",
-        "overUnder": "42.5",
-        "homeMoneyline": "-118",
-        "awayMoneyline": "-102",
-        "homeAbbreviation": "MIZ",
-        "awayAbbreviation": "OU"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -95544,7 +95104,7 @@
           "abbreviation": "BUCK",
           "homeAway": "away",
           "rank": null,
-          "record": "1-4",
+          "record": "1-5",
           "score": null,
           "color": "#000060",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2083.png",
@@ -99798,7 +99358,7 @@
           "abbreviation": "VAL",
           "homeAway": "home",
           "rank": null,
-          "record": "2-3-7",
+          "record": "3-3-7",
           "score": null,
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
@@ -100049,7 +99609,7 @@
           "abbreviation": "TOT",
           "homeAway": "away",
           "rank": null,
-          "record": "3-3-4",
+          "record": "4-3-4",
           "score": null,
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
@@ -100062,7 +99622,7 @@
           "abbreviation": "SUN",
           "homeAway": "home",
           "rank": null,
-          "record": "2-2-6",
+          "record": "2-3-6",
           "score": null,
           "color": "#eb172b",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
@@ -100075,10 +99635,10 @@
       "broadcastSummary": null,
       "odds": {
         "provider": "DraftKings",
-        "spread": "TOT +125",
+        "spread": "TOT +120",
         "overUnder": "2.5",
-        "homeMoneyline": "+225",
-        "awayMoneyline": "+125",
+        "homeMoneyline": "+230",
+        "awayMoneyline": "+120",
         "homeAbbreviation": "SUN",
         "awayAbbreviation": "TOT"
       },
@@ -100132,7 +99692,7 @@
           "abbreviation": "BOU",
           "homeAway": "away",
           "rank": null,
-          "record": "4-3-3",
+          "record": "5-3-3",
           "score": null,
           "color": "#f42727",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
@@ -100219,7 +99779,7 @@
           "abbreviation": "CRY",
           "homeAway": "home",
           "rank": null,
-          "record": "2-1-7",
+          "record": "2-1-8",
           "score": null,
           "color": "#0202fb",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
@@ -100840,7 +100400,7 @@
           "abbreviation": "ROMA",
           "homeAway": "home",
           "rank": null,
-          "record": "8-3-0",
+          "record": "9-3-0",
           "score": null,
           "color": "#990a2c",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
@@ -100864,10 +100424,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "ROMA -475",
+        "spread": "ROMA -550",
         "overUnder": "3.5",
-        "homeMoneyline": "-475",
-        "awayMoneyline": "+800",
+        "homeMoneyline": "-550",
+        "awayMoneyline": "+950",
         "homeAbbreviation": "ROMA",
         "awayAbbreviation": "MON"
       },
@@ -101214,7 +100774,7 @@
           "abbreviation": "FSU",
           "homeAway": "away",
           "rank": null,
-          "record": "6-0",
+          "record": "7-0",
           "score": null,
           "color": "#782f40",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
@@ -102355,9 +101915,9 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "JAX -14.5",
-        "overUnder": "47.5",
-        "homeMoneyline": "-1240",
-        "awayMoneyline": "+770",
+        "overUnder": "46.5",
+        "homeMoneyline": "-1180",
+        "awayMoneyline": "+740",
         "homeAbbreviation": "JAX",
         "awayAbbreviation": "TEN"
       },
@@ -103267,7 +102827,7 @@
         "spread": "DOR +105",
         "overUnder": "3.5",
         "homeMoneyline": "+105",
-        "awayMoneyline": "+190",
+        "awayMoneyline": "+195",
         "homeAbbreviation": "DOR",
         "awayAbbreviation": "B04"
       },
@@ -103605,7 +103165,7 @@
           "abbreviation": "UPST",
           "homeAway": "home",
           "rank": null,
-          "record": "1-5",
+          "record": "1-6",
           "score": null,
           "color": "#008545",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2908.png",
@@ -116734,7 +116294,7 @@
           "abbreviation": "IPS",
           "homeAway": "away",
           "rank": null,
-          "record": "3-2-5",
+          "record": "3-2-6",
           "score": null,
           "color": "#0000fa",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
@@ -116747,7 +116307,7 @@
           "abbreviation": "COV",
           "homeAway": "home",
           "rank": null,
-          "record": "3-0-7",
+          "record": "4-0-7",
           "score": null,
           "color": "#87cced",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
@@ -116758,7 +116318,15 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": null,
+      "odds": {
+        "provider": "Bet 365",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": null,
+        "awayMoneyline": null,
+        "homeAbbreviation": "COV",
+        "awayAbbreviation": "IPS"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -117031,7 +116599,7 @@
           "abbreviation": "UNCG",
           "homeAway": "away",
           "rank": null,
-          "record": "3-2",
+          "record": "4-2",
           "score": null,
           "color": "#003559",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2430.png",
@@ -117583,7 +117151,7 @@
           "abbreviation": "MD",
           "homeAway": "home",
           "rank": 18,
-          "record": "3-1",
+          "record": "4-1",
           "score": null,
           "color": "#ce1126",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
@@ -125891,7 +125459,7 @@
           "abbreviation": "LEE",
           "homeAway": "away",
           "rank": null,
-          "record": "3-5-2",
+          "record": "4-5-2",
           "score": null,
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
@@ -125915,7 +125483,15 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": null,
+      "odds": {
+        "provider": "Bet 365",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": null,
+        "awayMoneyline": null,
+        "homeAbbreviation": "MNC",
+        "awayAbbreviation": "LEE"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -125957,7 +125533,7 @@
           "abbreviation": "SUN",
           "homeAway": "away",
           "rank": null,
-          "record": "2-2-6",
+          "record": "2-3-6",
           "score": null,
           "color": "#eb172b",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
@@ -125981,7 +125557,15 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": null,
+      "odds": {
+        "provider": "Bet 365",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": null,
+        "awayMoneyline": null,
+        "homeAbbreviation": "LIV",
+        "awayAbbreviation": "SUN"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -126023,7 +125607,7 @@
           "abbreviation": "NFO",
           "homeAway": "away",
           "rank": null,
-          "record": "2-3-5",
+          "record": "2-3-6",
           "score": null,
           "color": "#c8102e",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
@@ -126047,7 +125631,15 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": null,
+      "odds": {
+        "provider": "Bet 365",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": null,
+        "awayMoneyline": null,
+        "homeAbbreviation": "HUL",
+        "awayAbbreviation": "NFO"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -126089,7 +125681,7 @@
           "abbreviation": "CRY",
           "homeAway": "away",
           "rank": null,
-          "record": "2-1-7",
+          "record": "2-1-8",
           "score": null,
           "color": "#0202fb",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
@@ -126102,7 +125694,7 @@
           "abbreviation": "CHE",
           "homeAway": "home",
           "rank": null,
-          "record": "5-1-4",
+          "record": "5-1-5",
           "score": null,
           "color": "#144992",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
@@ -126113,7 +125705,15 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": null,
+      "odds": {
+        "provider": "Bet 365",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": null,
+        "awayMoneyline": null,
+        "homeAbbreviation": "CHE",
+        "awayAbbreviation": "CRY"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -126338,7 +125938,15 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": null,
+      "odds": {
+        "provider": "Bet 365",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": null,
+        "awayMoneyline": null,
+        "homeAbbreviation": "BRE",
+        "awayAbbreviation": "ARS"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -126393,7 +126001,7 @@
           "abbreviation": "AVL",
           "homeAway": "home",
           "rank": null,
-          "record": "3-4-3",
+          "record": "3-5-3",
           "score": null,
           "color": "#660e36",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
@@ -126404,7 +126012,15 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": null,
+      "odds": {
+        "provider": "Bet 365",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": null,
+        "awayMoneyline": null,
+        "homeAbbreviation": "AVL",
+        "awayAbbreviation": "EVE"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -126470,7 +126086,15 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": null,
+      "odds": {
+        "provider": "Bet 365",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": null,
+        "awayMoneyline": null,
+        "homeAbbreviation": "NEW",
+        "awayAbbreviation": "MAN"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -126525,7 +126149,7 @@
           "abbreviation": "BOU",
           "homeAway": "home",
           "rank": null,
-          "record": "4-3-3",
+          "record": "5-3-3",
           "score": null,
           "color": "#f42727",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
@@ -126536,7 +126160,15 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": null,
+      "odds": {
+        "provider": "Bet 365",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": null,
+        "awayMoneyline": null,
+        "homeAbbreviation": "BOU",
+        "awayAbbreviation": "BHA"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -128667,7 +128299,7 @@
           "abbreviation": "MSU",
           "homeAway": "home",
           "rank": 2,
-          "record": "4-1",
+          "record": "5-1",
           "score": null,
           "color": "#173f35",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png",
@@ -128886,7 +128518,7 @@
           "abbreviation": "UCF",
           "homeAway": "home",
           "rank": null,
-          "record": "6-1",
+          "record": "6-2",
           "score": null,
           "color": "#b4a169",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
@@ -130099,7 +129731,7 @@
           "abbreviation": "DETM",
           "homeAway": "away",
           "rank": null,
-          "record": "0-4",
+          "record": "0-5",
           "score": null,
           "color": "#165b9e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2174.png",
@@ -130770,7 +130402,7 @@
           "abbreviation": "BUCK",
           "homeAway": "away",
           "rank": null,
-          "record": "1-4",
+          "record": "1-5",
           "score": null,
           "color": "#000060",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2083.png",
@@ -130860,7 +130492,7 @@
           "abbreviation": "UPST",
           "homeAway": "home",
           "rank": null,
-          "record": "1-5",
+          "record": "1-6",
           "score": null,
           "color": "#008545",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2908.png",
@@ -132577,7 +132209,7 @@
           "abbreviation": "MORG",
           "homeAway": "away",
           "rank": null,
-          "record": "2-5",
+          "record": "2-6",
           "score": null,
           "color": "#014786",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2415.png",
@@ -138426,7 +138058,7 @@
           "abbreviation": "TOT",
           "homeAway": "home",
           "rank": null,
-          "record": "3-3-4",
+          "record": "4-3-4",
           "score": null,
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
@@ -138437,7 +138069,15 @@
       "channels": [],
       "streaming": [],
       "broadcastSummary": null,
-      "odds": null,
+      "odds": {
+        "provider": "Bet 365",
+        "spread": null,
+        "overUnder": null,
+        "homeMoneyline": null,
+        "awayMoneyline": null,
+        "homeAbbreviation": "TOT",
+        "awayAbbreviation": "FUL"
+      },
       "favorite": true,
       "favoriteIds": [
         "tottenham"
@@ -140718,7 +140358,7 @@
           "abbreviation": "FSU",
           "homeAway": "home",
           "rank": null,
-          "record": "6-0",
+          "record": "7-0",
           "score": null,
           "color": "#782f40",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png",
@@ -147020,7 +146660,7 @@
           "abbreviation": "PSG",
           "homeAway": "away",
           "rank": null,
-          "record": "7-2-1",
+          "record": "8-2-1",
           "score": null,
           "color": "#011f68",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
@@ -147086,7 +146726,7 @@
           "abbreviation": "ROMA",
           "homeAway": "away",
           "rank": null,
-          "record": "8-3-0",
+          "record": "9-3-0",
           "score": null,
           "color": "#990a2c",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
@@ -148323,7 +147963,7 @@
           "abbreviation": "SIE",
           "homeAway": "home",
           "rank": null,
-          "record": "3-2",
+          "record": "4-2",
           "score": null,
           "color": "#037961",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2561.png",
@@ -148560,7 +148200,7 @@
           "abbreviation": "MORG",
           "homeAway": "away",
           "rank": null,
-          "record": "2-5",
+          "record": "2-6",
           "score": null,
           "color": "#014786",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2415.png",
