@@ -80,7 +80,7 @@ One source: ESPN's public scoreboard JSON. No API key.
 https://site.api.espn.com/apis/site/v2/sports/{sport}/{slug}/scoreboard?dates=YYYYMMDD&limit=1000
 ```
 
-The script requests each league for each day in the window, keeps US TV and streaming from `geoBroadcasts`, and writes one file. Radio is dropped. A national listing is stored ahead of a local one.
+The script requests each league for each day in the window, keeps US TV and streaming from `geoBroadcasts`, and writes one file. It does not send `limit=1000`: on college football that value returns only the early slate and drops evening games such as a 7:30 PM kickoff. College football asks for FBS (`groups=80`). Men's and women's college basketball ask for Division I (`groups=50`). Without those groups, ESPN returns a short list and the rest of the day never arrives. Radio is dropped. A national listing is stored ahead of a local one.
 
 Leagues included: NFL, college football, NBA, WNBA, men's and women's college basketball, NHL, MLB, Premier League, Champions League, Europa League, Conference League, FA Cup, EFL Cup, La Liga, Bundesliga, Serie A, Ligue 1, MLS, NWSL, Liga MX, and UFC.
 

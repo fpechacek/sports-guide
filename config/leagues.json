@@ -1,11 +1,11 @@
 {
   "leagues": [
     { "sport": "football", "slug": "nfl", "label": "NFL", "sportLabel": "Football", "emoji": "🏈", "competition": "NFL", "color": "#f0c36a" },
-    { "sport": "football", "slug": "college-football", "label": "NCAAF", "sportLabel": "Football", "emoji": "🏈", "competition": "College Football", "color": "#8fd6a6" },
+    { "sport": "football", "slug": "college-football", "label": "NCAAF", "sportLabel": "Football", "emoji": "🏈", "competition": "College Football", "color": "#8fd6a6", "groups": "80" },
     { "sport": "basketball", "slug": "nba", "label": "NBA", "sportLabel": "Basketball", "emoji": "🏀", "competition": "NBA", "color": "#ffb086" },
     { "sport": "basketball", "slug": "wnba", "label": "WNBA", "sportLabel": "Basketball", "emoji": "🏀", "competition": "WNBA", "color": "#ff9ec8" },
-    { "sport": "basketball", "slug": "mens-college-basketball", "label": "NCAAM", "sportLabel": "Basketball", "emoji": "🏀", "competition": "Men's College Basketball", "color": "#ffcf70" },
-    { "sport": "basketball", "slug": "womens-college-basketball", "label": "NCAAW", "sportLabel": "Basketball", "emoji": "🏀", "competition": "Women's College Basketball", "color": "#f5a6e0" },
+    { "sport": "basketball", "slug": "mens-college-basketball", "label": "NCAAM", "sportLabel": "Basketball", "emoji": "🏀", "competition": "Men's College Basketball", "color": "#ffcf70", "groups": "50" },
+    { "sport": "basketball", "slug": "womens-college-basketball", "label": "NCAAW", "sportLabel": "Basketball", "emoji": "🏀", "competition": "Women's College Basketball", "color": "#f5a6e0", "groups": "50" },
     { "sport": "hockey", "slug": "nhl", "label": "NHL", "sportLabel": "Hockey", "emoji": "🏒", "competition": "NHL", "color": "#9ad7f5" },
     { "sport": "baseball", "slug": "mlb", "label": "MLB", "sportLabel": "Baseball", "emoji": "⚾", "competition": "MLB", "color": "#ff9b9b" },
     { "sport": "soccer", "slug": "eng.1", "label": "Premier League", "sportLabel": "Soccer", "emoji": "⚽", "competition": "Premier League", "color": "#d7b4ff" },

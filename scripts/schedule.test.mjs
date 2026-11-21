@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile } from "node:fs/promises";
-import { buildSchedule } from "./lib/build.mjs";
+import { buildSchedule, scoreboardUrl } from "./lib/build.mjs";
 import { matchingFavorites } from "./lib/favorites.mjs";
 import { classifyMustWatch } from "./lib/must-watch.mjs";
 import { normalizeCompetition, pickBroadcasts } from "./lib/normalize.mjs";
@@ -450,6 +450,60 @@ test("Must Watch rules mark big games and leave ordinary ones out", async () => 
     rules,
   );
   assert.ok(espn.mustWatchReasons.some((reason) => reason.id === "national-tv"));
+});
+
+test("scoreboard urls do not use the limit that truncates a college day", async () => {
+  const config = JSON.parse(await readFile(new URL("../config/leagues.json", import.meta.url), "utf8"));
+  for (const league of config.leagues) {
+    const url = scoreboardUrl(league, "2026-11-21");
+    assert.equal(url.includes("limit="), false, url);
+  }
+  const bySlug = Object.fromEntries(config.leagues.map((league) => [league.slug, league]));
+  assert.equal(scoreboardUrl(bySlug["college-football"], "2026-11-21").includes("groups=80"), true);
+  assert.equal(scoreboardUrl(bySlug["mens-college-basketball"], "2026-11-21").includes("groups=50"), true);
+  assert.equal(scoreboardUrl(bySlug["womens-college-basketball"], "2026-11-21").includes("groups=50"), true);
+});
+
+test("a 7:30 PM ET kickoff stays on that Eastern date instead of being cut off", async () => {
+  const noon = eventFor(
+    "Wake Forest Demon Deacons at Georgia Tech Yellow Jackets",
+    "2026-11-21T17:00:00Z",
+    [team(154, "Wake Forest Demon Deacons"), team(59, "Georgia Tech Yellow Jackets", { homeAway: "home" })],
+    [{ type: { shortName: "TV" }, market: { type: "National" }, media: { shortName: "ESPN" }, region: "us" }],
+    { id: "noon", competitionId: "noon" },
+  );
+  const georgia = eventFor(
+    "South Carolina Gamecocks at Georgia Bulldogs",
+    "2026-11-22T00:30:00Z",
+    [team(2579, "South Carolina Gamecocks", { rank: 21 }), team(61, "Georgia Bulldogs", { homeAway: "home", rank: 1 })],
+    [{ type: { shortName: "TV" }, market: { type: "National" }, media: { shortName: "ABC" }, region: "us" }],
+    { id: "uga", competitionId: "uga" },
+  );
+  const league = { ...leagues.cfb, groups: "80" };
+  const schedule = await buildSchedule({
+    now: new Date("2026-11-21T15:00:00Z"),
+    days: 1,
+    leagues: [league],
+    favorites,
+    channelNames,
+    meta: { timezone: "America/New_York", location: "Merritt Island, Florida" },
+    fetchJson: async (url) => {
+      assert.equal(url.includes("limit="), false, url);
+      assert.equal(url.includes("groups=80"), true, url);
+      return { events: [noon, georgia] };
+    },
+  });
+  const day = schedule.events.filter((event) => event.date === "2026-11-21");
+  assert.equal(day.length, 2);
+  const uga = day.find((event) => event.name.includes("South Carolina"));
+  assert.ok(uga);
+  assert.equal(uga.timeEt, "7:30 PM");
+  assert.equal(uga.favorite, true);
+  assert.equal(uga.mustWatch, true);
+  assert.deepEqual(uga.channels, ["ABC"]);
+  const hours = day.map((event) => event.timeEt);
+  assert.ok(hours.includes("7:30 PM"));
+  assert.ok(day.length > 1);
 });
 
 test("a checkbox hides an automatic Must Watch game and keeps a manual one", () => {

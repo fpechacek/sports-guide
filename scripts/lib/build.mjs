@@ -26,7 +26,13 @@ async function mapPool(items, limit, worker) {
 }
 
 export function scoreboardUrl(league, ymd) {
-  return `https://site.api.espn.com/apis/site/v2/sports/${league.sport}/${league.slug}/scoreboard?dates=${compactDate(ymd)}&limit=1000`;
+  const params = new URLSearchParams({ dates: compactDate(ymd) });
+  // ESPN's college football scoreboard returns only the early slate (25 games,
+  // through about 3:00 PM ET) when limit=1000 is set. Omit limit.
+  // College slates also need an explicit division group or the default feed
+  // is a short TV list and drops the rest of the day.
+  if (league.groups) params.set("groups", String(league.groups));
+  return `https://site.api.espn.com/apis/site/v2/sports/${league.sport}/${league.slug}/scoreboard?${params}`;
 }
 
 export async function buildSchedule({ now = new Date(), days = 14, leagues, favorites, channelNames, mustWatch, meta, fetchJson }) {
@@ -46,9 +52,6 @@ export async function buildSchedule({ now = new Date(), days = 14, leagues, favo
     try {
       const json = await fetchJson(url);
       const parsed = listingsFromScoreboard(json, job.league, favorites, channelNames);
-      if (parsed.capped) {
-        warnings.push(`${job.league.slug} ${job.date}: response hit the 1000-event limit`);
-      }
       return parsed.listings;
     } catch (error) {
       failed += 1;
