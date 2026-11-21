@@ -37,11 +37,21 @@ export function redirectUrl(): string {
 
 export async function createSyncClient(config: SyncConfig): Promise<SupabaseClient> {
   const { createClient } = await import("@supabase/supabase-js");
-  return createClient(config.supabaseUrl, config.supabaseAnonKey, {
+  const key = config.supabaseAnonKey;
+  return createClient(config.supabaseUrl, key, {
     auth: {
       persistSession: true,
       autoRefreshToken: true,
       detectSessionInUrl: true,
+    },
+    global: {
+      fetch: (input, init) => {
+        const headers = new Headers(init?.headers);
+        if (headers.get("Authorization") === `Bearer ${key}` && (key.startsWith("sb_publishable_") || key.startsWith("sb_secret_"))) {
+          headers.delete("Authorization");
+        }
+        return fetch(input, { ...init, headers });
+      },
     },
   });
 }

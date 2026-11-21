@@ -1,7 +1,7 @@
 import { writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { buildMustWatchDocument } from "./lib/watch-sync.mjs";
+import { buildMustWatchDocument, normalizeSupabaseUrl, supabaseHeaders } from "./lib/watch-sync.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outPath = path.join(root, "public", "must-watch.json");
@@ -13,11 +13,7 @@ function env(name) {
 
 async function supabaseGet(url, apiKey, pathname) {
   const response = await fetch(`${url}${pathname}`, {
-    headers: {
-      apikey: apiKey,
-      authorization: `Bearer ${apiKey}`,
-      accept: "application/json",
-    },
+    headers: supabaseHeaders(apiKey),
   });
   if (!response.ok) {
     const body = await response.text();
@@ -53,19 +49,23 @@ async function loadRows(url, serviceKey, userId) {
 }
 
 async function main() {
-  const url = env("SUPABASE_URL");
+  const url = normalizeSupabaseUrl(env("SUPABASE_URL"));
   const serviceKey = env("SUPABASE_SERVICE_ROLE_KEY");
   const userId = env("SUPABASE_USER_ID");
-  let document;
   if (!url || !serviceKey) {
-    console.log("Supabase is not configured. Leaving Must Watch overrides empty.");
-    document = buildMustWatchDocument({ source: "unconfigured", rows: [] });
-  } else {
-    const loaded = await loadRows(url.replace(/\/$/, ""), serviceKey, userId);
-    document = buildMustWatchDocument(loaded);
-    console.log(`Must Watch file: ${document.pinned.length} added, ${document.hidden.length} hidden.`);
+    console.log("Supabase secrets are not set. Skipping Must Watch sync. The guide still updates.");
+    return;
   }
-  await writeFile(outPath, `${JSON.stringify(document, null, 2)}\n`);
+  try {
+    const loaded = await loadRows(url, serviceKey, userId);
+    const document = buildMustWatchDocument(loaded);
+    await writeFile(outPath, `${JSON.stringify(document, null, 2)}\n`);
+    console.log(`Must Watch file: ${document.pinned.length} added, ${document.hidden.length} hidden.`);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    console.log(`Must Watch sync skipped: ${message}`);
+    console.log("The schedule update will continue.");
+  }
 }
 
 main().catch((error) => {

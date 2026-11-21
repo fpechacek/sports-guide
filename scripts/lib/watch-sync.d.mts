@@ -10,6 +10,8 @@ export function mergeOnSignIn(
   local: { pinned?: Record<string, string>; hidden?: Record<string, string> },
   remoteRows: PickRow[],
 ): { store: { pinned: Record<string, string>; hidden: Record<string, string> }; uploads: PickRow[] };
+export function normalizeSupabaseUrl(url: string): string;
+export function supabaseHeaders(apiKey: string): { apikey: string; accept: string; authorization?: string };
 export function isSyncConfigured(config: { enabled?: boolean; supabaseUrl?: string; supabaseAnonKey?: string } | null): boolean;
 export function buildMustWatchDocument(input: {
   source: string;

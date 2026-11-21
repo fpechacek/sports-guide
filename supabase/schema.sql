@@ -12,6 +12,8 @@ create table if not exists public.watch_picks (
 
 alter table public.watch_picks enable row level security;
 
+grant select, insert, update, delete on table public.watch_picks to authenticated;
+
 drop policy if exists "read own picks" on public.watch_picks;
 create policy "read own picks"
   on public.watch_picks

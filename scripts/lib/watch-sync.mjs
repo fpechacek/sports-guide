@@ -52,6 +52,23 @@ export function mergeOnSignIn(local, remoteRows) {
   return { store: { pinned, hidden }, uploads };
 }
 
+export function normalizeSupabaseUrl(url) {
+  return String(url ?? "")
+    .trim()
+    .replace(/\/+$/, "")
+    .replace(/\/rest\/v1$/, "");
+}
+
+export function supabaseHeaders(apiKey) {
+  const headers = {
+    apikey: apiKey,
+    accept: "application/json",
+  };
+  const isNewKey = apiKey.startsWith("sb_publishable_") || apiKey.startsWith("sb_secret_");
+  if (!isNewKey) headers.authorization = `Bearer ${apiKey}`;
+  return headers;
+}
+
 export function isSyncConfigured(config) {
   return Boolean(config?.enabled && config?.supabaseUrl && config?.supabaseAnonKey);
 }

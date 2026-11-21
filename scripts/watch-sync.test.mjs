@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildMustWatchDocument, isSyncConfigured, mergeOnSignIn, rowsToStore, storeToRows } from "./lib/watch-sync.mjs";
+import { buildMustWatchDocument, isSyncConfigured, mergeOnSignIn, normalizeSupabaseUrl, rowsToStore, storeToRows, supabaseHeaders } from "./lib/watch-sync.mjs";
 
 test("first sign-in copies this phone's picks when the database is empty", () => {
   const local = {
@@ -41,6 +41,18 @@ test("sync stays off until a project url and public key are set", () => {
   assert.equal(isSyncConfigured({ enabled: false, supabaseUrl: "https://x.supabase.co", supabaseAnonKey: "k" }), false);
   assert.equal(isSyncConfigured({ enabled: true, supabaseUrl: "", supabaseAnonKey: "" }), false);
   assert.equal(isSyncConfigured({ enabled: true, supabaseUrl: "https://x.supabase.co", supabaseAnonKey: "anon" }), true);
+});
+
+test("a new secret key is sent only as apikey, not as a bearer token", () => {
+  const headers = supabaseHeaders("sb_secret_example");
+  assert.equal(headers.apikey, "sb_secret_example");
+  assert.equal(headers.authorization, undefined);
+  assert.equal(supabaseHeaders("sb_publishable_example").authorization, undefined);
+  assert.equal(supabaseHeaders("eyJlegacy").authorization, "Bearer eyJlegacy");
+});
+
+test("a pasted REST url is trimmed back to the project url", () => {
+  assert.equal(normalizeSupabaseUrl("https://example.supabase.co/rest/v1/"), "https://example.supabase.co");
 });
 
 test("the InfoBox file lists pins and hides without secrets", () => {
