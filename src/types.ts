@@ -32,11 +32,27 @@ export type Broadcast = {
   origin: "listed";
 };
 
+export type Odds = {
+  provider: string | null;
+  spread: string | null;
+  overUnder: string | null;
+  homeMoneyline: string | null;
+  awayMoneyline: string | null;
+  homeAbbreviation: string | null;
+  awayAbbreviation: string | null;
+};
+
+export type WatchReason = {
+  id: string;
+  label: string;
+};
+
 export type GuideEvent = {
   id: string;
   date: string;
   start: string;
   timeEt: string;
+  timeTbd?: boolean;
   timeZoneAbbr: string;
   weekday: string;
   dateLabel: string;
@@ -60,6 +76,9 @@ export type GuideEvent = {
   channels: string[];
   streaming: string[];
   broadcastSummary: string | null;
+  odds?: Odds | null;
+  mustWatch?: boolean;
+  mustWatchReasons?: WatchReason[];
   favorite: boolean;
   favoriteIds: string[];
   favoriteNames: string[];
@@ -101,6 +120,7 @@ export type Schedule = {
     failed: number;
     events: number;
     favorites: number;
+    mustWatch?: number;
     withBroadcast: number;
   };
   warnings: string[];

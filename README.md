@@ -52,6 +52,14 @@ https://site.api.espn.com/apis/common/v3/search?query=Team%20Name
 
 Use the `id`, `sport`, and `league` from the team result. Iowa football and Iowa basketball share an id, which is why Iowa's `leagues` is only `college-football`.
 
+## Must Watch
+
+`config/must-watch.json` decides which games are pinned, on top of your favorites. It is plain rules: ranked college games, top 10, rivalries, bowls, conference titles, NFL primetime, NBA and NHL national TV, Premier League big-six matches, and Champions League knockouts. Change the file and run `npm run fetch`.
+
+On the phone, every game has a checkbox. Checking adds it. Unchecking hides it, including a game the rules added. Those choices stay in the browser and follow the ESPN event id when the morning file is replaced. Games from past dates are dropped.
+
+A kickoff ESPN still lists as TBD shows as **TBD**, not midnight. Favorite games stay in Must Watch even when no channel is posted yet.
+
 ## Add a league
 
 Copy an object in `config/leagues.json`. `sport` and `slug` are the two pieces of ESPN's scoreboard path:

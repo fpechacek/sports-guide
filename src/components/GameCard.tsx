@@ -57,6 +57,14 @@ function statusWord(status: GameStatus): string {
 }
 
 function When({ event }: { event: GuideEvent }) {
+  if (event.status === "scheduled" && event.timeTbd) {
+    return (
+      <div className="when">
+        <span className="clock tbd">TBD</span>
+        <span className="period">Time</span>
+      </div>
+    );
+  }
   switch (event.status) {
     case "scheduled": {
       const { clock, period } = splitClock(event.timeEt);
@@ -91,18 +99,18 @@ function When({ event }: { event: GuideEvent }) {
   }
 }
 
-function Side({ team }: { team: Team }) {
+function Side({ team, showScore }: { team: Team; showScore: boolean }) {
   return (
     <span className={team.favorite ? "side is-favorite" : "side"}>
       {team.favorite ? <span className="pip" style={{ background: pipColor(team.color) }} aria-hidden="true" /> : null}
       {team.rank != null ? <span className="rank">#{team.rank}</span> : null}
       <span className="abbr">{team.abbreviation}</span>
-      {team.score != null ? <span className="score">{team.score}</span> : null}
+      {showScore && team.score != null ? <span className="score">{team.score}</span> : null}
     </span>
   );
 }
 
-function Matchup({ event }: { event: GuideEvent }) {
+function Matchup({ event, showScore }: { event: GuideEvent; showScore: boolean }) {
   switch (event.format) {
     case "fight":
       return (
@@ -120,9 +128,9 @@ function Matchup({ event }: { event: GuideEvent }) {
       return (
         <div className="matchup">
           <p className="abbr-line">
-            <Side team={away} />
+            <Side team={away} showScore={showScore} />
             <span className="at">at</span>
-            <Side team={home} />
+            <Side team={home} showScore={showScore} />
           </p>
           <p className="nicknames">
             <span className={away.favorite ? "nick fav" : "nick"}>{away.shortName}</span>
@@ -140,6 +148,20 @@ function Matchup({ event }: { event: GuideEvent }) {
       return neverFormat;
     }
   }
+}
+
+function oddsLine(event: GuideEvent): string | null {
+  const odds = event.odds;
+  if (!odds) return null;
+  const parts: string[] = [];
+  if (odds.provider) parts.push(odds.provider);
+  if (odds.spread) parts.push(odds.spread);
+  if (odds.overUnder) parts.push(`O/U ${odds.overUnder}`);
+  const money: string[] = [];
+  if (odds.awayMoneyline) money.push(`${odds.awayAbbreviation ?? "Away"} ${odds.awayMoneyline}`);
+  if (odds.homeMoneyline) money.push(`${odds.homeAbbreviation ?? "Home"} ${odds.homeMoneyline}`);
+  if (money.length > 0) parts.push(`ML ${money.join(" / ")}`);
+  return parts.length > 0 ? parts.join(" · ") : null;
 }
 
 function Pills({ event }: { event: GuideEvent }) {
@@ -165,21 +187,58 @@ function Pills({ event }: { event: GuideEvent }) {
   );
 }
 
-export function GameCard({ event }: { event: GuideEvent }) {
+export function GameCard({
+  event,
+  watched,
+  scoreOpen,
+  onToggleWatch,
+  onToggleScore,
+}: {
+  event: GuideEvent;
+  watched: boolean;
+  scoreOpen: boolean;
+  onToggleWatch: () => void;
+  onToggleScore: () => void;
+}) {
   const tagStyle = { "--tag": event.color } as CSSProperties;
+  const reasons = (event.mustWatchReasons ?? []).slice(0, 3);
+  const line = oddsLine(event);
+  const canScore =
+    (event.status === "in-progress" || event.status === "final") && event.teams.some((team) => team.score != null);
   return (
     <article className={event.favorite ? "card is-favorite" : "card"} data-status={event.status}>
       <When event={event} />
       <div className="card-main">
-        <Matchup event={event} />
+        <div className="card-top">
+          <Matchup event={event} showScore={scoreOpen} />
+          <label className="watch-check">
+            <input
+              type="checkbox"
+              checked={watched}
+              onChange={onToggleWatch}
+              aria-label={watched ? `Remove ${event.shortName} from Must Watch` : `Add ${event.shortName} to Must Watch`}
+            />
+          </label>
+        </div>
         <p className="tags">
           <span className="tag" style={tagStyle}>
             <span aria-hidden="true">{event.emoji}</span> {event.league}
           </span>
+          {reasons.map((reason) => (
+            <span key={reason.id} className="reason">
+              {reason.label}
+            </span>
+          ))}
           {event.stage ? <span className="stage">{event.stage}</span> : null}
           <span className="sr-only">{statusWord(event.status)}</span>
         </p>
         <Pills event={event} />
+        {line ? <p className="odds">{line}</p> : null}
+        {canScore ? (
+          <button type="button" className="score-toggle" aria-pressed={scoreOpen} onClick={onToggleScore}>
+            Score
+          </button>
+        ) : null}
       </div>
     </article>
   );

@@ -14,7 +14,6 @@ type Props = {
   leagues: LeagueMeta[];
   dates: string[];
   today: string;
-  favoriteCount: number;
   dateLabel: (ymd: string) => string;
   onChange: (filters: Filters) => void;
 };
@@ -35,7 +34,7 @@ function Chip({
   );
 }
 
-export function FilterBar({ filters, sports, leagues, dates, today, favoriteCount, dateLabel, onChange }: Props) {
+export function FilterBar({ filters, sports, leagues, dates, today, dateLabel, onChange }: Props) {
   const leagueChoices = leagues.filter((league) => !filters.sport || league.sport === filters.sport);
   return (
     <div className="tools">
@@ -56,8 +55,8 @@ export function FilterBar({ filters, sports, leagues, dates, today, favoriteCoun
       </label>
 
       <div className="scroller" role="toolbar" aria-label="Filters">
-        <Chip pressed={filters.mine} onClick={() => onChange({ ...filters, mine: !filters.mine })}>
-          {`★ My teams${favoriteCount > 0 ? ` ${favoriteCount}` : ""}`}
+        <Chip pressed={filters.watch} onClick={() => onChange({ ...filters, watch: !filters.watch })}>
+          ★ Must Watch
         </Chip>
         <Chip pressed={filters.onTv} onClick={() => onChange({ ...filters, onTv: !filters.onTv })}>
           On TV

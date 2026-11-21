@@ -1,0 +1,44 @@
+{
+  "notes": "Rules for the Must Watch list. Favorite teams always qualify. Edit this file and run npm run fetch. No AI is involved.",
+  "topRank": 10,
+  "rankedCeiling": 25,
+  "collegeLeagues": ["college-football", "mens-college-basketball", "womens-college-basketball"],
+  "primetime": {
+    "leagues": ["nfl"],
+    "thursday": true,
+    "monday": true,
+    "sundayStartHourEt": 19,
+    "networks": ["NBC", "ESPN", "ABC", "Prime Video", "Netflix", "NFL Network"]
+  },
+  "nationalTv": {
+    "leagues": ["nba", "nhl"],
+    "networks": ["ESPN", "ESPN2", "ABC", "TNT", "TBS", "NBC"]
+  },
+  "keywords": {
+    "playoff": ["playoff", "playoffs", "wild card", "wild-card", "round of 16", "round of 32", "quarterfinal", "semifinal", "semi-final", "knockout"],
+    "title": ["conference championship", "title game", "national championship", "cfp"],
+    "bowl": ["bowl"]
+  },
+  "premierLeague": {
+    "league": "eng.1",
+    "bigSix": ["Arsenal", "Chelsea", "Liverpool", "Manchester City", "Manchester United", "Tottenham Hotspur"]
+  },
+  "championsLeague": {
+    "league": "uefa.champions",
+    "knockoutStages": ["Round of 16", "Round of 32", "Quarterfinals", "Semifinals", "Final", "Knockout", "Knockout round"]
+  },
+  "rivalries": [
+    ["Georgia Bulldogs", "Georgia Tech Yellow Jackets"],
+    ["Georgia Bulldogs", "Florida Gators"],
+    ["Iowa Hawkeyes", "Iowa State Cyclones"],
+    ["Iowa Hawkeyes", "Nebraska Cornhuskers"],
+    ["Iowa Hawkeyes", "Minnesota Golden Gophers"],
+    ["Alabama Crimson Tide", "Auburn Tigers"],
+    ["Ohio State Buckeyes", "Michigan Wolverines"],
+    ["Texas Longhorns", "Oklahoma Sooners"],
+    ["Army Black Knights", "Navy Midshipmen"],
+    ["Pittsburgh Steelers", "Baltimore Ravens"],
+    ["Pittsburgh Steelers", "Cincinnati Bengals"],
+    ["Green Bay Packers", "Chicago Bears"]
+  ]
+}

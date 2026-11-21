@@ -1,3 +1,4 @@
+import { classifyMustWatch } from "./must-watch.mjs";
 import { listingsFromScoreboard } from "./normalize.mjs";
 import { addDays, compactDate, eachDate, todayEt } from "./time.mjs";
 
@@ -28,7 +29,7 @@ export function scoreboardUrl(league, ymd) {
   return `https://site.api.espn.com/apis/site/v2/sports/${league.sport}/${league.slug}/scoreboard?dates=${compactDate(ymd)}&limit=1000`;
 }
 
-export async function buildSchedule({ now = new Date(), days = 14, leagues, favorites, channelNames, meta, fetchJson }) {
+export async function buildSchedule({ now = new Date(), days = 14, leagues, favorites, channelNames, mustWatch, meta, fetchJson }) {
   const start = todayEt(now);
   const end = addDays(start, days - 1);
   const dates = eachDate(start, end);
@@ -73,7 +74,19 @@ export async function buildSchedule({ now = new Date(), days = 14, leagues, favo
     return a.id.localeCompare(b.id);
   });
 
+  for (const event of events) {
+    if (mustWatch) {
+      const classified = classifyMustWatch(event, mustWatch);
+      event.mustWatch = classified.mustWatch;
+      event.mustWatchReasons = classified.mustWatchReasons;
+    } else {
+      event.mustWatch = event.favorite;
+      event.mustWatchReasons = event.favorite ? [{ id: "my-team", label: "My team" }] : [];
+    }
+  }
+
   const favoriteEvents = events.filter((event) => event.favorite).length;
+  const mustWatchEvents = events.filter((event) => event.mustWatch).length;
   const withBroadcast = events.filter((event) => event.channels.length > 0 || event.streaming.length > 0).length;
 
   return {
@@ -111,6 +124,7 @@ export async function buildSchedule({ now = new Date(), days = 14, leagues, favo
       failed,
       events: events.length,
       favorites: favoriteEvents,
+      mustWatch: mustWatchEvents,
       withBroadcast,
     },
     warnings,

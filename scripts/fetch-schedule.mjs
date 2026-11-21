@@ -64,6 +64,7 @@ async function main() {
   const favoriteConfig = await readJson("config/favorites.json");
   const leagueConfig = await readJson("config/leagues.json");
   const channelNames = await readJson("config/channel-names.json");
+  const mustWatch = await readJson("config/must-watch.json");
   const favorites = favoriteConfig.favorites ?? [];
   const leagues = leagueConfig.leagues ?? [];
 
@@ -73,6 +74,7 @@ async function main() {
     leagues,
     favorites,
     channelNames,
+    mustWatch,
     meta: {
       timezone: favoriteConfig.timezone ?? "America/New_York",
       location: favoriteConfig.location ?? "Merritt Island, Florida",
@@ -89,7 +91,7 @@ async function main() {
 
   const counts = schedule.counts;
   console.log(
-    `${schedule.range.start} through ${schedule.range.end}: ${counts.events} games, ${counts.withBroadcast} with a US TV or streaming listing, ${counts.favorites} favorites.`,
+    `${schedule.range.start} through ${schedule.range.end}: ${counts.events} games, ${counts.withBroadcast} with a US TV or streaming listing, ${counts.favorites} favorites, ${counts.mustWatch} Must Watch.`,
   );
   console.log(`Requests ${counts.requests}, failed ${counts.failed}. Wrote ${path.relative(root, out)}.`);
   if (schedule.warnings.length > 0) {

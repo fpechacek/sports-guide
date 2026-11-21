@@ -216,6 +216,43 @@ function sortTeams(teams) {
   teams.sort((a, b) => (order[a.homeAway] ?? 2) - (order[b.homeAway] ?? 2));
 }
 
+function moneyline(side) {
+  const odds = side?.close?.odds ?? side?.open?.odds ?? null;
+  return odds == null || odds === "" ? null : String(odds);
+}
+
+function pickOdds(competition, teams) {
+  const odds = competition?.odds?.[0];
+  if (!odds) return null;
+  const home = teams.find((team) => team.homeAway === "home");
+  const away = teams.find((team) => team.homeAway === "away");
+  let spread = typeof odds.details === "string" && odds.details.trim() ? odds.details.trim() : null;
+  if (!spread && typeof odds.spread === "number" && home) {
+    const value = odds.spread > 0 ? `+${odds.spread}` : String(odds.spread);
+    spread = `${home.abbreviation} ${value}`;
+  }
+  const overUnder = odds.overUnder == null || odds.overUnder === "" ? null : String(odds.overUnder);
+  const homeMoneyline = moneyline(odds.moneyline?.home);
+  const awayMoneyline = moneyline(odds.moneyline?.away);
+  const provider = odds.provider?.displayName || odds.provider?.name || null;
+  if (!provider && !spread && !overUnder && !homeMoneyline && !awayMoneyline) return null;
+  return {
+    provider,
+    spread,
+    overUnder,
+    homeMoneyline,
+    awayMoneyline,
+    homeAbbreviation: home?.abbreviation ?? null,
+    awayAbbreviation: away?.abbreviation ?? null,
+  };
+}
+
+function timeIsTbd(competition, status) {
+  if (competition?.timeValid === false) return true;
+  const detail = `${status?.type?.shortDetail ?? ""} ${status?.type?.detail ?? ""}`;
+  return /\bTBD\b/i.test(detail);
+}
+
 function finishListing({ id, start, when, league, event, competition, teams, hits, broadcasts, format, name, shortName }) {
   const channels = uniqueNames(broadcasts, "tv");
   const streaming = uniqueNames(broadcasts, "streaming");
@@ -234,11 +271,15 @@ function finishListing({ id, start, when, league, event, competition, teams, hit
   const competitionLabel = league.competition;
   const where = listed.length > 0 ? listed.join(", ") : "channel not announced";
   const stageBit = stage ? ` · ${stage}` : "";
+  const statusSource = competition?.status || event?.status;
+  const timeTbd = timeIsTbd(competition, statusSource);
+  const whenText = timeTbd ? "Time TBD" : `${when.timeEt} ET`;
   return {
     id,
     date: when.date,
     start: new Date(start).toISOString(),
     timeEt: when.timeEt,
+    timeTbd,
     timeZoneAbbr: when.timeZoneAbbr,
     weekday: when.weekday,
     dateLabel: when.dateLabel,
@@ -262,11 +303,12 @@ function finishListing({ id, start, when, league, event, competition, teams, hit
     channels,
     streaming,
     broadcastSummary: listed.length > 0 ? listed.join(" · ") : null,
+    odds: pickOdds(competition, teams),
     favorite: favoriteIds.length > 0,
     favoriteIds,
     favoriteNames,
     color: league.color,
-    headline: `${when.dateLabel} · ${when.timeEt} ET · ${name} · ${league.label}${stageBit} · ${where}`,
+    headline: `${when.dateLabel} · ${whenText} · ${name} · ${league.label}${stageBit} · ${where}`,
     link: pickLink(event, competition),
   };
 }

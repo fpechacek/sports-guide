@@ -2,8 +2,9 @@ import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { FilterBar } from "./components/FilterBar";
 import { GameCard } from "./components/GameCard";
-import { applyFilters, defaultFilters, favoritePreview, filtersToSearch, groupByDate, readFilters, type Filters } from "./lib/filter";
+import { applyFilters, defaultFilters, filtersToSearch, groupByDate, passesView, readFilters, type Filters } from "./lib/filter";
 import { longDate, shortDate, todayEt, updatedLabel } from "./lib/time";
+import { isWatched, loadWatch, toggleStoredWatch, type WatchStore } from "./lib/watch";
 import type { GuideEvent, LeagueMeta, Schedule } from "./types";
 
 type BeforeInstallPromptEvent = Event & {
@@ -40,7 +41,9 @@ export function App() {
   );
   const [installEvent, setInstallEvent] = useState<BeforeInstallPromptEvent | null>(null);
   const [installHelp, setInstallHelp] = useState(false);
+  const [scores, setScores] = useState<Record<string, boolean>>({});
   const today = todayEt();
+  const [watchStore, setWatchStore] = useState<WatchStore>(() => loadWatch(today));
 
   useEffect(() => {
     const controller = new AbortController();
@@ -92,19 +95,29 @@ export function App() {
   const view = useMemo(() => {
     if (load.status !== "ready") return null;
     const schedule = load.schedule;
-    const events = applyFilters(schedule.events, filters);
-    const preview = favoritePreview(schedule.events, filters);
+    const watched = (event: GuideEvent) => isWatched(event, watchStore);
+    const events = applyFilters(schedule.events, filters).filter((event) => !filters.watch || watched(event));
+    const preview = schedule.events.filter(
+      (event) => watched(event) && event.status !== "canceled" && passesView(event, filters),
+    );
     return {
       schedule,
       events,
       groups: groupByDate(events),
-      preview: preview.slice(0, 6),
-      previewMore: Math.max(0, preview.length - 6),
+      preview,
       sports: sportsIn(schedule, schedule.events),
       leagues: leaguesIn(schedule, schedule.events),
-      favoriteTotal: schedule.events.filter((event) => event.favorite).length,
+      watchTotal: schedule.events.filter((event) => watched(event) && event.status !== "canceled").length,
     };
-  }, [load, filters]);
+  }, [load, filters, watchStore]);
+
+  function toggleScore(id: string) {
+    setScores((current) => ({ ...current, [id]: !current[id] }));
+  }
+
+  function toggleWatch(event: GuideEvent) {
+    setWatchStore((current) => toggleStoredWatch(event, current, today));
+  }
 
   async function install() {
     if (!installEvent) {
@@ -167,7 +180,6 @@ export function App() {
               leagues={view.leagues}
               dates={view.schedule.dates}
               today={today}
-              favoriteCount={view.favoriteTotal}
               dateLabel={shortDate}
               onChange={setFilters}
             />
@@ -175,29 +187,30 @@ export function App() {
           <p className="count" aria-live="polite">
             {view.events.length} {view.events.length === 1 ? "game" : "games"}
             {filters.onTv ? " on TV or streaming" : ""}
-            {view.favoriteTotal > 0 ? ` · ${view.favoriteTotal} for your teams` : ""}
+            {view.watchTotal > 0 ? ` · ${view.watchTotal} in Must Watch` : ""}
           </p>
 
-          {!filters.mine ? (
-            <section className="block" aria-labelledby="yours-heading">
+          {!filters.watch ? (
+            <section className="block" aria-labelledby="watch-heading">
               <div className="block-head">
-                <h2 id="yours-heading">Your teams</h2>
-                <p>{view.schedule.favorites.map((favorite) => favorite.name).join(" · ")}</p>
+                <h2 id="watch-heading">Must Watch</h2>
               </div>
               {view.preview.length === 0 ? (
-                <p className="quiet">No upcoming games for your teams in this view.</p>
+                <p className="quiet">Nothing in Must Watch for this view. Check a game to add it.</p>
               ) : (
                 <div className="stack">
                   {view.preview.map((event) => (
-                    <GameCard key={`fav-${event.leagueSlug}-${event.id}`} event={event} />
+                    <GameCard
+                      key={`watch-${event.leagueSlug}-${event.id}`}
+                      event={event}
+                      watched={isWatched(event, watchStore)}
+                      scoreOpen={scores[event.id] === true}
+                      onToggleWatch={() => toggleWatch(event)}
+                      onToggleScore={() => toggleScore(event.id)}
+                    />
                   ))}
                 </div>
               )}
-              {view.previewMore > 0 ? (
-                <Button variant="outline" size="sm" onClick={() => setFilters({ ...filters, mine: true })}>
-                  {view.previewMore} more for your teams
-                </Button>
-              ) : null}
             </section>
           ) : null}
 
@@ -206,7 +219,7 @@ export function App() {
               <h2 id="guide-heading">{filters.date ? longDate(filters.date) : "Full schedule"}</h2>
               <p>
                 {filters.onTv
-                  ? "Games without a listing are hidden, except your teams."
+                  ? "Games without a listing are hidden, except Must Watch."
                   : "Every game in the window, including ones with no channel yet."}
               </p>
             </div>
@@ -227,7 +240,14 @@ export function App() {
                   </h3>
                   <div className="stack">
                     {group.events.map((event) => (
-                      <GameCard key={`${event.leagueSlug}-${event.id}`} event={event} />
+                      <GameCard
+                        key={`${event.leagueSlug}-${event.id}`}
+                        event={event}
+                        watched={isWatched(event, watchStore)}
+                        scoreOpen={scores[event.id] === true}
+                        onToggleWatch={() => toggleWatch(event)}
+                        onToggleScore={() => toggleScore(event.id)}
+                      />
                     ))}
                   </div>
                 </div>

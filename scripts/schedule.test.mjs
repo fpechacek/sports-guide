@@ -1,10 +1,12 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { readFile } from "node:fs/promises";
 import { buildSchedule } from "./lib/build.mjs";
 import { matchingFavorites } from "./lib/favorites.mjs";
+import { classifyMustWatch } from "./lib/must-watch.mjs";
 import { normalizeCompetition, pickBroadcasts } from "./lib/normalize.mjs";
 import { formatEt } from "./lib/time.mjs";
+import { emptyWatch, isWatched, pruneWatch, toggleWatch } from "./lib/watch-state.mjs";
 
 const channelNames = { "USA Net": "USA Network", Tele: "Telemundo" };
 
@@ -272,4 +274,201 @@ test("checked-in favorites stay specific", async () => {
   assert.deepEqual(byId.steelers.leagues, ["nfl"]);
   assert.deepEqual(byId.nuggets.leagues, ["nba"]);
   assert.equal(config.timezone, "America/New_York");
+});
+
+test("a TBD kickoff stays a favorite and does not pretend to be midnight", () => {
+  const event = eventFor(
+    "Georgia Tech Yellow Jackets at Georgia Bulldogs",
+    "2026-11-28T05:00:00Z",
+    [team(59, "Georgia Tech Yellow Jackets"), team(61, "Georgia Bulldogs", { homeAway: "home", rank: 5 })],
+    [],
+    { week: { number: 13 } },
+  );
+  event.competitions[0].timeValid = false;
+  event.status.type.shortDetail = "TBD";
+  event.status.type.detail = "11/28 - TBD";
+  const listing = normalizeCompetition(event, event.competitions[0], leagues.cfb, favorites, channelNames);
+  assert.equal(listing.favorite, true);
+  assert.equal(listing.timeTbd, true);
+  assert.equal(listing.channels.length, 0);
+  assert.match(listing.headline, /Time TBD/);
+  assert.equal(listing.odds, null);
+});
+
+test("odds keep the provider, spread, moneyline, and total", () => {
+  const event = eventFor(
+    "Auburn Tigers at Alabama Crimson Tide",
+    "2026-11-28T17:00:00Z",
+    [team(2, "Auburn Tigers"), team(333, "Alabama Crimson Tide", { homeAway: "home" })],
+    [],
+  );
+  event.competitions[0].odds = [
+    {
+      provider: { name: "DraftKings", displayName: "DraftKings" },
+      details: "ALA -15.5",
+      overUnder: 50.5,
+      spread: -15.5,
+      moneyline: { home: { close: { odds: "-650" } }, away: { close: { odds: "+450" } } },
+    },
+  ];
+  const listing = normalizeCompetition(event, event.competitions[0], leagues.cfb, favorites, channelNames);
+  assert.equal(listing.odds.provider, "DraftKings");
+  assert.equal(listing.odds.spread, "ALA -15.5");
+  assert.equal(listing.odds.overUnder, "50.5");
+  assert.equal(listing.odds.homeMoneyline, "-650");
+  assert.equal(listing.odds.awayMoneyline, "+450");
+});
+
+test("Must Watch rules mark big games and leave ordinary ones out", async () => {
+  const rules = JSON.parse(await readFile(new URL("../config/must-watch.json", import.meta.url), "utf8"));
+  const base = {
+    timeTbd: false,
+    timeEt: "1:00 PM",
+    weekday: "Sat",
+    stage: "Week 13",
+    season: "regular-season",
+    competition: "College Football",
+    broadcasts: [],
+    favorite: false,
+    teams: [
+      { name: "Vanderbilt Commodores", rank: null },
+      { name: "Kentucky Wildcats", rank: null },
+    ],
+  };
+
+  const georgia = classifyMustWatch(
+    {
+      ...base,
+      name: "Georgia Tech Yellow Jackets at Georgia Bulldogs",
+      leagueSlug: "college-football",
+      favorite: true,
+      teams: [
+        { name: "Georgia Tech Yellow Jackets", rank: null },
+        { name: "Georgia Bulldogs", rank: 5 },
+      ],
+    },
+    rules,
+  );
+  assert.equal(georgia.mustWatch, true);
+  assert.deepEqual(
+    georgia.mustWatchReasons.map((reason) => reason.id),
+    ["my-team", "top-10", "rivalry"],
+  );
+
+  const ranked = classifyMustWatch(
+    {
+      ...base,
+      leagueSlug: "college-football",
+      teams: [
+        { name: "Oregon Ducks", rank: 8 },
+        { name: "Ohio State Buckeyes", rank: 1 },
+      ],
+    },
+    rules,
+  );
+  assert.ok(ranked.mustWatchReasons.some((reason) => reason.id === "ranked-matchup"));
+  assert.ok(ranked.mustWatchReasons.some((reason) => reason.id === "top-10"));
+
+  const noon = {
+    ...base,
+    name: "New Orleans Saints at Chicago Bears",
+    leagueSlug: "nfl",
+    weekday: "Sun",
+    timeEt: "1:00 PM",
+    competition: "NFL",
+    stage: "Week 11",
+    broadcasts: [{ name: "FOX", kind: "tv", market: "national" }],
+    teams: [
+      { name: "New Orleans Saints", rank: null },
+      { name: "Chicago Bears", rank: null },
+    ],
+  };
+  const afternoon = classifyMustWatch(noon, rules);
+  assert.equal(afternoon.mustWatch, false);
+
+  const snf = classifyMustWatch(
+    {
+      ...noon,
+      timeEt: "8:20 PM",
+      broadcasts: [{ name: "NBC", kind: "tv", market: "national" }],
+    },
+    rules,
+  );
+  assert.ok(snf.mustWatchReasons.some((reason) => reason.id === "primetime"));
+
+  const six = classifyMustWatch(
+    {
+      ...base,
+      name: "Arsenal at Liverpool",
+      leagueSlug: "eng.1",
+      competition: "Premier League",
+      stage: null,
+      teams: [
+        { name: "Arsenal", rank: null },
+        { name: "Liverpool", rank: null },
+      ],
+    },
+    rules,
+  );
+  assert.ok(six.mustWatchReasons.some((reason) => reason.id === "big-six"));
+
+  const euro = {
+    ...base,
+    leagueSlug: "uefa.champions",
+    stage: "League phase",
+    competition: "UEFA Champions League",
+    teams: [
+      { name: "Barcelona", rank: null },
+      { name: "Arsenal", rank: null },
+    ],
+  };
+  const leaguePhase = classifyMustWatch(euro, rules);
+  assert.equal(leaguePhase.mustWatch, false);
+
+  const round = classifyMustWatch({ ...euro, stage: "Round of 16" }, rules);
+  assert.ok(round.mustWatchReasons.some((reason) => reason.id === "knockout"));
+
+  const nhl = {
+    ...base,
+    leagueSlug: "nhl",
+    competition: "NHL",
+    stage: null,
+    broadcasts: [{ name: "ESPN+", kind: "streaming", market: "national" }],
+    teams: [
+      { name: "Buffalo Sabres", rank: null },
+      { name: "Florida Panthers", rank: null },
+    ],
+  };
+  const espnPlus = classifyMustWatch(nhl, rules);
+  assert.equal(espnPlus.mustWatch, false);
+
+  const espn = classifyMustWatch(
+    {
+      ...nhl,
+      broadcasts: [{ name: "ESPN", kind: "tv", market: "national" }],
+    },
+    rules,
+  );
+  assert.ok(espn.mustWatchReasons.some((reason) => reason.id === "national-tv"));
+});
+
+test("a checkbox hides an automatic Must Watch game and keeps a manual one", () => {
+  const today = "2026-11-21";
+  const georgia = { id: "401856760", date: "2026-11-28", mustWatch: true, favorite: true };
+  const ordinary = { id: "999", date: "2026-11-22", mustWatch: false, favorite: false };
+  let store = emptyWatch();
+  assert.equal(isWatched(georgia, store), true);
+  store = toggleWatch(georgia, store, today);
+  assert.equal(isWatched(georgia, store), false);
+  store = toggleWatch(georgia, store, today);
+  assert.equal(isWatched(georgia, store), true);
+
+  store = toggleWatch(ordinary, store, today);
+  assert.equal(isWatched(ordinary, store), true);
+  store = toggleWatch(ordinary, store, today);
+  assert.equal(isWatched(ordinary, store), false);
+
+  const stale = pruneWatch({ pinned: { old: "2026-11-20", keep: "2026-11-22" }, hidden: { gone: "2026-11-19" } }, today);
+  assert.deepEqual(stale.pinned, { keep: "2026-11-22" });
+  assert.deepEqual(stale.hidden, {});
 });
