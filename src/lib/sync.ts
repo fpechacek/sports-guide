@@ -13,7 +13,7 @@ const DIRTY = "sports-guide-sync-dirty";
 
 export async function loadSyncConfig(): Promise<SyncConfig> {
   try {
-    const response = await fetch(`${import.meta.env.BASE_URL}sync-config.json`, { cache: "no-cache" });
+    const response = await fetch(`${import.meta.env.BASE_URL}sync-config.json`, { cache: "no-store" });
     if (!response.ok) return disabled();
     const data = (await response.json()) as Partial<SyncConfig>;
     if (!data.enabled || !data.supabaseUrl || !data.supabaseAnonKey) return disabled();

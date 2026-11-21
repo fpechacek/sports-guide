@@ -17,7 +17,6 @@ export function SyncPicks({
   const [email, setEmail] = useState("");
   const [sent, setSent] = useState(false);
   const [error, setError] = useState("");
-  const [open, setOpen] = useState(false);
 
   async function sendLink() {
     setError("");
@@ -44,39 +43,34 @@ export function SyncPicks({
 
   return (
     <div className="sync">
-      <button type="button" className="sync-toggle" aria-expanded={open} onClick={() => setOpen((value) => !value)}>
-        {user ? "Picks sync on" : "Sync picks"}
-      </button>
-      {open ? (
-        <div className="sync-panel">
-          {user ? (
-            <>
-              <p>Signed in as {user.email}. Checks on this phone show up on your other devices.</p>
-              <Button variant="outline" size="sm" onClick={() => void signOut()}>
-                Sign out
-              </Button>
-            </>
-          ) : sent ? (
-            <p>Check that email on this phone and tap the link. This browser will stay signed in.</p>
-          ) : (
-            <>
-              <p>Email yourself a sign-in link. The guide stays open either way. Your checks are saved on this phone until you sign in.</p>
-              <Input
-                type="email"
-                inputMode="email"
-                autoComplete="email"
-                placeholder="you@email.com"
-                value={email}
-                onChange={(event) => setEmail(event.target.value)}
-                aria-label="Email"
-              />
-              <Button onClick={() => void sendLink()}>Email me a link</Button>
-            </>
-          )}
-          {error ? <p className="sync-error">{error}</p> : null}
-          {note ? <p className="sync-note">{note}</p> : null}
-        </div>
-      ) : null}
+      <div className="sync-panel">
+        {user ? (
+          <>
+            <p>Signed in as {user.email}. Checks on this phone show up on your other devices.</p>
+            <Button variant="outline" size="sm" onClick={() => void signOut()}>
+              Sign out
+            </Button>
+          </>
+        ) : sent ? (
+          <p>Check that email on this phone and tap the link. This browser will stay signed in.</p>
+        ) : (
+          <>
+            <p>Sign in to sync your checks. The guide stays open either way.</p>
+            <Input
+              type="email"
+              inputMode="email"
+              autoComplete="email"
+              placeholder="you@email.com"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              aria-label="Email"
+            />
+            <Button onClick={() => void sendLink()}>Email me a link</Button>
+          </>
+        )}
+        {error ? <p className="sync-error">{error}</p> : null}
+        {note ? <p className="sync-note">{note}</p> : null}
+      </div>
     </div>
   );
 }

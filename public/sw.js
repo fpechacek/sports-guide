@@ -1,4 +1,4 @@
-const VERSION = "sports-guide-v1";
+const VERSION = "sports-guide-v3";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(self.skipWaiting());
@@ -8,7 +8,7 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== VERSION).map((key) => caches.delete(key))))
+      .then((keys) => Promise.all(keys.map((key) => caches.delete(key))))
       .then(() => self.clients.claim()),
   );
 });
@@ -19,17 +19,20 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
 
-  if (url.pathname.endsWith("schedule.json") || request.mode === "navigate") {
-    event.respondWith(networkFirst(request));
-    return;
-  }
-  event.respondWith(cacheFirst(request));
+  const path = url.pathname;
+  const needsFreshCopy =
+    request.mode === "navigate" ||
+    path.endsWith(".json") ||
+    path.endsWith(".js") ||
+    path.endsWith(".css") ||
+    path.endsWith(".webmanifest");
+  event.respondWith(needsFreshCopy ? networkFirst(request) : cacheFirst(request));
 });
 
 async function networkFirst(request) {
   const cache = await caches.open(VERSION);
   try {
-    const response = await fetch(request);
+    const response = await fetch(request, { cache: "no-store" });
     if (response.ok) await cache.put(request, response.clone());
     return response;
   } catch (error) {
