@@ -52,6 +52,14 @@ https://site.api.espn.com/apis/common/v3/search?query=Team%20Name
 
 Use the `id`, `sport`, and `league` from the team result. Iowa football and Iowa basketball share an id, which is why Iowa's `leagues` is only `college-football`.
 
+## Sync picks
+
+The guide can be read with no account. Checks stay on the phone until Supabase is connected. `public/sync-config.json` has `"enabled": false` until then, so nothing on the site asks you to sign in.
+
+When it is on, sign-in is an email link. The browser remembers it. Only the signed-in person can change their own rows. The morning job copies those rows into `must-watch.json` for the TV, and that same visit keeps the free Supabase project from being paused. The service key stays in GitHub Actions secrets, not in the repo.
+
+The steps to turn it on are the checklist from the setup note. SQL for the table is `supabase/schema.sql`.
+
 ## Must Watch
 
 `config/must-watch.json` decides which games are pinned, on top of your favorites. It is plain rules: ranked college games, top 10, rivalries, bowls, conference titles, NFL primetime, NBA and NHL national TV, Premier League big-six matches, and Champions League knockouts. Change the file and run `npm run fetch`.

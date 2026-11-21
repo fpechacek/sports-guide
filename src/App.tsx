@@ -1,9 +1,12 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import type { SupabaseClient, User } from "@supabase/supabase-js";
 import { Button } from "@/components/ui/button";
 import { FilterBar } from "./components/FilterBar";
 import { GameCard } from "./components/GameCard";
+import { SyncPicks } from "./components/SyncPicks";
 import { applyFilters, defaultFilters, filtersToSearch, groupByDate, passesView, readFilters, type Filters } from "./lib/filter";
 import { longDate, shortDate, todayEt, updatedLabel } from "./lib/time";
+import { createSyncClient, loadSyncConfig, markDirty, pushAfterToggle, syncOnSignIn } from "./lib/sync";
 import { isWatched, loadWatch, toggleStoredWatch, type WatchStore } from "./lib/watch";
 import type { GuideEvent, LeagueMeta, Schedule } from "./types";
 
@@ -44,6 +47,10 @@ export function App() {
   const [scores, setScores] = useState<Record<string, boolean>>({});
   const today = todayEt();
   const [watchStore, setWatchStore] = useState<WatchStore>(() => loadWatch(today));
+  const [syncClient, setSyncClient] = useState<SupabaseClient | null>(null);
+  const [syncUser, setSyncUser] = useState<User | null>(null);
+  const [syncNote, setSyncNote] = useState("");
+  const syncUserRef = useRef<User | null>(null);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -64,6 +71,35 @@ export function App() {
       });
     return () => controller.abort();
   }, [attempt]);
+
+  useEffect(() => {
+    let active = true;
+    let unsubscribe = () => {};
+    void loadSyncConfig().then(async (config) => {
+      if (!config.enabled || !active) return;
+      const client = await createSyncClient(config);
+      if (!active) return;
+      setSyncClient(client);
+      const { data: listener } = client.auth.onAuthStateChange((event, session) => {
+        const next = session?.user ?? null;
+        syncUserRef.current = next;
+        setSyncUser(next);
+        if (!next || (event !== "SIGNED_IN" && event !== "INITIAL_SESSION")) return;
+        void syncOnSignIn(client, next, today)
+          .then((store) => {
+            if (active) setWatchStore(store);
+          })
+          .catch((error: unknown) => {
+            if (active) setSyncNote(error instanceof Error ? error.message : "Saved on this phone. Sync will retry.");
+          });
+      });
+      unsubscribe = () => listener.subscription.unsubscribe();
+    });
+    return () => {
+      active = false;
+      unsubscribe();
+    };
+  }, [today]);
 
   useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
@@ -116,7 +152,17 @@ export function App() {
   }
 
   function toggleWatch(event: GuideEvent) {
-    setWatchStore((current) => toggleStoredWatch(event, current, today));
+    setWatchStore((current) => {
+      const next = toggleStoredWatch(event, current, today);
+      const user = syncUserRef.current;
+      if (syncClient && user) {
+        markDirty();
+        void pushAfterToggle(syncClient, user, next).catch((error: unknown) => {
+          setSyncNote(error instanceof Error ? error.message : "Saved on this phone. Sync will retry.");
+        });
+      }
+      return next;
+    });
   }
 
   async function install() {
@@ -147,6 +193,7 @@ export function App() {
             {load.status === "ready" ? `Updated ${updatedLabel(load.schedule.generatedAt)} ET` : "Loading schedule"}
           </p>
         </div>
+        {syncClient ? <SyncPicks client={syncClient} user={syncUser} note={syncNote} onSignedIn={() => setSyncUser(syncUserRef.current)} /> : null}
       </header>
       <div className="stripe" aria-hidden="true">
         <span />
