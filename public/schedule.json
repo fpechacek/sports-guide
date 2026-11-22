@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T16:32:12.512Z",
+  "generatedAt": "2026-11-22T16:42:36.269Z",
   "timezone": "America/New_York",
   "location": "Merritt Island, Florida",
   "range": {
@@ -958,7 +958,7 @@
       "shortName": "RSO @ RAC",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "58'",
+      "statusDetail": "68'",
       "venue": "El Sardineros",
       "teams": [
         {
@@ -969,7 +969,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "7-1-4",
-          "score": "1",
+          "score": "2",
           "color": "#3366cc",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
           "conferenceId": null,
@@ -983,7 +983,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-2-6",
-          "score": "2",
+          "score": "3",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
           "conferenceId": null,
@@ -1055,7 +1055,7 @@
       "shortName": "REN @ LOR",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "16'",
+      "statusDetail": "27'",
       "venue": "Stade du Moustoir - Yves Allainmat",
       "teams": [
         {
@@ -1142,7 +1142,7 @@
       "shortName": "MAN @ LIV",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "2'",
+      "statusDetail": "12'",
       "venue": "Anfield",
       "teams": [
         {
@@ -1167,7 +1167,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-3-2",
-          "score": "0",
+          "score": "1",
           "color": "#d11317",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
           "conferenceId": null,
@@ -1242,8 +1242,8 @@
       "name": "Hamburg SV at Werder Bremen",
       "shortName": "HSV @ SVW",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "Scheduled",
+      "status": "in-progress",
+      "statusDetail": "11'",
       "venue": "Weserstadion",
       "teams": [
         {
@@ -1254,7 +1254,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-0-5",
-          "score": null,
+          "score": "0",
           "color": "#1a26af",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
           "conferenceId": null,
@@ -1268,7 +1268,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-3-2",
-          "score": null,
+          "score": "0",
           "color": "#03915c",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
           "conferenceId": null,
@@ -1304,7 +1304,7 @@
       "favoriteNames": [],
       "color": "#ff8d8d",
       "headline": "Sun, Nov 22 · 11:30 AM ET · Hamburg SV at Werder Bremen · Bundesliga · Fandango",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401884730/hamburg-sv-werder-bremen",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401884730",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1329,8 +1329,8 @@
       "name": "Pennsylvania Quakers at Maine Black Bears",
       "shortName": "PENN @ ME",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/22 - 11:30 AM EST",
+      "status": "in-progress",
+      "statusDetail": "4:46 - 1st",
       "venue": "Skip Chappelle Court in Memorial Gymnasium",
       "teams": [
         {
@@ -1341,7 +1341,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "5-1",
-          "score": null,
+          "score": "5",
           "color": "#082a74",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/219.png",
           "conferenceId": "12",
@@ -1355,7 +1355,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-1",
-          "score": null,
+          "score": "2",
           "color": "#127dbe",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/311.png",
           "conferenceId": "1",
@@ -1393,7 +1393,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Sun, Nov 22 · 11:30 AM ET · Pennsylvania Quakers at Maine Black Bears · NCAAW · ESPN+, NESN",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401913767/penn-maine",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401913767",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1468,10 +1468,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "MIL -165",
+        "spread": "MIL -160",
         "overUnder": "3.5",
-        "homeMoneyline": "-165",
-        "awayMoneyline": "+370",
+        "homeMoneyline": "-160",
+        "awayMoneyline": "+360",
         "homeAbbreviation": "MIL",
         "awayAbbreviation": "FRO"
       },
@@ -2181,8 +2181,8 @@
         "provider": "DraftKings",
         "spread": "AMER -1.5",
         "overUnder": "131.5",
-        "homeMoneyline": "-118",
-        "awayMoneyline": "-102",
+        "homeMoneyline": "-115",
+        "awayMoneyline": "-105",
         "homeAbbreviation": "AMER",
         "awayAbbreviation": "TOW"
       },
@@ -2267,9 +2267,9 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "LIU -3.5",
-        "overUnder": "145.5",
-        "homeMoneyline": "-148",
-        "awayMoneyline": "+124",
+        "overUnder": "143.5",
+        "homeMoneyline": "-155",
+        "awayMoneyline": "+130",
         "homeAbbreviation": "LIU",
         "awayAbbreviation": "FAIR"
       },
@@ -2956,8 +2956,8 @@
         "provider": "DraftKings",
         "spread": "DET -3.5",
         "overUnder": "48.5",
-        "homeMoneyline": "-221",
-        "awayMoneyline": "+184",
+        "homeMoneyline": "-220",
+        "awayMoneyline": "+183",
         "homeAbbreviation": "DET",
         "awayAbbreviation": "TB"
       },
@@ -3136,7 +3136,7 @@
         "spread": "PIT -3.5",
         "overUnder": "37.5",
         "homeMoneyline": "+166",
-        "awayMoneyline": "-198",
+        "awayMoneyline": "-199",
         "homeAbbreviation": "PHI",
         "awayAbbreviation": "PIT"
       },
@@ -4036,8 +4036,8 @@
       "broadcastSummary": "FloSports",
       "odds": {
         "provider": "DraftKings",
-        "spread": "FOR -2.5",
-        "overUnder": "143.5",
+        "spread": "FOR -3.5",
+        "overUnder": "141.5",
         "homeMoneyline": "-155",
         "awayMoneyline": "+130",
         "homeAbbreviation": "FOR",
@@ -7409,8 +7409,8 @@
         "provider": "DraftKings",
         "spread": "VT -1.5",
         "overUnder": "158.5",
-        "homeMoneyline": "+105",
-        "awayMoneyline": "-125",
+        "homeMoneyline": "+110",
+        "awayMoneyline": "-130",
         "homeAbbreviation": "OKST",
         "awayAbbreviation": "VT"
       },
@@ -7581,10 +7581,10 @@
       "broadcastSummary": "CW",
       "odds": {
         "provider": "DraftKings",
-        "spread": "TXST -2.5",
+        "spread": "TXST -1.5",
         "overUnder": "141.5",
-        "homeMoneyline": "-135",
-        "awayMoneyline": "+114",
+        "homeMoneyline": "-130",
+        "awayMoneyline": "+110",
         "homeAbbreviation": "TXST",
         "awayAbbreviation": "MCN"
       },
@@ -8397,9 +8397,9 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "LAC -3",
-        "overUnder": "42.5",
-        "homeMoneyline": "-172",
-        "awayMoneyline": "+145",
+        "overUnder": "43.5",
+        "homeMoneyline": "-173",
+        "awayMoneyline": "+146",
         "homeAbbreviation": "LAC",
         "awayAbbreviation": "NYJ"
       },
@@ -8572,8 +8572,8 @@
         "provider": "DraftKings",
         "spread": "DEN -10.5",
         "overUnder": "40.5",
-        "homeMoneyline": "-596",
-        "awayMoneyline": "+444",
+        "homeMoneyline": "-597",
+        "awayMoneyline": "+445",
         "homeAbbreviation": "DEN",
         "awayAbbreviation": "LV"
       },
@@ -9428,7 +9428,7 @@
       "broadcastSummary": null,
       "odds": {
         "provider": "DraftKings",
-        "spread": "OKST -32.5",
+        "spread": "OKST -34.5",
         "overUnder": "142.5",
         "homeMoneyline": "OFF",
         "awayMoneyline": "OFF",
@@ -49943,8 +49943,8 @@
         "provider": "DraftKings",
         "spread": "DAL -8.5",
         "overUnder": "47.5",
-        "homeMoneyline": "-402",
-        "awayMoneyline": "+318",
+        "homeMoneyline": "-409",
+        "awayMoneyline": "+322",
         "homeAbbreviation": "DAL",
         "awayAbbreviation": "PHI"
       },
@@ -50669,8 +50669,8 @@
         "provider": "DraftKings",
         "spread": "BUF -3",
         "overUnder": "51.5",
-        "homeMoneyline": "-159",
-        "awayMoneyline": "+134",
+        "homeMoneyline": "-162",
+        "awayMoneyline": "+137",
         "homeAbbreviation": "BUF",
         "awayAbbreviation": "KC"
       },
@@ -63526,10 +63526,10 @@
       "broadcastSummary": "Fox",
       "odds": {
         "provider": "DraftKings",
-        "spread": "UTAH -20.5",
+        "spread": "UTAH -19.5",
         "overUnder": "69.5",
-        "homeMoneyline": "-1450",
-        "awayMoneyline": "+850",
+        "homeMoneyline": "-1350",
+        "awayMoneyline": "+800",
         "homeAbbreviation": "UTAH",
         "awayAbbreviation": "WVU"
       },
@@ -70029,10 +70029,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "ARMY -7.5",
+        "spread": "ARMY -7",
         "overUnder": "50.5",
-        "homeMoneyline": "+240",
-        "awayMoneyline": "-298",
+        "homeMoneyline": "+205",
+        "awayMoneyline": "-250",
         "homeAbbreviation": "RICE",
         "awayAbbreviation": "ARMY"
       },
@@ -70116,10 +70116,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "JMU -14",
+        "spread": "JMU -14.5",
         "overUnder": "55.5",
-        "homeMoneyline": "-750",
-        "awayMoneyline": "+525",
+        "homeMoneyline": "-850",
+        "awayMoneyline": "+575",
         "homeAbbreviation": "JMU",
         "awayAbbreviation": "CCU"
       },
@@ -70203,10 +70203,10 @@
       "broadcastSummary": "ESPN+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "UL -3.5",
+        "spread": "UL -4.5",
         "overUnder": "56.5",
-        "homeMoneyline": "+140",
-        "awayMoneyline": "-166",
+        "homeMoneyline": "+154",
+        "awayMoneyline": "-185",
         "homeAbbreviation": "GAST",
         "awayAbbreviation": "UL"
       },
@@ -75512,7 +75512,15 @@
         "MW+"
       ],
       "broadcastSummary": "MW+",
-      "odds": null,
+      "odds": {
+        "provider": "DraftKings",
+        "spread": "NIU -4.5",
+        "overUnder": "49.5",
+        "homeMoneyline": "-185",
+        "awayMoneyline": "+154",
+        "homeAbbreviation": "NIU",
+        "awayAbbreviation": "UTEP"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -80139,8 +80147,8 @@
         "provider": "DraftKings",
         "spread": "OKST -6.5",
         "overUnder": "67.5",
-        "homeMoneyline": "-225",
-        "awayMoneyline": "+185",
+        "homeMoneyline": "-218",
+        "awayMoneyline": "+180",
         "homeAbbreviation": "OKST",
         "awayAbbreviation": "KU"
       },
@@ -82068,7 +82076,15 @@
       ],
       "streaming": [],
       "broadcastSummary": "ACC Network",
-      "odds": null,
+      "odds": {
+        "provider": "DraftKings",
+        "spread": "CAL -7.5",
+        "overUnder": "47.5",
+        "homeMoneyline": "-290",
+        "awayMoneyline": "+235",
+        "homeAbbreviation": "CAL",
+        "awayAbbreviation": "PITT"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -83334,7 +83350,15 @@
       ],
       "streaming": [],
       "broadcastSummary": "CBS Sports Network",
-      "odds": null,
+      "odds": {
+        "provider": "DraftKings",
+        "spread": "UNLV -4.5",
+        "overUnder": "45.5",
+        "homeMoneyline": "-185",
+        "awayMoneyline": "+154",
+        "homeAbbreviation": "UNLV",
+        "awayAbbreviation": "NEV"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
@@ -94543,7 +94567,7 @@
       "odds": {
         "provider": "DraftKings",
         "spread": "WSH -7",
-        "overUnder": "42.5",
+        "overUnder": "41.5",
         "homeMoneyline": "+268",
         "awayMoneyline": "-332",
         "homeAbbreviation": "ARI",
