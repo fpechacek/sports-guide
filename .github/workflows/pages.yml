@@ -4,11 +4,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  # A push made with the Actions token does not start workflows, except
-  # workflow_run. This is what publishes the file the morning refresh commits.
-  workflow_run:
-    workflows: ["Refresh schedule"]
-    types: [completed]
 
 permissions:
   contents: read
@@ -20,12 +15,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -54,6 +45,16 @@ jobs:
         with:
           path: dist
 
+  # Deploy in a later job. In the same job, deploy-pages asks for the
+  # github-pages artifact before Actions has finished listing the upload,
+  # and the step fails with "Found 0 artifact(s)" even though the file exists.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v5

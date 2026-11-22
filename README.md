@@ -159,7 +159,7 @@ The published site is public even if the GitHub repository is private. There is 
 7. If **Deploy site** did not start from the push, open that workflow and use **Run workflow**.
 8. When the job is green, **Settings → Pages** shows the site address. For this repository name it is `https://YOUR_USER.github.io/sports-guide/`.
 9. The file for Home Assistant is `https://YOUR_USER.github.io/sports-guide/schedule.json`.
-10. **Refresh schedule** runs on its own at 8:30 and 9:30 UTC. One of those is 4:30 AM Eastern all year. In winter the other run is 3:30 AM. In summer it is 5:30 AM. You can also start it by hand from the Actions tab with **Run workflow**. GitHub sometimes starts a scheduled job late, which is why there are two. A run with new listings commits `public/schedule.json` as `github-actions[bot]`, and that commit publishes the site.
+10. **Refresh schedule** runs on its own at 8:30 and 9:30 UTC. One of those is 4:30 AM Eastern all year. In winter the other run is 3:30 AM. In summer it is 5:30 AM. You can also start it by hand from the Actions tab with **Run workflow**. GitHub sometimes starts a scheduled job late, which is why there are two. A run with new listings commits `public/schedule.json` as `github-actions[bot]`, then that same workflow publishes the site.
 11. On your phone, open the site in Chrome or Samsung Internet. Use the browser menu and tap **Add to Home screen** or **Install app**. The page has an **Add to home** button with the same steps. It then opens full screen, and the last schedule remains available for a short time offline.
 
 After that, a normal morning is: open the icon, see your teams, scroll the day.

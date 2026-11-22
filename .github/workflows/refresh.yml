@@ -10,9 +10,11 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
-  group: refresh-schedule
+  group: pages
   cancel-in-progress: false
 
 jobs:
@@ -26,6 +28,7 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: npm
 
       - name: Fetch schedule
         run: node scripts/fetch-schedule.mjs
@@ -44,8 +47,37 @@ jobs:
           git add public/schedule.json public/must-watch.json
           if git diff --cached --quiet; then
             echo "Schedule is unchanged."
-            exit 0
+          else
+            git commit -m "Update TV schedule"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push
           fi
-          git commit -m "Update TV schedule"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        env:
+          VITE_BASE: ${{ github.event.repository.name == format('{0}.github.io', github.repository_owner) && '/' || format('/{0}/', github.event.repository.name) }}
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  # A push from this workflow cannot start Deploy site. Publish here, in a
+  # second job, so the artifact is listed before deploy-pages looks for it.
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
