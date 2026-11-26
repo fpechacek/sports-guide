@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T18:33:41.051Z",
+  "generatedAt": "2026-11-26T19:12:03.182Z",
   "timezone": "America/New_York",
   "location": "Merritt Island, Florida",
   "range": {
@@ -770,8 +770,8 @@
       "name": "West Virginia Mountaineers at Notre Dame Fighting Irish",
       "shortName": "WVU VS ND",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "0:47 - 4th",
+      "status": "final",
+      "statusDetail": "Final",
       "venue": "Imperial Arena",
       "teams": [
         {
@@ -781,8 +781,8 @@
           "abbreviation": "WVU",
           "homeAway": "away",
           "rank": 22,
-          "record": "6-0",
-          "score": "63",
+          "record": "6-1",
+          "score": "64",
           "color": "#eaaa00",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
           "conferenceId": "8",
@@ -795,8 +795,8 @@
           "abbreviation": "ND",
           "homeAway": "home",
           "rank": 13,
-          "record": "6-0",
-          "score": "75",
+          "record": "7-0",
+          "score": "78",
           "color": "#062340",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
           "conferenceId": "2",
@@ -824,7 +824,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Thu, Nov 26 · 11:30 AM ET · West Virginia Mountaineers at Notre Dame Fighting Irish · NCAAW · ESPN2",
-      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401923185",
+      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401923185/west-virginia-notre-dame",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -917,8 +917,8 @@
       "name": "Oklahoma Sooners at Purdue Boilermakers",
       "shortName": "OU VS PUR",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "10:52 - 2nd",
+      "status": "final",
+      "statusDetail": "Final",
       "venue": "Suncoast Credit Union Arena",
       "teams": [
         {
@@ -928,8 +928,8 @@
           "abbreviation": "OU",
           "homeAway": "away",
           "rank": null,
-          "record": "4-2",
-          "score": "50",
+          "record": "5-2",
+          "score": "70",
           "color": "#990000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
           "conferenceId": "23",
@@ -942,8 +942,8 @@
           "abbreviation": "PUR",
           "homeAway": "home",
           "rank": null,
-          "record": "4-3",
-          "score": "47",
+          "record": "4-4",
+          "score": "63",
           "color": "#ceb888",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
           "conferenceId": "7",
@@ -971,7 +971,7 @@
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Thu, Nov 26 · 12:00 PM ET · Oklahoma Sooners at Purdue Boilermakers · NCAAM · Fox",
-      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401906807",
+      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401906807/oklahoma-purdue",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -996,8 +996,8 @@
       "name": "Army Black Knights at UTSA Roadrunners",
       "shortName": "ARMY @ UTSA",
       "format": "teams",
-      "status": "in-progress",
-      "statusDetail": "5:13 - 2nd",
+      "status": "final",
+      "statusDetail": "Final",
       "venue": "UTSA Convocation Center",
       "teams": [
         {
@@ -1007,8 +1007,8 @@
           "abbreviation": "ARMY",
           "homeAway": "away",
           "rank": null,
-          "record": "2-5",
-          "score": "67",
+          "record": "3-5",
+          "score": "79",
           "color": "#d3bc8d",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
           "conferenceId": "22",
@@ -1021,8 +1021,8 @@
           "abbreviation": "UTSA",
           "homeAway": "home",
           "rank": null,
-          "record": "4-2",
-          "score": "54",
+          "record": "4-3",
+          "score": "61",
           "color": "#0c2340",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png",
           "conferenceId": "62",
@@ -1050,7 +1050,7 @@
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Thu, Nov 26 · 12:00 PM ET · Army Black Knights at UTSA Roadrunners · NCAAM · ESPN+",
-      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401912231",
+      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401912231/army-utsa",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1076,7 +1076,7 @@
       "shortName": "LR VS TNTC",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "Halftime",
+      "statusDetail": "4:38 - 4th",
       "venue": "Elridge Blake Sports and Fitness Center",
       "teams": [
         {
@@ -1087,7 +1087,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-5",
-          "score": "31",
+          "score": "44",
           "color": "#ad0000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2031.png",
           "conferenceId": "30",
@@ -1101,7 +1101,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-3",
-          "score": "18",
+          "score": "41",
           "color": "#5a4099",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2635.png",
           "conferenceId": "24",
@@ -1155,7 +1155,7 @@
       "shortName": "SYR VS WIS",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "9:24 - 3rd",
+      "statusDetail": "3:47 - 4th",
       "venue": "Coliseo Guillermo Angulo",
       "teams": [
         {
@@ -1166,7 +1166,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "5-1",
-          "score": "46",
+          "score": "66",
           "color": "#000e54",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png",
           "conferenceId": "2",
@@ -1180,7 +1180,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "6-2",
-          "score": "40",
+          "score": "58",
           "color": "#a00000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png",
           "conferenceId": "7",
@@ -1233,8 +1233,8 @@
       "name": "Hapoel Be'er at Besiktas",
       "shortName": "HBE @ BES",
       "format": "teams",
-      "status": "other",
-      "statusDetail": "Susp",
+      "status": "in-progress",
+      "statusDetail": "HT",
       "venue": "Batumi Stadium (Adjarabet Arena)",
       "teams": [
         {
@@ -1245,7 +1245,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "0-1-3",
-          "score": null,
+          "score": "0",
           "color": "#fd0000",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13083.png",
           "conferenceId": null,
@@ -1259,7 +1259,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-1-1",
-          "score": null,
+          "score": "0",
           "color": "#ffffff",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
           "conferenceId": null,
@@ -1281,13 +1281,21 @@
         "Paramount+"
       ],
       "broadcastSummary": "Paramount+",
-      "odds": null,
+      "odds": {
+        "provider": "DraftKings",
+        "spread": "BES -250",
+        "overUnder": "3.5",
+        "homeMoneyline": "-250",
+        "awayMoneyline": "+600",
+        "homeAbbreviation": "BES",
+        "awayAbbreviation": "HBE"
+      },
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffb07a",
       "headline": "Thu, Nov 26 · 12:45 PM ET · Hapoel Be'er at Besiktas · Europa League · League phase · Paramount+",
-      "link": "https://www.espn.com/soccer/match/_/gameId/401915506/hapoel-beer-besiktas",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401915506",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -1313,7 +1321,7 @@
       "shortName": "LEV @ OLM",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "HT",
+      "statusDetail": "67'",
       "venue": "Stade Vélodrome",
       "teams": [
         {
@@ -1400,7 +1408,7 @@
       "shortName": "LECH @ USG",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "45'+2'",
+      "statusDetail": "67'",
       "venue": "King Power at Den Dreef Stadion",
       "teams": [
         {
@@ -1425,7 +1433,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-1-0",
-          "score": "0",
+          "score": "2",
           "color": "#fcee33",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
           "conferenceId": null,
@@ -1487,7 +1495,7 @@
       "shortName": "B04 @ DZG",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "HT",
+      "statusDetail": "68'",
       "venue": "Maksimir Stadium",
       "teams": [
         {
@@ -1574,7 +1582,7 @@
       "shortName": "SLB @ PLZ",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "HT",
+      "statusDetail": "68'",
       "venue": "Doosan Arena",
       "teams": [
         {
@@ -1599,7 +1607,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "1-0-3",
-          "score": "3",
+          "score": "4",
           "color": "#0000dd",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11706.png",
           "conferenceId": null,
@@ -1661,7 +1669,7 @@
       "shortName": "BOU @ CEL",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "45'+4'",
+      "statusDetail": "68'",
       "venue": "Balaidos",
       "teams": [
         {
@@ -1672,7 +1680,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "4-0-0",
-          "score": "0",
+          "score": "1",
           "color": "#f42727",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
           "conferenceId": null,
@@ -1748,7 +1756,7 @@
       "shortName": "ARA @ SLZ",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "HT",
+      "statusDetail": "70'",
       "venue": "Red Bull Arena Salzburg",
       "teams": [
         {
@@ -1773,7 +1781,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "1-1-2",
-          "score": "0",
+          "score": "2",
           "color": "#d82c3a",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png",
           "conferenceId": null,
@@ -1835,7 +1843,7 @@
       "shortName": "MIL @ OLY",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "HT",
+      "statusDetail": "68'",
       "venue": "Georgios Karaiskakis Stadium",
       "teams": [
         {
@@ -1846,7 +1854,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "1-0-3",
-          "score": "0",
+          "score": "2",
           "color": "#e4002b",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
           "conferenceId": null,
@@ -1860,7 +1868,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-1-0",
-          "score": "1",
+          "score": "2",
           "color": "#d01729",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
           "conferenceId": null,
@@ -1922,7 +1930,7 @@
       "shortName": "RIG @ ZAL",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "45'+2'",
+      "statusDetail": "57'",
       "venue": "S. Darius and S. Gireno Stadium",
       "teams": [
         {
@@ -1947,7 +1955,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "0-0-3",
-          "score": "0",
+          "score": "1",
           "color": "#c60000",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20028.png",
           "conferenceId": null,
@@ -2009,7 +2017,7 @@
       "shortName": "AGF @ SKBR",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "HT",
+      "statusDetail": "69'",
       "venue": "Brann Stadium",
       "teams": [
         {
@@ -2020,7 +2028,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "0-2-1",
-          "score": "2",
+          "score": "4",
           "color": "#000000",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7853.png",
           "conferenceId": null,
@@ -2034,7 +2042,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-1-0",
-          "score": "0",
+          "score": "1",
           "color": "#ff0000",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/620.png",
           "conferenceId": null,
@@ -2096,7 +2104,7 @@
       "shortName": "MID @ PAF",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "HT",
+      "statusDetail": "70'",
       "venue": "Alphamega Stadium",
       "teams": [
         {
@@ -2183,7 +2191,7 @@
       "shortName": "LRI @ EGN",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "HT",
+      "statusDetail": "69'",
       "venue": "Air Albania Stadium",
       "teams": [
         {
@@ -2208,7 +2216,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "0-2-1",
-          "score": "0",
+          "score": "1",
           "color": "#c60000",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21943.png",
           "conferenceId": null,
@@ -2270,7 +2278,7 @@
       "shortName": "MON @ HOM",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "44'",
+      "statusDetail": "63'",
       "venue": "Tynecastle Park",
       "teams": [
         {
@@ -2295,7 +2303,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "0-1-2",
-          "score": "1",
+          "score": "2",
           "color": "#8e003b",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
           "conferenceId": null,
@@ -2357,7 +2365,7 @@
       "shortName": "LUG @ JABL",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "45'+3'",
+      "statusDetail": "68'",
       "venue": "Stadion Strelnice",
       "teams": [
         {
@@ -2444,7 +2452,7 @@
       "shortName": "GET @ IBE",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "HT",
+      "statusDetail": "68'",
       "venue": "Mikheil Meskhi Stadioni",
       "teams": [
         {
@@ -2531,7 +2539,7 @@
       "shortName": "UCRA @ BHA",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "45'+4'",
+      "statusDetail": "66'",
       "venue": "American Express Stadium",
       "teams": [
         {
@@ -2556,7 +2564,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "2-1-0",
-          "score": "2",
+          "score": "4",
           "color": "#0606fa",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
           "conferenceId": null,
@@ -2618,7 +2626,7 @@
       "shortName": "THUN @ AJA",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "45'+3'",
+      "statusDetail": "67'",
       "venue": "Johan Cruijff Arena",
       "teams": [
         {
@@ -2705,7 +2713,7 @@
       "shortName": "MD VS SDSU",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "10:42 - 1st",
+      "statusDetail": "Halftime",
       "venue": "Michelob ULTRA Arena",
       "teams": [
         {
@@ -2716,7 +2724,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-3",
-          "score": "6",
+          "score": "31",
           "color": "#ce1126",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/120.png",
           "conferenceId": "7",
@@ -2730,7 +2738,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-1",
-          "score": "13",
+          "score": "34",
           "color": "#a6192e",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png",
           "conferenceId": "21",
@@ -2784,7 +2792,7 @@
       "shortName": "CHI @ DET",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "3:12 - 1st",
+      "statusDetail": "4:07 - 2nd",
       "venue": "Ford Field",
       "teams": [
         {
@@ -2795,7 +2803,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "8-2",
-          "score": "0",
+          "score": "10",
           "color": "#0b1c3a",
           "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/chi.png",
           "conferenceId": null,
@@ -2809,7 +2817,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "8-2",
-          "score": "3",
+          "score": "10",
           "color": "#0076b6",
           "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/det.png",
           "conferenceId": null,
@@ -2872,7 +2880,7 @@
       "shortName": "MCN VS COFC",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "4:38 - 2nd",
+      "statusDetail": "3:54 - 3rd",
       "venue": "McArthur Center",
       "teams": [
         {
@@ -2883,7 +2891,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-4",
-          "score": "22",
+          "score": "37",
           "color": "#00529c",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2377.png",
           "conferenceId": "25",
@@ -2897,7 +2905,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "3-2",
-          "score": "17",
+          "score": "36",
           "color": "#7a2531",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/232.png",
           "conferenceId": "10",
@@ -2950,8 +2958,8 @@
       "name": "Boston College Eagles at UCF Knights",
       "shortName": "BC VS UCF",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/26 - 1:30 PM EST",
+      "status": "in-progress",
+      "statusDetail": "11:00 - 1st",
       "venue": "State Farm Field House",
       "teams": [
         {
@@ -2962,7 +2970,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "6-0",
-          "score": null,
+          "score": "13",
           "color": "#8c2232",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/103.png",
           "conferenceId": "2",
@@ -2976,7 +2984,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-2",
-          "score": null,
+          "score": "7",
           "color": "#b4a169",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2116.png",
           "conferenceId": "8",
@@ -2998,21 +3006,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "ESPN2",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "UCF -1.5",
-        "overUnder": "147.5",
-        "homeMoneyline": "-118",
-        "awayMoneyline": "-102",
-        "homeAbbreviation": "UCF",
-        "awayAbbreviation": "BC"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
       "headline": "Thu, Nov 26 · 1:30 PM ET · Boston College Eagles at UCF Knights · NCAAM · ESPN2",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401929282/boston-college-ucf",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401929282",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3038,7 +3038,7 @@
       "shortName": "UGA VS COLO",
       "format": "teams",
       "status": "in-progress",
-      "statusDetail": "9:23 - 1st",
+      "statusDetail": "4:02 - 2nd",
       "venue": "Hard Rock Hotel Riviera Maya",
       "teams": [
         {
@@ -3049,7 +3049,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "6-1",
-          "score": "0",
+          "score": "17",
           "color": "#ba0c2f",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/61.png",
           "conferenceId": "23",
@@ -3063,7 +3063,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-0",
-          "score": "0",
+          "score": "28",
           "color": "#cfb87c",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png",
           "conferenceId": "8",
@@ -3113,39 +3113,39 @@
       "stage": null,
       "season": "regular-season",
       "week": null,
-      "name": "South Carolina Gamecocks at Arizona State Sun Devils",
-      "shortName": "SC VS ASU",
+      "name": "Arizona State Sun Devils at South Carolina Gamecocks",
+      "shortName": "ASU VS SC",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/26 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "16:19 - 1st",
       "venue": "Acrisure Arena",
       "teams": [
-        {
-          "id": "2579",
-          "name": "South Carolina Gamecocks",
-          "shortName": "South Carolina",
-          "abbreviation": "SC",
-          "homeAway": "away",
-          "rank": null,
-          "record": "5-1",
-          "score": null,
-          "color": "#73000a",
-          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
-          "conferenceId": "23",
-          "favorite": false
-        },
         {
           "id": "9",
           "name": "Arizona State Sun Devils",
           "shortName": "Arizona St",
           "abbreviation": "ASU",
-          "homeAway": "home",
+          "homeAway": "away",
           "rank": null,
           "record": "5-1",
-          "score": null,
+          "score": "9",
           "color": "#ffc627",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/9.png",
           "conferenceId": "8",
+          "favorite": false
+        },
+        {
+          "id": "2579",
+          "name": "South Carolina Gamecocks",
+          "shortName": "South Carolina",
+          "abbreviation": "SC",
+          "homeAway": "home",
+          "rank": null,
+          "record": "5-1",
+          "score": "7",
+          "color": "#73000a",
+          "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png",
+          "conferenceId": "23",
           "favorite": false
         }
       ],
@@ -3164,21 +3164,13 @@
       ],
       "streaming": [],
       "broadcastSummary": "CBS Sports Network",
-      "odds": {
-        "provider": "DraftKings",
-        "spread": "ASU -4.5",
-        "overUnder": "139.5",
-        "homeMoneyline": "-198",
-        "awayMoneyline": "+164",
-        "homeAbbreviation": "ASU",
-        "awayAbbreviation": "SC"
-      },
+      "odds": null,
       "favorite": false,
       "favoriteIds": [],
       "favoriteNames": [],
       "color": "#ffcf70",
-      "headline": "Thu, Nov 26 · 2:00 PM ET · South Carolina Gamecocks at Arizona State Sun Devils · NCAAM · CBS Sports Network",
-      "link": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921674/south-carolina-arizona-st",
+      "headline": "Thu, Nov 26 · 2:00 PM ET · Arizona State Sun Devils at South Carolina Gamecocks · NCAAM · CBS Sports Network",
+      "link": "https://www.espn.com/mens-college-basketball/game?gameId=401921674",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3203,8 +3195,8 @@
       "name": "Davidson Wildcats at Florida Gators",
       "shortName": "DAV VS FLA",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/26 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:34 - 1st",
       "venue": "Imperial Arena",
       "teams": [
         {
@@ -3215,7 +3207,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-4",
-          "score": null,
+          "score": "6",
           "color": "#e51837",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2166.png",
           "conferenceId": "3",
@@ -3229,7 +3221,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "4-3",
-          "score": null,
+          "score": "10",
           "color": "#0021a5",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png",
           "conferenceId": "23",
@@ -3257,7 +3249,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Thu, Nov 26 · 2:00 PM ET · Davidson Wildcats at Florida Gators · NCAAW · ESPNU",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401921023/davidson-florida",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401921023",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3282,8 +3274,8 @@
       "name": "UTSA Roadrunners at Binghamton Bearcats",
       "shortName": "UTSA VS BING",
       "format": "teams",
-      "status": "scheduled",
-      "statusDetail": "11/26 - 2:00 PM EST",
+      "status": "in-progress",
+      "statusDetail": "4:02 - 1st",
       "venue": "Ruben Rodriguez Coliseum",
       "teams": [
         {
@@ -3294,7 +3286,7 @@
           "homeAway": "away",
           "rank": null,
           "record": "3-2",
-          "score": null,
+          "score": "7",
           "color": "#0c2340",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png",
           "conferenceId": "62",
@@ -3308,7 +3300,7 @@
           "homeAway": "home",
           "rank": null,
           "record": "5-3",
-          "score": null,
+          "score": "12",
           "color": "#00614a",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2066.png",
           "conferenceId": "1",
@@ -3325,7 +3317,7 @@
       "favoriteNames": [],
       "color": "#f5a6e0",
       "headline": "Thu, Nov 26 · 2:00 PM ET · UTSA Roadrunners at Binghamton Bearcats · NCAAW · channel not announced",
-      "link": "https://www.espn.com/womens-college-basketball/game/_/gameId/401925995/utsa-binghamton",
+      "link": "https://www.espn.com/womens-college-basketball/game?gameId=401925995",
       "mustWatch": false,
       "mustWatchReasons": []
     },
@@ -3399,11 +3391,11 @@
       "streaming": [],
       "broadcastSummary": "FS1",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TEX -8.5",
         "overUnder": "153.5",
-        "homeMoneyline": "-380",
-        "awayMoneyline": "+300",
+        "homeMoneyline": "-395",
+        "awayMoneyline": "+310",
         "homeAbbreviation": "TEX",
         "awayAbbreviation": "GTWN"
       },
@@ -3487,10 +3479,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "LYON -525",
+        "spread": "LYON -380",
         "overUnder": "3.5",
-        "homeMoneyline": "-525",
-        "awayMoneyline": "+1300",
+        "homeMoneyline": "-380",
+        "awayMoneyline": "+950",
         "homeAbbreviation": "LYON",
         "awayAbbreviation": "LSK"
       },
@@ -3574,9 +3566,9 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "JUV -525",
-        "overUnder": "3.5",
-        "homeMoneyline": "-525",
+        "spread": "JUV -500",
+        "overUnder": "2.5",
+        "homeMoneyline": "-500",
         "awayMoneyline": "+1300",
         "homeAbbreviation": "JUV",
         "awayAbbreviation": "OMON"
@@ -3661,10 +3653,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "AND -130",
+        "spread": "AND -135",
         "overUnder": "2.5",
-        "homeMoneyline": "+350",
-        "awayMoneyline": "-130",
+        "homeMoneyline": "+380",
+        "awayMoneyline": "-135",
         "homeAbbreviation": "OFI",
         "awayAbbreviation": "AND"
       },
@@ -3748,10 +3740,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "CRY +120",
+        "spread": "CRY -105",
         "overUnder": "3.5",
-        "homeMoneyline": "+120",
-        "awayMoneyline": "+200",
+        "homeMoneyline": "-105",
+        "awayMoneyline": "+250",
         "homeAbbreviation": "CRY",
         "awayAbbreviation": "RSO"
       },
@@ -3835,10 +3827,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "REN +115",
+        "spread": "REN +120",
         "overUnder": "3.5",
-        "homeMoneyline": "+210",
-        "awayMoneyline": "+115",
+        "homeMoneyline": "+200",
+        "awayMoneyline": "+120",
         "homeAbbreviation": "NEC",
         "awayAbbreviation": "REN"
       },
@@ -3922,10 +3914,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "CEL -160",
+        "spread": "CEL -145",
         "overUnder": "3.5",
-        "homeMoneyline": "+380",
-        "awayMoneyline": "-160",
+        "homeMoneyline": "+350",
+        "awayMoneyline": "-145",
         "homeAbbreviation": "TOR",
         "awayAbbreviation": "CEL"
       },
@@ -4009,10 +4001,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "SUN -360",
+        "spread": "SUN -370",
         "overUnder": "2.5",
-        "homeMoneyline": "-360",
-        "awayMoneyline": "+950",
+        "homeMoneyline": "-370",
+        "awayMoneyline": "+1000",
         "homeAbbreviation": "SUN",
         "awayAbbreviation": "JAG"
       },
@@ -4096,10 +4088,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "AZ +140",
+        "spread": "SPP +160",
         "overUnder": "2.5",
-        "homeMoneyline": "+185",
-        "awayMoneyline": "+140",
+        "homeMoneyline": "+160",
+        "awayMoneyline": "+160",
         "homeAbbreviation": "SPP",
         "awayAbbreviation": "AZ"
       },
@@ -4183,10 +4175,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "TSG -330",
+        "spread": "TSG -350",
         "overUnder": "3.5",
-        "homeMoneyline": "-330",
-        "awayMoneyline": "+750",
+        "homeMoneyline": "-350",
+        "awayMoneyline": "+800",
         "homeAbbreviation": "TSG",
         "awayAbbreviation": "STG"
       },
@@ -4270,9 +4262,9 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "FER -265",
+        "spread": "FER -270",
         "overUnder": "3.5",
-        "homeMoneyline": "-265",
+        "homeMoneyline": "-270",
         "awayMoneyline": "+650",
         "homeAbbreviation": "FER",
         "awayAbbreviation": "NKC"
@@ -4357,10 +4349,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "KBH -370",
+        "spread": "KBH -300",
         "overUnder": "2.5",
-        "homeMoneyline": "+1000",
-        "awayMoneyline": "-370",
+        "homeMoneyline": "+900",
+        "awayMoneyline": "-300",
         "homeAbbreviation": "IDE",
         "awayAbbreviation": "KBH"
       },
@@ -4444,10 +4436,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "SCF -130",
+        "spread": "SCF +100",
         "overUnder": "2.5",
-        "homeMoneyline": "-130",
-        "awayMoneyline": "+330",
+        "homeMoneyline": "+100",
+        "awayMoneyline": "+270",
         "homeAbbreviation": "SCF",
         "awayAbbreviation": "TWE"
       },
@@ -4705,10 +4697,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "GENT +145",
+        "spread": "GENT +140",
         "overUnder": "2.5",
-        "homeMoneyline": "+145",
-        "awayMoneyline": "+185",
+        "homeMoneyline": "+140",
+        "awayMoneyline": "+190",
         "homeAbbreviation": "GENT",
         "awayAbbreviation": "RSB"
       },
@@ -4792,10 +4784,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "HAJ +110",
+        "spread": "HAJ +120",
         "overUnder": "2.5",
-        "homeMoneyline": "+110",
-        "awayMoneyline": "+230",
+        "homeMoneyline": "+120",
+        "awayMoneyline": "+210",
         "homeAbbreviation": "HAJ",
         "awayAbbreviation": "STVV"
       },
@@ -4879,10 +4871,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "ATA -250",
+        "spread": "ATA -235",
         "overUnder": "3.5",
-        "homeMoneyline": "+600",
-        "awayMoneyline": "-250",
+        "homeMoneyline": "+550",
+        "awayMoneyline": "-235",
         "homeAbbreviation": "BBL",
         "awayAbbreviation": "ATA"
       },
@@ -4966,10 +4958,10 @@
       "broadcastSummary": "Paramount+",
       "odds": {
         "provider": "DraftKings",
-        "spread": "FCN +140",
+        "spread": "FCN +125",
         "overUnder": "2.5",
-        "homeMoneyline": "+140",
-        "awayMoneyline": "+185",
+        "homeMoneyline": "+125",
+        "awayMoneyline": "+205",
         "homeAbbreviation": "FCN",
         "awayAbbreviation": "PAO"
       },
@@ -5131,7 +5123,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "ISU -4.5",
         "overUnder": "139.5",
         "homeMoneyline": "-205",
@@ -5223,7 +5215,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN2",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MIA -1.5",
         "overUnder": "159.5",
         "homeMoneyline": "-105",
@@ -5468,9 +5460,9 @@
       "streaming": [],
       "broadcastSummary": "CBS Sports Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "USC -1.5",
-        "overUnder": "157.5",
+        "overUnder": "156.5",
         "homeMoneyline": "-122",
         "awayMoneyline": "+102",
         "homeAbbreviation": "USC",
@@ -5555,7 +5547,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MSU -5.5",
         "overUnder": "148.5",
         "homeMoneyline": "-225",
@@ -5642,11 +5634,11 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "DAL -8.5",
         "overUnder": "49.5",
-        "homeMoneyline": "-455",
-        "awayMoneyline": "+354",
+        "homeMoneyline": "-457",
+        "awayMoneyline": "+355",
         "homeAbbreviation": "DAL",
         "awayAbbreviation": "PHI"
       },
@@ -5734,11 +5726,11 @@
       "streaming": [],
       "broadcastSummary": "FS1",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "UCLA -7.5",
         "overUnder": "152.5",
-        "homeMoneyline": "-325",
-        "awayMoneyline": "+260",
+        "homeMoneyline": "-340",
+        "awayMoneyline": "+270",
         "homeAbbreviation": "UCLA",
         "awayAbbreviation": "SMC"
       },
@@ -5900,7 +5892,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "CREI -1.5",
         "overUnder": "153.5",
         "homeMoneyline": "-125",
@@ -6071,7 +6063,7 @@
       "streaming": [],
       "broadcastSummary": "FS1",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "PITT -1.5",
         "overUnder": "137.5",
         "homeMoneyline": "-112",
@@ -6163,7 +6155,7 @@
       "streaming": [],
       "broadcastSummary": "CBS Sports Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "LSU -6.5",
         "overUnder": "155.5",
         "homeMoneyline": "-310",
@@ -6250,7 +6242,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TTU -14",
         "overUnder": "46.5",
         "homeMoneyline": "-625",
@@ -6337,7 +6329,7 @@
       ],
       "broadcastSummary": "FloSports",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "JXST -3.5",
         "overUnder": "137.5",
         "homeMoneyline": "+136",
@@ -6584,11 +6576,11 @@
       "streaming": [],
       "broadcastSummary": "NBC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "BUF -3",
         "overUnder": "45.5",
-        "homeMoneyline": "-155",
-        "awayMoneyline": "+131",
+        "homeMoneyline": "-153",
+        "awayMoneyline": "+130",
         "homeAbbreviation": "BUF",
         "awayAbbreviation": "KC"
       },
@@ -6680,7 +6672,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN2",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "SJU -1.5",
         "overUnder": "160.5",
         "homeMoneyline": "-125",
@@ -6776,7 +6768,7 @@
       "streaming": [],
       "broadcastSummary": "ESPNU",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "ALA -13.5",
         "overUnder": "169.5",
         "homeMoneyline": "+700",
@@ -7023,7 +7015,7 @@
       ],
       "broadcastSummary": "FloSports",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "PAC -7.5",
         "overUnder": "139.5",
         "homeMoneyline": "+275",
@@ -7110,7 +7102,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN2",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TTU -10.5",
         "overUnder": "148.5",
         "homeMoneyline": "+400",
@@ -7197,7 +7189,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "GONZ -3.5",
         "overUnder": "153.5",
         "homeMoneyline": "-175",
@@ -8080,7 +8072,7 @@
       "streaming": [],
       "broadcastSummary": "ABC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MISS -18.5",
         "overUnder": "56.5",
         "homeMoneyline": "-1050",
@@ -8167,7 +8159,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "IOWA -3.5",
         "overUnder": "40.5",
         "homeMoneyline": "-198",
@@ -8197,7 +8189,7 @@
         },
         {
           "id": "dgb",
-          "label": "DGB #3"
+          "label": "DGB #2"
         },
         {
           "id": "rivalry",
@@ -8275,7 +8267,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TLSA -1.5",
         "overUnder": "57.5",
         "homeMoneyline": "-110",
@@ -8362,7 +8354,7 @@
       "streaming": [],
       "broadcastSummary": "CBS Sports Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "BUF -7.5",
         "overUnder": "47.5",
         "homeMoneyline": "+245",
@@ -8449,7 +8441,7 @@
       "streaming": [],
       "broadcastSummary": "ESPNU",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TOL -3",
         "overUnder": "45.5",
         "homeMoneyline": "+130",
@@ -9443,7 +9435,7 @@
       ],
       "broadcastSummary": "ESPN+ · NESN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "BOS -166",
         "overUnder": "6.5",
         "homeMoneyline": "-166",
@@ -9540,7 +9532,7 @@
       ],
       "broadcastSummary": "ESPN+ · MSGSN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "NJ -265",
         "overUnder": "6.5",
         "homeMoneyline": "-265",
@@ -9655,7 +9647,7 @@
       ],
       "broadcastSummary": "ESPN+ · Scripps Sports · Utah 16 · Mammoth+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "UTAH -112",
         "overUnder": "6.5",
         "homeMoneyline": "-108",
@@ -11035,7 +11027,7 @@
       ],
       "broadcastSummary": "NHL Network · Blues App · BN+ · Prime Video (Local)",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "DAL -142",
         "overUnder": "5.5",
         "homeMoneyline": "+120",
@@ -11846,7 +11838,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "USA -3.5",
         "overUnder": "56.5",
         "homeMoneyline": "-166",
@@ -12443,7 +12435,7 @@
       ],
       "broadcastSummary": "Prime Video",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "DEN -4.5",
         "overUnder": "36.5",
         "homeMoneyline": "+190",
@@ -12553,7 +12545,7 @@
       ],
       "broadcastSummary": "ESPN+ · The Spot - MTN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TB -135",
         "overUnder": "5.5",
         "homeMoneyline": "-135",
@@ -12650,7 +12642,7 @@
       ],
       "broadcastSummary": "ESPN+ · NBC Sports Phil",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "PHI -230",
         "overUnder": "6.5",
         "homeMoneyline": "-230",
@@ -12756,8 +12748,8 @@
       ],
       "broadcastSummary": "ESPN+ · MNMT · Scripps Sports",
       "odds": {
-        "provider": "DraftKings",
-        "spread": "WSH -108",
+        "provider": "Draft Kings",
+        "spread": "FLA -112",
         "overUnder": "6.5",
         "homeMoneyline": "-108",
         "awayMoneyline": "-112",
@@ -12871,7 +12863,7 @@
       ],
       "broadcastSummary": "ESPN+ · CBJNHL · DSN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "CBJ -130",
         "overUnder": "5.5",
         "homeMoneyline": "-130",
@@ -13647,7 +13639,7 @@
       "streaming": [],
       "broadcastSummary": "ABC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "FLA -6.5",
         "overUnder": "53.5",
         "homeMoneyline": "+195",
@@ -13734,7 +13726,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MEM -18.5",
         "overUnder": "66.5",
         "homeMoneyline": "-1000",
@@ -13821,7 +13813,7 @@
       "streaming": [],
       "broadcastSummary": "CBS Sports Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "NDSU -7.5",
         "overUnder": "39.5",
         "homeMoneyline": "+275",
@@ -14469,7 +14461,7 @@
       ],
       "broadcastSummary": "ESPN+ · MINNHL · Altitude Sports",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MIN -125",
         "overUnder": "6.5",
         "homeMoneyline": "-125",
@@ -14598,7 +14590,7 @@
       ],
       "broadcastSummary": "ESPN+ · KCOP · Fox 11 Plus · Prime Video (Local) · ABTV",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "LA -120",
         "overUnder": "6.5",
         "homeMoneyline": "+100",
@@ -14704,7 +14696,7 @@
       ],
       "broadcastSummary": "ESPN+ · NBC Sports BA · Scripps Sports",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "VGK -205",
         "overUnder": "6.5",
         "homeMoneyline": "+170",
@@ -15344,7 +15336,7 @@
       "streaming": [],
       "broadcastSummary": "CW",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "UNM -6.5",
         "overUnder": "42.5",
         "homeMoneyline": "-258",
@@ -16393,7 +16385,7 @@
       "streaming": [],
       "broadcastSummary": "TNT · truTV",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "NYR -175",
         "overUnder": "6.5",
         "homeMoneyline": "+145",
@@ -17670,7 +17662,7 @@
       "mustWatchReasons": [
         {
           "id": "dgb",
-          "label": "DGB #2"
+          "label": "DGB #3"
         }
       ]
     },
@@ -17970,7 +17962,7 @@
       ],
       "broadcastSummary": "Prime Video",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "NY -3.5",
         "overUnder": "224.5",
         "homeMoneyline": "-169",
@@ -18294,7 +18286,7 @@
       "streaming": [],
       "broadcastSummary": "ABC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TEX -11.5",
         "overUnder": "40.5",
         "homeMoneyline": "+350",
@@ -18381,7 +18373,7 @@
       "streaming": [],
       "broadcastSummary": "NBC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "WIS -7.5",
         "overUnder": "37.5",
         "homeMoneyline": "-305",
@@ -18636,7 +18628,7 @@
       ],
       "broadcastSummary": "MyMi · Bucks App",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "DET -11.5",
         "overUnder": "221.5",
         "homeMoneyline": "-561",
@@ -18712,7 +18704,7 @@
       "streaming": [],
       "broadcastSummary": null,
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "PHI -3.5",
         "overUnder": "232.5",
         "homeMoneyline": "+146",
@@ -18799,7 +18791,7 @@
       ],
       "broadcastSummary": "DAZN (YES)",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TOR -7.5",
         "overUnder": "221.5",
         "homeMoneyline": "-333",
@@ -18896,7 +18888,7 @@
       ],
       "broadcastSummary": "ESPN+ · MSGSN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "NYI -135",
         "overUnder": "6.5",
         "homeMoneyline": "-135",
@@ -19749,7 +19741,7 @@
       "streaming": [],
       "broadcastSummary": null,
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "BOS -9.5",
         "overUnder": "222.5",
         "homeMoneyline": "-395",
@@ -19845,7 +19837,7 @@
       "streaming": [],
       "broadcastSummary": "TNT · truTV",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "BUF -148",
         "overUnder": "6.5",
         "homeMoneyline": "-148",
@@ -19956,7 +19948,7 @@
       ],
       "broadcastSummary": "ESPN+ · KONG · Prime Video (Local)",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "EDM -205",
         "overUnder": "6.5",
         "homeMoneyline": "-205",
@@ -20312,7 +20304,7 @@
       ],
       "broadcastSummary": "DAZN MIN · DAZN MEM",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MIN -2.5",
         "overUnder": "223.5",
         "homeMoneyline": "-142",
@@ -20399,7 +20391,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "UTAH -26.5",
         "overUnder": "66.5",
         "homeMoneyline": "-2800",
@@ -20593,7 +20585,7 @@
       ],
       "broadcastSummary": "Arizona's Family 3TV · Suns Live · KFAA-TV · MavsTV",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "PHX -3.5",
         "overUnder": "227.5",
         "homeMoneyline": "-142",
@@ -20759,7 +20751,7 @@
       ],
       "broadcastSummary": "Prime Video",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "SA -4.5",
         "overUnder": "224.5",
         "homeMoneyline": "-205",
@@ -20856,7 +20848,7 @@
       ],
       "broadcastSummary": "KJZZ-TV · Jazz+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "DEN -9.5",
         "overUnder": "228.5",
         "homeMoneyline": "+326",
@@ -20970,9 +20962,9 @@
       ],
       "broadcastSummary": "ClipperVision · GCSEN · Pelicans.com",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "LAC -2.5",
-        "overUnder": "228.5",
+        "overUnder": "229.5",
         "homeMoneyline": "-147",
         "awayMoneyline": "+124",
         "homeAbbreviation": "LAC",
@@ -21067,7 +21059,7 @@
       ],
       "broadcastSummary": "KUNP 16 · BlazerVision",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "POR -9.5",
         "overUnder": "221.5",
         "homeMoneyline": "-325",
@@ -22658,7 +22650,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN2",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "LOU -3",
         "overUnder": "54.5",
         "homeMoneyline": "+120",
@@ -22750,7 +22742,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MIA -24.5",
         "overUnder": "53.5",
         "homeMoneyline": "-2800",
@@ -22837,7 +22829,7 @@
       "streaming": [],
       "broadcastSummary": "ACC Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "UNC -6",
         "overUnder": "54.5",
         "homeMoneyline": "-225",
@@ -22924,7 +22916,7 @@
       "streaming": [],
       "broadcastSummary": "ABC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "ND -25.5",
         "overUnder": "53.5",
         "homeMoneyline": "+1300",
@@ -23011,7 +23003,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "OSU -10.5",
         "overUnder": "37.5",
         "homeMoneyline": "-425",
@@ -23103,7 +23095,7 @@
       "streaming": [],
       "broadcastSummary": "FS1",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "CONN -3",
         "overUnder": "45.5",
         "homeMoneyline": "+130",
@@ -23190,7 +23182,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "NAVY -16.5",
         "overUnder": "54.5",
         "homeMoneyline": "+575",
@@ -23277,7 +23269,7 @@
       "streaming": [],
       "broadcastSummary": "CBS Sports Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "CMU -4",
         "overUnder": "50.5",
         "homeMoneyline": "+160",
@@ -23364,7 +23356,7 @@
       "streaming": [],
       "broadcastSummary": "ESPNU",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "GASO -2.5",
         "overUnder": "54.5",
         "homeMoneyline": "-135",
@@ -24216,7 +24208,7 @@
       "streaming": [],
       "broadcastSummary": "Big Ten Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "NU -2.5",
         "overUnder": "50.5",
         "homeMoneyline": "-142",
@@ -24743,7 +24735,7 @@
       "streaming": [],
       "broadcastSummary": "SEC Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "LSU -14.5",
         "overUnder": "49.5",
         "homeMoneyline": "+455",
@@ -24830,7 +24822,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "ECU -1.5",
         "overUnder": "57.5",
         "homeMoneyline": "-118",
@@ -24917,9 +24909,9 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "KENN -3.5",
-        "overUnder": "53.5",
+        "overUnder": "54.5",
         "homeMoneyline": "+142",
         "awayMoneyline": "-170",
         "homeAbbreviation": "WKU",
@@ -25004,7 +24996,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MRSH -5.5",
         "overUnder": "51.5",
         "homeMoneyline": "+170",
@@ -25091,7 +25083,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "ODU -6",
         "overUnder": "50.5",
         "homeMoneyline": "-230",
@@ -26784,11 +26776,11 @@
       "streaming": [],
       "broadcastSummary": "TNT",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "COLO -2.5",
         "overUnder": "49.5",
-        "homeMoneyline": "-125",
-        "awayMoneyline": "+105",
+        "homeMoneyline": "-130",
+        "awayMoneyline": "+110",
         "homeAbbreviation": "COLO",
         "awayAbbreviation": "UCF"
       },
@@ -26871,7 +26863,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "ISU -3.5",
         "overUnder": "53.5",
         "homeMoneyline": "-185",
@@ -26958,8 +26950,8 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
-        "spread": "ARMY -6",
+        "provider": "Draft Kings",
+        "spread": "ARMY -5.5",
         "overUnder": "47.5",
         "homeMoneyline": "+170",
         "awayMoneyline": "-205",
@@ -27045,7 +27037,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "JMU -17.5",
         "overUnder": "54.5",
         "homeMoneyline": "-850",
@@ -27132,7 +27124,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "UL -5.5",
         "overUnder": "55.5",
         "homeMoneyline": "+170",
@@ -27219,7 +27211,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "LIB -17.5",
         "overUnder": "53.5",
         "homeMoneyline": "+600",
@@ -27306,7 +27298,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "FIU -11.5",
         "overUnder": "41.5",
         "homeMoneyline": "-455",
@@ -27393,7 +27385,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MTSU -3",
         "overUnder": "51.5",
         "homeMoneyline": "-162",
@@ -30478,7 +30470,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN2",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "SC -6",
         "overUnder": "41.5",
         "homeMoneyline": "+190",
@@ -30565,7 +30557,7 @@
       "streaming": [],
       "broadcastSummary": "CW",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "VT -3",
         "overUnder": "50.5",
         "homeMoneyline": "-155",
@@ -30652,7 +30644,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "ARST -3.5",
         "overUnder": "46.5",
         "homeMoneyline": "-185",
@@ -31872,7 +31864,7 @@
       "streaming": [],
       "broadcastSummary": "ABC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "UGA -35.5",
         "overUnder": "55.5",
         "homeMoneyline": "-8000",
@@ -31972,7 +31964,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "BYU -15.5",
         "overUnder": "56.5",
         "homeMoneyline": "-700",
@@ -32069,7 +32061,7 @@
       ],
       "broadcastSummary": "ESPN · Disney+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "WAKE -14.5",
         "overUnder": "55.5",
         "homeMoneyline": "-650",
@@ -32156,7 +32148,7 @@
       "streaming": [],
       "broadcastSummary": "ACC Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "SMU -7",
         "overUnder": "61.5",
         "homeMoneyline": "+230",
@@ -32243,7 +32235,7 @@
       "streaming": [],
       "broadcastSummary": "FS1",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "PSU -7",
         "overUnder": "48.5",
         "homeMoneyline": "+225",
@@ -32330,7 +32322,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "USC -6.5",
         "overUnder": "45.5",
         "homeMoneyline": "+205",
@@ -32426,7 +32418,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "USF -6.5",
         "overUnder": "43.5",
         "homeMoneyline": "-238",
@@ -32513,7 +32505,7 @@
       ],
       "broadcastSummary": "MW+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "NIU -4",
         "overUnder": "50.5",
         "homeMoneyline": "-192",
@@ -32600,7 +32592,7 @@
       ],
       "broadcastSummary": "ESPN+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "BGSU -3",
         "overUnder": "42.5",
         "homeMoneyline": "-162",
@@ -32692,7 +32684,7 @@
       "streaming": [],
       "broadcastSummary": "CBS Sports Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "DEL -2.5",
         "overUnder": "58.5",
         "homeMoneyline": "-142",
@@ -33321,7 +33313,7 @@
       "streaming": [],
       "broadcastSummary": "ESPNU",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "UNT -3",
         "overUnder": "45.5",
         "homeMoneyline": "-155",
@@ -34612,7 +34604,7 @@
       "streaming": [],
       "broadcastSummary": "SEC Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MIZ -2.5",
         "overUnder": "41.5",
         "homeMoneyline": "-122",
@@ -34708,7 +34700,7 @@
       "streaming": [],
       "broadcastSummary": "Big Ten Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MSU -3",
         "overUnder": "46.5",
         "homeMoneyline": "+130",
@@ -36219,7 +36211,7 @@
       "streaming": [],
       "broadcastSummary": "USA Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "BOIS -21",
         "overUnder": "76.5",
         "homeMoneyline": "+1000",
@@ -37128,7 +37120,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN2",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "OKST -6.5",
         "overUnder": "64.5",
         "homeMoneyline": "-230",
@@ -37215,7 +37207,7 @@
       "streaming": [],
       "broadcastSummary": "CW",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "WSU -2.5",
         "overUnder": "46.5",
         "homeMoneyline": "-142",
@@ -37473,7 +37465,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TENN -13.5",
         "overUnder": "42.5",
         "homeMoneyline": "+410",
@@ -37560,7 +37552,7 @@
       "streaming": [],
       "broadcastSummary": "FS1",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "IU -23.5",
         "overUnder": "52.5",
         "homeMoneyline": "-2100",
@@ -37691,7 +37683,7 @@
           "abbreviation": "ARMY",
           "homeAway": "home",
           "rank": null,
-          "record": "2-5",
+          "record": "3-5",
           "score": null,
           "color": "#d3bc8d",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
@@ -39163,7 +39155,7 @@
       ],
       "broadcastSummary": "ABC · Disney+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "ALA -15.5",
         "overUnder": "49.5",
         "homeMoneyline": "-750",
@@ -39255,7 +39247,7 @@
       "streaming": [],
       "broadcastSummary": "ACC Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "PITT -9.5",
         "overUnder": "47.5",
         "homeMoneyline": "+280",
@@ -39342,7 +39334,7 @@
       "streaming": [],
       "broadcastSummary": "NBC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "ORE -13.5",
         "overUnder": "50.5",
         "homeMoneyline": "-625",
@@ -40532,11 +40524,11 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "ARIZ -7.5",
         "overUnder": "53.5",
-        "homeMoneyline": "-325",
-        "awayMoneyline": "+260",
+        "homeMoneyline": "-310",
+        "awayMoneyline": "+250",
         "homeAbbreviation": "ARIZ",
         "awayAbbreviation": "ASU"
       },
@@ -40619,7 +40611,7 @@
       "streaming": [],
       "broadcastSummary": "CBS Sports Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "UNLV -5.5",
         "overUnder": "44.5",
         "homeMoneyline": "-225",
@@ -40920,7 +40912,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN2",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "HOU -4.5",
         "overUnder": "55.5",
         "homeMoneyline": "-198",
@@ -41007,7 +40999,7 @@
       "streaming": [],
       "broadcastSummary": "USA Network",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TXST -7",
         "overUnder": "52.5",
         "homeMoneyline": "+220",
@@ -41094,7 +41086,7 @@
       "streaming": [],
       "broadcastSummary": "CW",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "FRES -3",
         "overUnder": "58.5",
         "homeMoneyline": "-155",
@@ -41541,7 +41533,7 @@
       ],
       "broadcastSummary": "MW+",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "HAW -13.5",
         "overUnder": "39.5",
         "homeMoneyline": "-575",
@@ -44151,10 +44143,10 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MIN -7",
         "overUnder": "41.5",
-        "homeMoneyline": "-311",
+        "homeMoneyline": "-310",
         "awayMoneyline": "+252",
         "homeAbbreviation": "MIN",
         "awayAbbreviation": "ATL"
@@ -44238,11 +44230,11 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "HOU -6.5",
         "overUnder": "47.5",
-        "homeMoneyline": "-332",
-        "awayMoneyline": "+267",
+        "homeMoneyline": "-334",
+        "awayMoneyline": "+268",
         "homeAbbreviation": "HOU",
         "awayAbbreviation": "BAL"
       },
@@ -44325,7 +44317,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "CIN -10",
         "overUnder": "49.5",
         "homeMoneyline": "-563",
@@ -44412,7 +44404,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "NYG -6",
         "overUnder": "41.5",
         "homeMoneyline": "+236",
@@ -44499,7 +44491,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "NYJ -4.5",
         "overUnder": "39.5",
         "homeMoneyline": "+200",
@@ -44586,7 +44578,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "JAX -14.5",
         "overUnder": "49.5",
         "homeMoneyline": "-1180",
@@ -50924,7 +50916,7 @@
           "abbreviation": "UTSA",
           "homeAway": "away",
           "rank": null,
-          "record": "4-2",
+          "record": "4-3",
           "score": null,
           "color": "#0c2340",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png",
@@ -52047,11 +52039,11 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
-        "spread": "NE -1.5",
+        "provider": "Draft Kings",
+        "spread": "NE -2.5",
         "overUnder": "35.5",
-        "homeMoneyline": "-101",
-        "awayMoneyline": "-117",
+        "homeMoneyline": "+112",
+        "awayMoneyline": "-132",
         "homeAbbreviation": "LAC",
         "awayAbbreviation": "NE"
       },
@@ -52134,7 +52126,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "SF -3",
         "overUnder": "43.5",
         "homeMoneyline": "-152",
@@ -52226,7 +52218,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "WSH -6.5",
         "overUnder": "41.5",
         "homeMoneyline": "+282",
@@ -54070,11 +54062,11 @@
       "streaming": [],
       "broadcastSummary": "NBC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "CLE -4.5",
         "overUnder": "40.5",
         "homeMoneyline": "-244",
-        "awayMoneyline": "+202",
+        "awayMoneyline": "+201",
         "homeAbbreviation": "CLE",
         "awayAbbreviation": "LV"
       },
@@ -56436,7 +56428,7 @@
           "abbreviation": "WVU",
           "homeAway": "home",
           "rank": 22,
-          "record": "6-0",
+          "record": "6-1",
           "score": null,
           "color": "#eaaa00",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
@@ -58535,7 +58527,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TB -3",
         "overUnder": "43.5",
         "homeMoneyline": "-157",
@@ -61942,7 +61934,7 @@
           "abbreviation": "PUR",
           "homeAway": "home",
           "rank": null,
-          "record": "4-3",
+          "record": "4-4",
           "score": null,
           "color": "#ceb888",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png",
@@ -65856,7 +65848,7 @@
           "abbreviation": "OU",
           "homeAway": "home",
           "rank": null,
-          "record": "4-2",
+          "record": "5-2",
           "score": null,
           "color": "#990000",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png",
@@ -67963,7 +67955,7 @@
           "abbreviation": "ARMY",
           "homeAway": "home",
           "rank": null,
-          "record": "2-5",
+          "record": "3-5",
           "score": null,
           "color": "#d3bc8d",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
@@ -84745,7 +84737,7 @@
           "abbreviation": "WVU",
           "homeAway": "home",
           "rank": 22,
-          "record": "6-0",
+          "record": "6-1",
           "score": null,
           "color": "#eaaa00",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
@@ -88809,7 +88801,7 @@
       ],
       "broadcastSummary": "Prime Video",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "LAR -1.5",
         "overUnder": "44.5",
         "homeMoneyline": "-110",
@@ -89653,7 +89645,7 @@
           "abbreviation": "ND",
           "homeAway": "away",
           "rank": 13,
-          "record": "6-0",
+          "record": "7-0",
           "score": null,
           "color": "#062340",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
@@ -93294,7 +93286,7 @@
           "abbreviation": "WVU",
           "homeAway": "home",
           "rank": 22,
-          "record": "6-0",
+          "record": "6-1",
           "score": null,
           "color": "#eaaa00",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png",
@@ -94016,7 +94008,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "BOIS -15.5",
         "overUnder": "58.5",
         "homeMoneyline": "-750",
@@ -97806,7 +97798,7 @@
       "streaming": [],
       "broadcastSummary": "ABC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MIA -2.5",
         "overUnder": "57.5",
         "homeMoneyline": "-142",
@@ -106375,7 +106367,7 @@
           "abbreviation": "UTSA",
           "homeAway": "away",
           "rank": null,
-          "record": "4-2",
+          "record": "4-3",
           "score": null,
           "color": "#0c2340",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png",
@@ -112404,7 +112396,7 @@
           "abbreviation": "ARMY",
           "homeAway": "away",
           "rank": null,
-          "record": "2-5",
+          "record": "3-5",
           "score": null,
           "color": "#d3bc8d",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
@@ -116747,7 +116739,7 @@
           "abbreviation": "ND",
           "homeAway": "home",
           "rank": 13,
-          "record": "6-0",
+          "record": "7-0",
           "score": null,
           "color": "#062340",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
@@ -117744,7 +117736,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "SF -6.5",
         "overUnder": "47.5",
         "homeMoneyline": "+241",
@@ -117831,7 +117823,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "CIN -6",
         "overUnder": "46.5",
         "homeMoneyline": "+211",
@@ -117997,7 +117989,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "GB -4.5",
         "overUnder": "46.5",
         "homeMoneyline": "+189",
@@ -118163,7 +118155,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "TB -5.5",
         "overUnder": "40.5",
         "homeMoneyline": "-256",
@@ -118250,7 +118242,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "WSH -4.5",
         "overUnder": "47.5",
         "homeMoneyline": "+192",
@@ -125928,7 +125920,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "DEN -14.5",
         "overUnder": "39.5",
         "homeMoneyline": "-1120",
@@ -126015,7 +126007,7 @@
       "streaming": [],
       "broadcastSummary": "Fox",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "PHI -3",
         "overUnder": "36.5",
         "homeMoneyline": "+131",
@@ -126102,7 +126094,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "BUF -12.5",
         "overUnder": "44.5",
         "homeMoneyline": "+548",
@@ -126194,7 +126186,7 @@
       "streaming": [],
       "broadcastSummary": "CBS",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "MIN -5.5",
         "overUnder": "43.5",
         "homeMoneyline": "-254",
@@ -127845,7 +127837,7 @@
       "streaming": [],
       "broadcastSummary": "NBC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "HOU -4.5",
         "overUnder": "41.5",
         "homeMoneyline": "+182",
@@ -128752,7 +128744,7 @@
           "abbreviation": "ARMY",
           "homeAway": "home",
           "rank": null,
-          "record": "2-5",
+          "record": "3-5",
           "score": null,
           "color": "#d3bc8d",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/349.png",
@@ -131290,7 +131282,7 @@
       "streaming": [],
       "broadcastSummary": "ESPN · ABC",
       "odds": {
-        "provider": "DraftKings",
+        "provider": "Draft Kings",
         "spread": "SEA -6",
         "overUnder": "50.5",
         "homeMoneyline": "-265",
@@ -137210,7 +137202,7 @@
           "abbreviation": "UTSA",
           "homeAway": "away",
           "rank": null,
-          "record": "4-2",
+          "record": "4-3",
           "score": null,
           "color": "#0c2340",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2636.png",
@@ -145017,7 +145009,7 @@
           "abbreviation": "ND",
           "homeAway": "home",
           "rank": 13,
-          "record": "6-0",
+          "record": "7-0",
           "score": null,
           "color": "#062340",
           "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/87.png",
