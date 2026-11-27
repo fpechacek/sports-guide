@@ -580,6 +580,26 @@ test("college football keeps an FBS game and drops an FCS-only game", () => {
   assert.match(parsed.listings[0].name, /Ole Miss/);
 });
 
+test("listings keep the full team name and the abbreviation used by search", () => {
+  const event = eventFor(
+    "Iowa Hawkeyes at Pittsburgh Steelers",
+    "2026-11-28T17:00:00Z",
+    [team(2294, "Iowa Hawkeyes"), team(23, "Pittsburgh Steelers", { homeAway: "home" })],
+    [],
+  );
+  event.competitions[0].competitors[0].team.abbreviation = "IOWA";
+  event.competitions[0].competitors[0].team.shortDisplayName = "Iowa";
+  event.competitions[0].competitors[1].team.displayName = "";
+  event.competitions[0].competitors[1].team.shortDisplayName = "Steelers";
+  event.competitions[0].competitors[1].team.abbreviation = "PIT";
+  const listing = normalizeCompetition(event, event.competitions[0], leagues.nfl, favorites, channelNames);
+  assert.equal(listing.teams[0].name, "Iowa Hawkeyes");
+  assert.equal(listing.teams[0].shortName, "Iowa");
+  assert.equal(listing.teams[0].abbreviation, "IOWA");
+  assert.equal(listing.teams[1].name, "Steelers");
+  assert.equal(listing.teams[1].abbreviation, "PIT");
+});
+
 test("UFC lists each fight and a race lists the session, not every driver", () => {
   const card = {
     id: "ufc1",

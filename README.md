@@ -126,7 +126,7 @@ Sun, Nov 22 · 1:00 PM ET · Pittsburgh Steelers at Philadelphia Eagles · NFL �
 
 Group by `date`, or keep rows where `favorite` is true. This repo does not change ha-infobox.
 
-Team `logo` values are ESPN image URLs, included so a later email can use them. The page itself uses abbreviations, so a logo outage does not break the guide.
+Team `logo` values are ESPN image URLs, included so a later email can use them. The page shows each club's full ESPN name (`displayName`, or `shortDisplayName` when the full name is missing). Abbreviations stay on the team so a search for `IOWA` or `PIT` still matches, and Must Watch keeps matching on the full name, the short name, and the abbreviation. The betting spread keeps the sportsbook shorthand. The moneyline uses the full names.
 
 ## Put it on the internet, for free
 

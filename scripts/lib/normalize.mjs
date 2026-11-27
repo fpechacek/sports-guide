@@ -89,15 +89,26 @@ function initials(name) {
   return letters.slice(0, 3) || "—";
 }
 
+function identityFromTeam(team) {
+  const full = String(team?.displayName ?? "").trim();
+  const short = String(team?.shortDisplayName ?? "").trim() || String(team?.name ?? "").trim();
+  const name = full || short;
+  if (!name) return null;
+  return {
+    name,
+    shortName: short || name,
+    abbreviation: String(team?.abbreviation ?? "").trim() || initials(name),
+  };
+}
+
 function baseTeam(competitor, status) {
   const team = competitor?.team;
   const athlete = competitor?.athlete;
-  if (team?.displayName) {
+  const named = team ? identityFromTeam(team) : null;
+  if (named) {
     return {
       id: String(team.id ?? competitor.id ?? ""),
-      name: team.displayName,
-      shortName: team.shortDisplayName || team.name || team.displayName,
-      abbreviation: team.abbreviation || initials(team.displayName),
+      ...named,
       homeAway: competitor.homeAway === "home" || competitor.homeAway === "away" ? competitor.homeAway : null,
       rank: rankOf(competitor),
       record: recordOf(competitor),
@@ -108,11 +119,13 @@ function baseTeam(competitor, status) {
     };
   }
   if (athlete) {
-    const name = athlete.displayName || athlete.fullName || "TBD";
+    const full = String(athlete.displayName || athlete.fullName || "").trim();
+    const short = String(athlete.shortName || "").trim();
+    const name = full || short || "TBD";
     return {
       id: String(athlete.id ?? competitor.id ?? ""),
       name,
-      shortName: athlete.shortName || name,
+      shortName: short || name,
       abbreviation: initials(name),
       homeAway: null,
       rank: null,

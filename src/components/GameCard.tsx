@@ -104,7 +104,7 @@ function Side({ team, showScore }: { team: Team; showScore: boolean }) {
     <span className={team.favorite ? "side is-favorite" : "side"}>
       {team.favorite ? <span className="pip" style={{ background: pipColor(team.color) }} aria-hidden="true" /> : null}
       {team.rank != null ? <span className="rank">#{team.rank}</span> : null}
-      <span className="abbr">{team.abbreviation}</span>
+      <span className="team-name">{team.name}</span>
       {showScore && team.score != null ? <span className="score">{team.score}</span> : null}
     </span>
   );
@@ -113,7 +113,7 @@ function Side({ team, showScore }: { team: Team; showScore: boolean }) {
 function FightScores({ event }: { event: GuideEvent }) {
   const scored = event.teams.filter((team) => team.score != null);
   if (scored.length === 0) return null;
-  return <p className="nicknames">{scored.map((team) => `${team.shortName} ${team.score}`).join(" · ")}</p>;
+  return <p className="nicknames">{scored.map((team) => `${team.name} ${team.score}`).join(" · ")}</p>;
 }
 
 function Matchup({ event, showScore }: { event: GuideEvent; showScore: boolean }) {
@@ -135,19 +135,12 @@ function Matchup({ event, showScore }: { event: GuideEvent; showScore: boolean }
           : null;
       return (
         <div className="matchup">
-          <p className="abbr-line">
+          <p className="name-line">
             <Side team={away} showScore={showScore} />
             <span className="at">at</span>
             <Side team={home} showScore={showScore} />
           </p>
-          <p className="nicknames">
-            <span className={away.favorite ? "nick fav" : "nick"}>{away.shortName}</span>
-            <span className="nick-dot" aria-hidden="true">
-              ·
-            </span>
-            <span className={home.favorite ? "nick fav" : "nick"}>{home.shortName}</span>
-            {records ? <span className="records">{records}</span> : null}
-          </p>
+          {records ? <p className="records">{records}</p> : null}
         </div>
       );
     }
@@ -165,9 +158,11 @@ function oddsLine(event: GuideEvent): string | null {
   if (odds.provider) parts.push(odds.provider);
   if (odds.spread) parts.push(odds.spread);
   if (odds.overUnder) parts.push(`O/U ${odds.overUnder}`);
+  const away = event.teams.find((team) => team.homeAway === "away");
+  const home = event.teams.find((team) => team.homeAway === "home");
   const money: string[] = [];
-  if (odds.awayMoneyline) money.push(`${odds.awayAbbreviation ?? "Away"} ${odds.awayMoneyline}`);
-  if (odds.homeMoneyline) money.push(`${odds.homeAbbreviation ?? "Home"} ${odds.homeMoneyline}`);
+  if (odds.awayMoneyline) money.push(`${away?.name || odds.awayAbbreviation || "Away"} ${odds.awayMoneyline}`);
+  if (odds.homeMoneyline) money.push(`${home?.name || odds.homeAbbreviation || "Home"} ${odds.homeMoneyline}`);
   if (money.length > 0) parts.push(`ML ${money.join(" / ")}`);
   return parts.length > 0 ? parts.join(" · ") : null;
 }
@@ -224,7 +219,7 @@ export function GameCard({
               type="checkbox"
               checked={watched}
               onChange={onToggleWatch}
-              aria-label={watched ? `Remove ${event.shortName} from Must Watch` : `Add ${event.shortName} to Must Watch`}
+              aria-label={watched ? `Remove ${event.name} from Must Watch` : `Add ${event.name} to Must Watch`}
             />
           </label>
         </div>
