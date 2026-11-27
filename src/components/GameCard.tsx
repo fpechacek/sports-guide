@@ -1,6 +1,16 @@
-import type { CSSProperties } from "react";
 import type { Broadcast, GameStatus, GuideEvent, Team } from "../types";
 import { splitClock } from "../lib/time";
+
+function inkFor(hex: string): string {
+  const raw = hex.replace("#", "");
+  if (raw.length < 6) return "#17211c";
+  const red = Number.parseInt(raw.slice(0, 2), 16);
+  const green = Number.parseInt(raw.slice(2, 4), 16);
+  const blue = Number.parseInt(raw.slice(4, 6), 16);
+  if ([red, green, blue].some((channel) => Number.isNaN(channel))) return "#17211c";
+  const luminance = (0.2126 * red + 0.7152 * green + 0.0722 * blue) / 255;
+  return luminance > 0.62 ? "#17211c" : "#f7f4ea";
+}
 
 function pipColor(hex: string | null): string {
   if (!hex) return "#f0c14d";
@@ -203,13 +213,18 @@ export function GameCard({
   onToggleWatch: () => void;
   onToggleScore: () => void;
 }) {
-  const tagStyle = { "--tag": event.color } as CSSProperties;
   const reasons = (event.mustWatchReasons ?? []).slice(0, 3);
   const line = oddsLine(event);
   const canScore =
     (event.status === "in-progress" || event.status === "final") && event.teams.some((team) => team.score != null);
   return (
     <article className={event.favorite ? "card is-favorite" : "card"} data-status={event.status}>
+      <div className="card-league">
+        <p className="league-badge" style={{ background: event.color, color: inkFor(event.color) }}>
+          <span aria-hidden="true">{event.emoji}</span>
+          <span>{event.league}</span>
+        </p>
+      </div>
       <When event={event} />
       <div className="card-main">
         <div className="card-top">
@@ -224,9 +239,6 @@ export function GameCard({
           </label>
         </div>
         <p className="tags">
-          <span className="tag" style={tagStyle}>
-            <span aria-hidden="true">{event.emoji}</span> {event.league}
-          </span>
           {reasons.map((reason) => (
             <span key={reason.id} className="reason">
               {reason.label}
