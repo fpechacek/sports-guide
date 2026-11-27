@@ -54,7 +54,7 @@ Use the `id`, `sport`, and `league` from the team result. Iowa football and Iowa
 
 ## Sync picks
 
-The guide can be read with no account. Checks stay on the phone until you sign in. `public/sync-config.json` has sync turned on. The email box is at the top of the page.
+The guide can be read with no account. Checks stay on the phone until you sign in. `public/sync-config.json` has sync turned on. The email box is at the bottom of the page, below the listings.
 
 When it is on, sign-in is an email link. The browser remembers it. Only the signed-in person can change their own rows. The morning job copies those rows into `must-watch.json` for the TV, and that same visit keeps the free Supabase project from being paused. The service key stays in GitHub Actions secrets, not in the repo.
 

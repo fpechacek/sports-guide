@@ -227,7 +227,6 @@ export function App() {
             {load.status === "ready" ? `Updated ${updatedLabel(load.schedule.generatedAt)} ET` : "Loading schedule"}
           </p>
         </div>
-        {syncClient ? <SyncPicks client={syncClient} user={syncUser} note={syncNote} onSignedIn={() => setSyncUser(syncUserRef.current)} /> : null}
       </header>
       <div className="stripe" aria-hidden="true">
         <span />
@@ -336,6 +335,9 @@ export function App() {
             )}
           </section>
         </>
+      ) : null}
+      {syncClient ? (
+        <SyncPicks client={syncClient} user={syncUser} note={syncNote} onSignedIn={() => setSyncUser(syncUserRef.current)} />
       ) : null}
     </div>
   );
