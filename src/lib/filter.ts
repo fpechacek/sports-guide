@@ -64,6 +64,7 @@ export function matchesQuery(event: GuideEvent, query: string): boolean {
     event.stage ?? "",
     event.venue ?? "",
     event.broadcastSummary ?? "",
+    event.session ?? "",
     ...event.channels,
     ...event.streaming,
     ...event.broadcasts.map((broadcast) => broadcast.name),
@@ -82,10 +83,16 @@ export function passesView(event: GuideEvent, filters: Filters): boolean {
   return true;
 }
 
+function showsWithoutBroadcast(event: GuideEvent): boolean {
+  if (event.favorite || event.mustWatch) return true;
+  if (event.format !== "race" || !event.session || event.session === "Race") return false;
+  return true;
+}
+
 export function applyFilters(events: GuideEvent[], filters: Filters): GuideEvent[] {
   return events.filter((event) => {
     if (!passesView(event, filters)) return false;
-    if (filters.onTv && !event.favorite && !event.mustWatch && !hasListing(event)) return false;
+    if (filters.onTv && !hasListing(event) && !showsWithoutBroadcast(event)) return false;
     return true;
   });
 }

@@ -1,3 +1,4 @@
+import { listingsFromNascarRaces, nascarScheduleUrl, NASCAR_SERIES, yearsCovering } from "./nascar.mjs";
 import { classifyMustWatch } from "./must-watch.mjs";
 import { listingsFromScoreboard } from "./normalize.mjs";
 import { addDays, compactDate, eachDate, todayEt } from "./time.mjs";
@@ -8,7 +9,8 @@ const COVERAGE = [
   "A TV channel is not turned into a streaming service. Streams appear only when ESPN lists them.",
   "Channels for later days are often blank until closer to game time.",
   "TBD at TBD placeholders are dropped. College football keeps the FBS slate, including an FBS team hosting an FCS opponent, and drops FCS-only games.",
-  "UFC is one row per fight. Auto racing is one row per session.",
+  "UFC is one row per fight. Auto racing is one row per session. Formula 1 sessions are Practice 1, Practice 2, Practice 3, Qualifying, Sprint Shootout, Sprint, and Race, with the TV or stream ESPN lists.",
+  "NASCAR Cup, the O'Reilly Auto Parts Series, and the Craftsman Truck Series add practice and qualifying from NASCAR's public schedule. The race keeps the ESPN TV listing. A practice or qualifying session with no channel says the channel is not announced.",
 ];
 
 async function mapPool(items, limit, worker) {
@@ -48,6 +50,7 @@ export async function buildSchedule({ now = new Date(), days = 14, leagues, favo
 
   const warnings = [];
   let failed = 0;
+  let requests = jobs.length;
   const batches = await mapPool(jobs, 4, async (job) => {
     const url = scoreboardUrl(job.league, job.date);
     try {
@@ -67,6 +70,23 @@ export async function buildSchedule({ now = new Date(), days = 14, leagues, favo
     for (const listing of listings) {
       if (listing.date < start || listing.date > end) continue;
       byId.set(`${listing.leagueSlug}:${listing.id}`, listing);
+    }
+  }
+
+  const nascarLeagues = activeLeagues.filter((league) => NASCAR_SERIES[league.slug]);
+  for (const year of nascarLeagues.length > 0 ? yearsCovering(start, end) : []) {
+    requests += 1;
+    try {
+      const json = await fetchJson(nascarScheduleUrl(year));
+      for (const league of nascarLeagues) {
+        const races = json?.[NASCAR_SERIES[league.slug]] ?? [];
+        const listings = listingsFromNascarRaces(races, league, channelNames, { start, end, now });
+        for (const listing of listings) byId.set(`${listing.leagueSlug}:${listing.id}`, listing);
+      }
+    } catch (error) {
+      failed += 1;
+      const message = error instanceof Error ? error.message : String(error);
+      warnings.push(`nascar ${year}: ${message}`);
     }
   }
 
@@ -106,6 +126,15 @@ export async function buildSchedule({ now = new Date(), days = 14, leagues, favo
         name: "ESPN public scoreboard",
         url: "https://site.api.espn.com/apis/site/v2/sports/{sport}/{league}/scoreboard",
       },
+      ...(nascarLeagues.length > 0
+        ? [
+            {
+              id: "nascar-schedule",
+              name: "NASCAR public schedule",
+              url: "https://cf.nascar.com/cacher/{year}/race_list_basic.json",
+            },
+          ]
+        : []),
     ],
     coverage: COVERAGE,
     favorites: favorites.map((favorite) => ({
@@ -125,7 +154,7 @@ export async function buildSchedule({ now = new Date(), days = 14, leagues, favo
       ...(league.groups ? { groups: String(league.groups) } : {}),
     })),
     counts: {
-      requests: jobs.length,
+      requests,
       failed,
       events: events.length,
       favorites: favoriteEvents,

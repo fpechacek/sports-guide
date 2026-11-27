@@ -299,7 +299,7 @@ export function App() {
               <h2 id="guide-heading">{filters.date ? longDate(filters.date) : "Full schedule"}</h2>
               <p>
                 {filters.onTv
-                  ? "Games without a listing are hidden, except Must Watch."
+                  ? "Games without a listing are hidden, except Must Watch and racing practice or qualifying."
                   : "Every game in the window, including ones with no channel yet."}
               </p>
             </div>

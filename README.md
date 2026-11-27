@@ -102,7 +102,8 @@ Leagues included: NFL, college football (FBS), NBA, WNBA, men's and women's coll
 - If ESPN has no US feed, non-US feeds are kept and tagged with their region. Otherwise they are dropped.
 - Blackouts and "also in the team app" are only as complete as ESPN's list.
 - WNBA and MLB are included. In November they usually have no games. An empty league is not an error.
-- Placeholder `TBD at TBD` games are dropped. UFC is one row per fight. Auto racing is one row per session (practice, qualifying, race), not one row per driver.
+- Placeholder `TBD at TBD` games are dropped. UFC is one row per fight. Auto racing is one row per session (practice, qualifying, race), not one row per driver. Formula 1 sessions are labeled Practice 1, Practice 2, Practice 3, Qualifying, Sprint Shootout, Sprint, and Race, and keep the TV or stream ESPN lists, such as Apple TV.
+- NASCAR Cup, the O'Reilly Auto Parts Series, and the Craftsman Truck Series add practice and qualifying from NASCAR's public schedule at `https://cf.nascar.com/cacher/{year}/race_list_basic.json`. The race keeps the ESPN TV listing. Practice and qualifying with no listed channel say the channel is not announced.
 - ESPN's public racing scoreboard has Formula 1, IndyCar, NASCAR Cup, the O'Reilly series (Xfinity), Trucks, and NHRA. IMSA, WEC, and MotoGP are not on that scoreboard.
 - DGB Ratings puts its ranked list in the page data, not in the visible HTML. The morning job reads that list and marks the five highest-rated games each day as DGB #1 through DGB #5. Game of the Day has a public games API; its featured game is tagged Game of the day. Women's games are still left out. If either site is down, the schedule is still written.
 - Rankings are ESPN's `curatedRank` when it is a real rank. The value 99 means unranked and is omitted.

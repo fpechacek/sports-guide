@@ -85,6 +85,7 @@ export type GuideEvent = {
   color: string;
   headline: string;
   link: string | null;
+  session?: string | null;
 };
 
 export type FavoriteConfig = {

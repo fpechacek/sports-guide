@@ -687,9 +687,148 @@ test("UFC lists each fight and a race lists the session, not every driver", () =
     channelNames,
   );
   assert.equal(race.listings.length, 1);
-  assert.equal(race.listings[0].name, "Las Vegas Grand Prix · FP1");
+  assert.equal(race.listings[0].name, "Las Vegas Grand Prix · Practice 1");
+  assert.equal(race.listings[0].session, "Practice 1");
+  assert.deepEqual(race.listings[0].streaming, ["Apple TV"]);
   assert.equal(race.listings[0].teams.length, 0);
   assert.equal(race.listings[0].format, "race");
+});
+
+test("Formula 1 sessions use plain labels and NASCAR practice stays off the race row", async () => {
+  const f1 = {
+    sport: "racing",
+    slug: "f1",
+    label: "F1",
+    sportLabel: "Auto Racing",
+    emoji: "🏎️",
+    competition: "Formula 1",
+    color: "#ff5a6a",
+    mode: "race",
+  };
+  const weekend = listingsFromScoreboard(
+    {
+      events: [
+        {
+          id: "british",
+          name: "Pirelli British Grand Prix",
+          shortName: "British GP",
+          date: "2026-07-05T14:00:00Z",
+          status: { type: { state: "pre" } },
+          competitions: [
+            { id: "fp1", date: "2026-07-03T11:30:00Z", type: { abbreviation: "FP1" }, geoBroadcasts: [{ type: { shortName: "Streaming" }, market: { type: "National" }, media: { shortName: "Apple TV" }, region: "us" }] },
+            { id: "ss", date: "2026-07-03T15:30:00Z", type: { abbreviation: "SS" }, geoBroadcasts: [{ type: { shortName: "Streaming" }, market: { type: "National" }, media: { shortName: "Apple TV" }, region: "us" }] },
+            { id: "sr", date: "2026-07-04T11:00:00Z", type: { abbreviation: "SR" }, geoBroadcasts: [{ type: { shortName: "Streaming" }, market: { type: "National" }, media: { shortName: "Apple TV" }, region: "us" }] },
+            { id: "qual", date: "2026-07-04T15:00:00Z", type: { abbreviation: "Qual" }, geoBroadcasts: [{ type: { shortName: "Streaming" }, market: { type: "National" }, media: { shortName: "Apple TV" }, region: "us" }] },
+            { id: "race", date: "2026-07-05T14:00:00Z", type: { abbreviation: "Race" }, geoBroadcasts: [{ type: { shortName: "Streaming" }, market: { type: "National" }, media: { shortName: "Apple TV" }, region: "us" }] },
+          ],
+        },
+      ],
+    },
+    f1,
+    favorites,
+    channelNames,
+  );
+  assert.deepEqual(
+    weekend.listings.map((listing) => listing.session),
+    ["Practice 1", "Sprint Shootout", "Sprint", "Qualifying", "Race"],
+  );
+  assert.equal(weekend.listings[4].name, "Pirelli British Grand Prix · Race");
+  assert.deepEqual(weekend.listings[4].streaming, ["Apple TV"]);
+
+  const cup = {
+    sport: "racing",
+    slug: "nascar-premier",
+    label: "NASCAR Cup",
+    sportLabel: "Auto Racing",
+    emoji: "🏎️",
+    competition: "NASCAR Cup Series",
+    color: "#f0c36a",
+    mode: "race",
+  };
+  const schedule = await buildSchedule({
+    now: new Date("2026-02-11T15:00:00Z"),
+    days: 7,
+    leagues: [cup],
+    favorites,
+    channelNames,
+    meta: { timezone: "America/New_York", location: "Merritt Island, Florida" },
+    fetchJson: async (url) => {
+      if (url.includes("cf.nascar.com")) {
+        return {
+          series_1: [
+            {
+              race_id: 5596,
+              series_id: 1,
+              race_name: "DAYTONA 500",
+              schedule: [
+                { event_name: "Haulers Enter", start_time_utc: "2026-02-10T23:15:00", run_type: 0 },
+                { event_name: "Practice 1", start_time_utc: "2026-02-11T15:00:00", run_type: 1 },
+                { event_name: "Qualifying (Impound)", start_time_utc: "2026-02-12T01:15:00", run_type: 2 },
+                { event_name: "Practice 2", start_time_utc: "2026-02-13T22:35:00", run_type: 1 },
+                { event_name: "Practice 3", start_time_utc: "2026-02-14T20:00:00", run_type: 1 },
+                { event_name: "Race", start_time_utc: "2026-02-15T18:30:00", run_type: 3 },
+                { event_name: "Practice", start_time_utc: "2026-03-01T15:00:00", run_type: 1 },
+              ],
+            },
+            {
+              race_id: 1,
+              series_id: 1,
+              race_name: "Clash",
+              schedule: [
+                { event_name: "Practice", start_time_utc: "2026-02-11T18:00:00", run_type: 1 },
+                { event_name: "Practice", start_time_utc: "2026-02-11T20:00:00", run_type: 1 },
+                { event_name: "Race", start_time_utc: "2026-02-11T23:00:00", run_type: 3 },
+              ],
+            },
+            {
+              race_id: 5594,
+              series_id: 1,
+              race_name: "America 250 Florida Duel at DAYTONA",
+              schedule: [{ event_name: "Qualifying Race 1", start_time_utc: "2026-02-13T00:00:00", run_type: 2 }],
+            },
+          ],
+        };
+      }
+      return {
+        events: [
+          {
+            id: "daytona",
+            name: "Daytona 500",
+            date: "2026-02-15T18:30:00Z",
+            status: { type: { state: "pre", shortDetail: "Scheduled" } },
+            competitions: [
+              {
+                id: "daytona-race",
+                date: "2026-02-15T18:30:00Z",
+                geoBroadcasts: [{ type: { shortName: "TV" }, market: { type: "National" }, media: { shortName: "FOX" }, region: "us" }],
+              },
+            ],
+          },
+        ],
+      };
+    },
+  });
+  const names = schedule.events.map((event) => event.name);
+  assert.ok(names.includes("DAYTONA 500 · Practice 1"));
+  assert.ok(names.includes("DAYTONA 500 · Practice 2"));
+  assert.ok(names.includes("DAYTONA 500 · Practice 3"));
+  assert.ok(names.includes("DAYTONA 500 · Qualifying"));
+  assert.ok(names.includes("Clash · Practice 1"));
+  assert.ok(names.includes("Clash · Practice 2"));
+  assert.equal(names.filter((name) => name === "Daytona 500").length, 1);
+  assert.equal(names.some((name) => name.includes("Qualifying Race")), false);
+  assert.equal(names.filter((name) => name.startsWith("DAYTONA 500 · Practice")).length, 3);
+  const race = schedule.events.find((event) => event.id === "daytona-race");
+  assert.ok(race);
+  assert.deepEqual(race.channels, ["FOX"]);
+  assert.equal(race.sport, "Auto Racing");
+  const practice = schedule.events.find((event) => event.name === "DAYTONA 500 · Practice 1");
+  assert.equal(practice.session, "Practice 1");
+  assert.equal(practice.broadcastSummary, null);
+  assert.equal(practice.channels.length, 0);
+  const qualifying = schedule.events.find((event) => event.session === "Qualifying");
+  assert.equal(qualifying.name, "DAYTONA 500 · Qualifying");
+  assert.equal(schedule.sources.some((source) => source.id === "nascar-schedule"), true);
 });
 
 test("DGB top 5 are ranked per day and a dead source is ignored", async () => {

@@ -268,7 +268,7 @@ function timeIsTbd(competition, status) {
   return /\bTBD\b/i.test(detail);
 }
 
-function finishListing({ id, start, when, league, event, competition, teams, hits, broadcasts, format, name, shortName, stage }) {
+function finishListing({ id, start, when, league, event, competition, teams, hits, broadcasts, format, name, shortName, stage, session = null }) {
   const channels = uniqueNames(broadcasts, "tv");
   const streaming = uniqueNames(broadcasts, "streaming");
   const listed = [];
@@ -325,6 +325,7 @@ function finishListing({ id, start, when, league, event, competition, teams, hit
     color: league.color,
     headline: `${when.dateLabel} · ${whenText} · ${name} · ${league.label}${stageBit} · ${where}`,
     link: pickLink(event, competition),
+    session,
   };
 }
 
@@ -415,12 +416,55 @@ function keepListing(listing, league) {
   return true;
 }
 
+const SESSION_LABELS = {
+  fp1: "Practice 1",
+  p1: "Practice 1",
+  "practice 1": "Practice 1",
+  fp2: "Practice 2",
+  p2: "Practice 2",
+  "practice 2": "Practice 2",
+  fp3: "Practice 3",
+  p3: "Practice 3",
+  "practice 3": "Practice 3",
+  fp: "Practice",
+  practice: "Practice",
+  "practice / qualifying": "Practice / Qualifying",
+  "practice/qualifying": "Practice / Qualifying",
+  qual: "Qualifying",
+  q: "Qualifying",
+  qualifying: "Qualifying",
+  sq: "Sprint Shootout",
+  ss: "Sprint Shootout",
+  "sprint shootout": "Sprint Shootout",
+  "sprint qualifying": "Sprint Shootout",
+  sr: "Sprint",
+  sprint: "Sprint",
+  "sprint race": "Sprint",
+  race: "Race",
+  r: "Race",
+};
+
+export function plainSessionLabel(raw) {
+  const key = String(raw ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s*\([^)]*\)\s*/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (!key) return "";
+  if (SESSION_LABELS[key]) return SESSION_LABELS[key];
+  const numbered = key.match(/^(practice|qualifying)\s+(\d+)$/);
+  if (numbered) {
+    const word = numbered[1] === "practice" ? "Practice" : "Qualifying";
+    return `${word} ${numbered[2]}`;
+  }
+  return key.replace(/\b[a-z0-9]/g, (letter) => letter.toUpperCase());
+}
+
 function sessionLabel(competition) {
   const type = competition?.type;
-  const label = type?.text || type?.abbreviation || type?.shortName || "";
-  const trimmed = String(label).trim();
-  if (!trimmed || /^r(ace)?$/i.test(trimmed)) return "";
-  return trimmed;
+  const raw = type?.text || type?.abbreviation || type?.shortName || "";
+  return plainSessionLabel(raw);
 }
 
 export function normalizeBout(event, competition, league, favorites, channelNames) {
@@ -473,6 +517,7 @@ export function normalizeRace(event, competition, league, channelNames) {
     name,
     shortName: event?.shortName ? (session ? `${event.shortName} · ${session}` : event.shortName) : name,
     stage: null,
+    session: session || null,
   });
 }
 
